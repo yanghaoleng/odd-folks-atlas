@@ -1,6 +1,10 @@
 /* Layout-only resize control. Never changes avatar configuration or saved user data. */
 (() => {
   'use strict';
+  let initialized = false;
+  const setup = () => {
+  if (initialized) return;
+  initialized = true;
   const handle = document.getElementById('workspaceResize');
   const stage = document.getElementById('stageCapture');
   const workspace = document.getElementById('editorWorkspace');
@@ -67,4 +71,7 @@
   }).observe(column);
   window.addEventListener('resize', resize);
   apply(limits().default);
+  };
+  window.addEventListener('avatar-editor-ready', setup, { once: true });
+  if (typeof editorSetupReady !== 'undefined' && editorSetupReady) setup();
 })();

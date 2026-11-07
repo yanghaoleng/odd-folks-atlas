@@ -1578,6 +1578,13 @@
       "source": "Iconoir 7.12.2; see THIRD_PARTY_NOTICES.md"
     },
     {
+      "path": "dist/icons/fx.svg",
+      "bytes": 435,
+      "sha256": "6a8d703756c7434be237bcba3df58e15db4c00dc9f1551c6c4e35c44b568b472",
+      "license": "MIT",
+      "source": "Iconoir 7.12.2; see THIRD_PARTY_NOTICES.md"
+    },
+    {
       "path": "dist/icons/log-out.svg",
       "bytes": 440,
       "sha256": "a02e98288d4cd8cf9fe5982d270dc35eb18017021fd117c3516bb0de9774354a",
@@ -1642,50 +1649,57 @@
     },
     {
       "path": "docs/screenshots/catalog-desktop.png",
-      "bytes": 156653,
-      "sha256": "dd9f4547c939154eb846ea40b72d94493a840bb6ac66703c0654f7e6038d6b16",
+      "bytes": 156587,
+      "sha256": "fe58f3f9efe4f375f44b02ed802b03fd3eb1726067fe84afcf71e5691492bcc8",
       "license": "CC-BY-NC-4.0",
       "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
     },
     {
       "path": "docs/screenshots/compact-mobile.png",
-      "bytes": 115153,
-      "sha256": "62841042f3d9863c87aaee5cf77e8f32e0c1c42e300a5b4a817fb5c55d8c04f4",
+      "bytes": 115005,
+      "sha256": "3af717575444ff86d24e78c42ad6aa22b7f441fcca28a545ee7d50204adeb9ef",
       "license": "CC-BY-NC-4.0",
       "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
     },
     {
       "path": "docs/screenshots/demo-mobile.png",
-      "bytes": 225450,
-      "sha256": "4c174050252c853b6b1b1fe1b356ebb4af628d90d72477a2292ab7805495c932",
+      "bytes": 225785,
+      "sha256": "d0d29f6c5bbb51582fd534b192493328597b9847425e1903c2643d4ad48539bc",
       "license": "CC-BY-NC-4.0",
       "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
     },
     {
       "path": "docs/screenshots/editor-desktop.png",
-      "bytes": 307934,
-      "sha256": "f61316e9f77de99617a23a24f8fd5fa70cf87243f5f945bd73b273302666cbd2",
+      "bytes": 466433,
+      "sha256": "71f34ddff655ee21afbdb637d0f314f71699ab00f1027d99c9b9d8607a9fc796",
       "license": "CC-BY-NC-4.0",
       "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
     },
     {
       "path": "docs/screenshots/editor-mobile.png",
-      "bytes": 225450,
-      "sha256": "4c174050252c853b6b1b1fe1b356ebb4af628d90d72477a2292ab7805495c932",
+      "bytes": 225785,
+      "sha256": "d0d29f6c5bbb51582fd534b192493328597b9847425e1903c2643d4ad48539bc",
       "license": "CC-BY-NC-4.0",
       "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
     },
     {
       "path": "docs/screenshots/keypad-mobile.png",
-      "bytes": 95112,
-      "sha256": "46638701726f65fd86ecfe04cdc49f125ff1fa72ca70249288c720bd843a67be",
+      "bytes": 94320,
+      "sha256": "4e358cdef2810ea03e3264e51fb4761ba10c9f8413ea441d0d82f880b175e926",
       "license": "CC-BY-NC-4.0",
       "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
     },
     {
       "path": "docs/screenshots/settings-logout-mobile.png",
-      "bytes": 119995,
-      "sha256": "6e35b23cab2082afebb935c89ed4b675a07278a02bed2521adaeb331573046c8",
+      "bytes": 119884,
+      "sha256": "94336fcdafb67d59da693a507d02cf886f641b6534973e861e22735c8f22511c",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "docs/screenshots/sidebar-tablet.png",
+      "bytes": 404365,
+      "sha256": "740f7f06bf26bac542d5dc4bddcea52d32ea400a50ace02725db68ff754c6604",
       "license": "CC-BY-NC-4.0",
       "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
     }

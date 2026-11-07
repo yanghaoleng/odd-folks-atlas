@@ -51,7 +51,7 @@ function setup(){
  const background=$('backgroundProperties'),backgroundTiming=background.querySelector('.background-timing');background.prepend($('backgroundEmphasis').closest('label'),body.querySelector('[data-select="backgroundEmphasis"]'),$('backgroundEvent').closest('label'),body.querySelector('[data-select="backgroundEvent"]'),$('backgroundEnabled').closest('label'),background.querySelector('.background-play-actions'),backgroundTiming);
  installPageScrollGuard(panel);
  body.addEventListener('change',()=>queueMicrotask(refresh));document.addEventListener('avatar-layer-change',()=>{body.scrollTop=0;refresh()});
- installSheetGesture(panel,body);const fitStage=()=>{if(panel.open&&matchMedia('(max-width:760px)').matches){const top=$('stageCapture').getBoundingClientRect().top;document.documentElement.style.setProperty('--compact-stage-limit',Math.max(96,panel.getBoundingClientRect().top-top-14)+'px')}};new ResizeObserver(fitStage).observe(panel);window.addEventListener('resize',fitStage);window.AvatarCompactInspector={refresh(){refresh();requestAnimationFrame(fitStage)}};refresh();syncInspectorProperties();
+ installSheetGesture(panel,body);installSidebarGesture(panel);const fitStage=()=>{if(panel.open&&matchMedia('(max-width:760px)').matches){const top=$('stageCapture').getBoundingClientRect().top;document.documentElement.style.setProperty('--compact-stage-limit',Math.max(96,panel.getBoundingClientRect().top-top-14)+'px')}};new ResizeObserver(fitStage).observe(panel);window.addEventListener('resize',fitStage);window.AvatarCompactInspector={refresh(){refresh();requestAnimationFrame(fitStage)}};refresh();syncInspectorProperties();
 }
 function installPageScrollGuard(panel){
  // CSS handles current browsers. This narrowly scoped fallback only consumes an
@@ -117,6 +117,50 @@ function installSheetGesture(panel,body){
  panel.addEventListener('click',e=>{if(suppressClick&&e.detail!==0){e.preventDefault();e.stopImmediatePropagation();suppressClick=false}},{capture:true});
  body.addEventListener('wheel',e=>{if(!mobile()||!panel.open||e.ctrlKey||e.target.closest('input,select,textarea')||Math.abs(e.deltaX)>Math.abs(e.deltaY))return;const max=Math.max(0,body.scrollHeight-body.clientHeight),out=(e.deltaY<0&&body.scrollTop<=1)||(e.deltaY>0&&body.scrollTop>=max-1);if(!out){if(wheelDistance){const previous=wheelDistance;wheelDistance=0;clearTimeout(wheelTimer);finish(previous,true)}return}e.preventDefault();stopMomentum();const delta=e.deltaY*(e.deltaMode===1?16:e.deltaMode===2?body.clientHeight:1);wheelDistance=Math.max(-150,Math.min(150,wheelDistance-delta*.35));draw(wheelDistance);clearTimeout(wheelTimer);wheelTimer=setTimeout(()=>{const d=wheelDistance;wheelDistance=0;finish(d)},130)},{passive:false});
  panel.addEventListener('close',reset);window.addEventListener('resize',reset);document.addEventListener('visibilitychange',()=>{if(document.hidden)reset()});
+}
+function installSidebarGesture(panel){
+ let gesture=null,settle=null,suppressClick=false,clickTimer=0;
+ const wide=()=>matchMedia('(min-width:761px)').matches;
+ const clearClasses=()=>{panel.classList.remove('sidebar-dragging');document.body.classList.remove('sidebar-dragging')};
+ const draw=distance=>{panel.style.transform=`translateX(${distance}px)`;if(distance){panel.classList.add('sidebar-dragging');document.body.classList.add('sidebar-dragging')}};
+ function finish(distance,cancel=false){
+  panel.classList.remove('sidebar-dragging');
+  if(!cancel&&distance>=64){closeInspector(1,'x');return}
+  if(!distance||matchMedia('(prefers-reduced-motion:reduce)').matches){panel.style.transform='';clearClasses();return}
+  const animation=panel.animate([{transform:`translateX(${distance}px)`},{transform:'translateX(0)'}],{duration:200,easing:'cubic-bezier(.2,.8,.2,1)'});settle=animation;animation.onfinish=()=>{if(settle===animation){settle=null;panel.style.transform='';clearClasses()}};
+ }
+ function end(cancel=false){
+  if(!gesture)return;const current=gesture;gesture=null;cancel=cancel||!wide()||current.width!==innerWidth||current.height!==innerHeight;
+  if(panel.hasPointerCapture(current.id))panel.releasePointerCapture(current.id);
+  finish(current.distance,cancel||!current.active);
+  if(suppressClick){clearTimeout(clickTimer);clickTimer=setTimeout(()=>{suppressClick=false},350)}
+ }
+ function reset(preserveClick=false){
+  const current=gesture;gesture=null;preserveClick=preserveClick||!!current?.active;if(current&&panel.hasPointerCapture(current.id))panel.releasePointerCapture(current.id);
+  settle?.cancel();settle=null;if(!preserveClick){clearTimeout(clickTimer);suppressClick=false}else if(suppressClick){clearTimeout(clickTimer);clickTimer=setTimeout(()=>{suppressClick=false},350)}panel.style.transform='';clearClasses();
+ }
+ panel.addEventListener('pointerdown',e=>{
+  if(!wide()||!panel.open||inspectorTransition||!e.isPrimary||e.button!==0||e.target.closest('input,select,textarea,[contenteditable="true"]'))return;
+  const current=settle?new DOMMatrixReadOnly(getComputedStyle(panel).transform).m41:0;settle?.cancel();settle=null;clearTimeout(clickTimer);suppressClick=false;draw(current);
+  gesture={id:e.pointerId,x:e.clientX,y:e.clientY,start:current,distance:current,active:false,width:innerWidth,height:innerHeight};
+ });
+ panel.addEventListener('pointermove',e=>{
+  if(!gesture||e.pointerId!==gesture.id)return;if(!wide()||gesture.width!==innerWidth||gesture.height!==innerHeight){reset();return}const dx=e.clientX-gesture.x,dy=e.clientY-gesture.y;
+  if(!gesture.active){
+   if(Math.abs(dy)>6&&Math.abs(dy)>=Math.abs(dx)){end(true);return}
+   if(dx< -6){end(true);return}
+   if(dx<6||Math.abs(dx)<Math.abs(dy)*1.15)return;
+   gesture.active=true;panel.setPointerCapture(e.pointerId);
+  }
+  e.preventDefault();suppressClick=true;gesture.distance=Math.max(0,Math.min(panel.clientWidth*.9,gesture.start+dx*.94));draw(gesture.distance);
+ });
+ panel.addEventListener('pointerup',e=>{if(gesture?.id===e.pointerId)end(false)});
+ panel.addEventListener('pointercancel',e=>{if(gesture?.id===e.pointerId)end(true)});
+ panel.addEventListener('lostpointercapture',e=>{if(gesture?.id===e.pointerId)end(true)});
+ document.addEventListener('pointerdown',()=>{clearTimeout(clickTimer);suppressClick=false},{capture:true});
+ document.addEventListener('click',e=>{if(suppressClick&&e.detail!==0){e.preventDefault();e.stopImmediatePropagation();suppressClick=false}},{capture:true});
+ panel.addEventListener('keydown',e=>{if(e.key==='Escape'&&gesture){e.preventDefault();e.stopPropagation();end(true)}},{capture:true});
+ panel.addEventListener('close',()=>reset(true));window.addEventListener('resize',()=>reset());window.addEventListener('blur',()=>end(true));document.addEventListener('visibilitychange',()=>{if(document.hidden)end(true)});
 }
 window.addEventListener('avatar-editor-ready',setup);if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',setup,{once:true});if(typeof editorSetupReady!=='undefined'&&editorSetupReady)setup();
 })();

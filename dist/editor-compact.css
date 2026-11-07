@@ -65,10 +65,10 @@ body.workspace-shell .workspace-main-tabs button[aria-selected=true]{color:var(-
 @media(max-width:760px) and (max-height:660px){body.editor-page #materialPanel.compact-inspector{height:max(200px,calc(100dvh - 330px));max-height:max(200px,calc(100dvh - 330px))}}
 body.workspace-shell[data-focus-input=pointer] #materialPanel button:focus{outline:none}
 
-/* A transparent toolbar: history at left, page navigation pinned to the right. */
+/* A transparent toolbar: history and page navigation separated at the right. */
 html,body{overscroll-behavior-y:none}
 body.workspace-shell>header,body.workspace-shell>header.avatar-auth-header{display:block;min-height:0;padding:0 20px;border:0;background:transparent}
-.workspace-topbar{position:relative;display:grid;grid-template-columns:auto auto minmax(0,1fr);align-items:center;column-gap:12px;min-height:64px}
+.workspace-topbar{position:relative;display:grid;grid-template-columns:minmax(0,1fr) auto auto;align-items:center;column-gap:12px;min-height:64px}
 .workspace-topbar::after{content:'';position:absolute;left:0;right:0;bottom:0;height:1px;background:var(--line);pointer-events:none}
 body.workspace-shell>header h1,body.workspace-shell>header.avatar-auth-header h1{grid-column:1;grid-row:1;min-width:0;background:transparent}
 body.workspace-shell>header .workspace-main-tabs{grid-column:3;grid-row:1;align-self:stretch;justify-self:end;width:auto;max-width:none;gap:4px;border:0;background:transparent}
@@ -78,7 +78,7 @@ body.workspace-shell>header .workspace-main-tabs button[aria-selected=true]{bord
 body.workspace-shell>header .workspace-main-tabs button[aria-selected=true]::after{background:var(--accent)}
 body.workspace-shell>header .workspace-main-tabs button:hover{background:transparent;color:var(--accent)}
 .workspace-tab-icon{width:22px;height:22px;display:block;background:currentColor;-webkit-mask:var(--workspace-tab-icon) center/contain no-repeat;mask:var(--workspace-tab-icon) center/contain no-repeat}
-body.workspace-shell>header nav,body.workspace-shell>header.avatar-auth-header nav{grid-column:2;grid-row:1;width:auto;gap:0;margin:0;justify-self:start;background:transparent}
+body.workspace-shell>header nav,body.workspace-shell>header.avatar-auth-header nav{grid-column:2;grid-row:1;width:auto;gap:0;margin:0;justify-self:end;background:transparent}
 body.workspace-shell>header nav button{min-height:44px;width:40px;margin:0;padding:8px;background:transparent}
 body.workspace-shell>header #redo{margin:0}
 body.workspace-shell>header .avatar-brand-random:hover{background:transparent}
@@ -93,3 +93,14 @@ body.workspace-shell>header .avatar-demo-notice{margin:8px 0}
 @media(max-width:650px){body.workspace-shell>header,body.workspace-shell>header.avatar-auth-header{padding:0 12px}.workspace-topbar{column-gap:6px;min-height:60px}body.workspace-shell>header .workspace-main-tabs{gap:0}body.workspace-shell>header .workspace-main-tabs button{width:44px;min-height:44px}body.workspace-shell>header nav,body.workspace-shell>header.avatar-auth-header nav{gap:0}body.workspace-shell>header nav button{width:36px;min-height:44px}.avatar-caption{gap:6px}.avatar-caption #panelToggle{width:36px;min-height:40px;padding:7px}}
 @media(max-width:360px){body.workspace-shell>header .avatar-brand-copy small{display:block}body.workspace-shell>header h1{font-size:12px}.workspace-topbar{column-gap:4px}.avatar-caption{gap:5px}.avatar-caption #panelToggle{width:32px;padding:5px}}
 @media(min-width:761px) and (max-width:900px){body.editor-page #materialPanel.compact-inspector{width:320px;flex-basis:320px}}
+
+/* History is adjacent to, but visually separated from, page navigation. */
+body.workspace-shell>header .workspace-main-tabs{margin-left:12px}
+.motion-edit-icon{display:inline-block;background:currentColor;-webkit-mask:url('icons/fx.svg') center/contain no-repeat;mask:url('icons/fx.svg') center/contain no-repeat}
+body.inspector-open .avatar-caption #panelToggle{visibility:hidden;pointer-events:none}
+body.sidebar-dragging{overflow-x:clip}
+#materialPanel.sidebar-dragging{user-select:none;cursor:grabbing;transition:none!important}
+@media(min-width:761px){body.editor-page #materialPanel.compact-inspector{height:var(--inspector-height,430px);max-height:none;touch-action:pan-y pinch-zoom;will-change:transform}}
+@media(max-width:650px){.workspace-topbar{column-gap:4px}body.workspace-shell>header .workspace-main-tabs{margin-left:8px}body.workspace-shell>header nav button{width:32px;min-height:44px}}
+@media(prefers-reduced-motion:reduce){body.editor-page #materialPanel.compact-inspector{will-change:auto}}
+@media(min-width:761px){body.inspector-open .editor-stage-column .stage{min-width:0;min-height:0}body.inspector-open #editorWorkspace{min-height:0}}
