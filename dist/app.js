@@ -186,7 +186,7 @@ function syncMotionControls(){
  for(const [id,path]of [['motionEnabled','enabled'],['motionStyle','style'],['motionDuration','duration'],['motionStagger','stagger'],['motionStrength','strength'],['moodEnabled','mood.enabled'],['moodDelay','mood.delay'],['moodHold','mood.hold'],['moodDuration','mood.duration']]){
   const el=$(id),v=path.split('.').reduce((o,key)=>o[key],value);if(document.activeElement!==el){if(el.type==='checkbox')el.checked=v;else el.value=v;}
  }
- AvatarMotion.configure($('motionPreview'),motionConfig(),backgroundConfig());
+ AvatarMotion.configure($('motionPreview'),motionConfig(),backgroundConfig());window.AvatarCompactInspector?.refresh();
 }
 function renderMotionPreview(host=$('motionPreview')){
  if(!host)return;host.dataset.avatarMoodId=assetId(state,'mood');

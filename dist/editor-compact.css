@@ -1,0 +1,78 @@
+/* Compact, nonmodal inspector. Content scrolls; canvas stays interactive. */
+body.editor-page #materialPanel.compact-inspector{display:none;width:384px;flex-basis:384px;height:min(670px,calc(100dvh - 150px));max-height:670px;overflow:hidden;border-radius:18px;flex-direction:column}
+body.editor-page #materialPanel.compact-inspector[open]{display:flex}
+#materialPanel.compact-inspector .drawer-head{display:none}
+#materialPanel.compact-inspector .drawer-body{overflow-y:auto;overflow-x:hidden;min-height:0;padding:2px 14px 12px;overscroll-behavior:contain;scrollbar-width:thin;scroll-padding-block:8px}
+.compact-inspector-tabs{display:flex;align-items:center;gap:6px;padding:0 8px 0 14px;border-bottom:1px solid var(--line);flex:none;background:var(--panel)}
+#materialPanel .compact-inspector-tabs .tabs{display:flex;flex:1;margin:0;padding:0;gap:12px;background:transparent;border-radius:0;min-width:0}
+#materialPanel .compact-inspector-tabs .tabs button{position:relative;min-height:42px;padding:8px 1px;background:transparent;box-shadow:none;border-radius:0;font-size:12px;border:0;border-bottom:2px solid transparent}
+#materialPanel .compact-inspector-tabs .tabs button.on{color:var(--accent);border-bottom-color:var(--accent)}
+#materialPanel.compact-inspector #panelClose{width:32px;min-height:36px;padding:7px;background:transparent;color:var(--muted);flex:none;border:0}
+#materialPanel.compact-inspector #assetLabel,#materialPanel.compact-inspector .direct-edit-hint{display:none}
+#materialPanel .compact-native-choice{display:none!important}
+.compact-choice-field{margin:9px 0}
+.compact-choice-caption{display:flex;justify-content:space-between;align-items:center;font-size:11px;color:var(--muted);min-height:18px;margin-bottom:5px}
+#materialPanel .compact-more{padding:0 3px;min-height:24px;border:0;background:transparent;color:var(--accent);font-size:11px}
+.compact-choices{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:5px}
+#materialPanel .compact-choices button{padding:6px 3px;min-height:34px;border-radius:8px;font-size:11px;line-height:1.3;background:var(--soft);color:var(--ink);border:1px solid transparent;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;box-shadow:none}
+#materialPanel .compact-choices button[aria-pressed=true]{border-color:var(--accent);color:var(--accent);background:color-mix(in srgb,var(--accent) 8%,var(--panel))}
+#materialPanel .compact-choices button[hidden],#materialPanel .compact-more[hidden]{display:none}
+#materialPanel .compact-event-tabs{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;border-bottom:1px solid var(--line)}
+#materialPanel .compact-event-tabs button{min-height:34px;padding:6px 4px;border:0;border-bottom:2px solid transparent;border-radius:0;background:transparent;color:var(--muted)}
+#materialPanel .compact-event-tabs button[aria-pressed=true]{border-bottom-color:var(--accent);background:transparent;color:var(--accent)}
+.compact-choice-field:has(.compact-event-tabs)>.compact-choice-caption{display:none}
+#materialPanel.compact-inspector .motion-section{border:0;padding:0;margin:8px 0}
+#materialPanel.compact-inspector .motion-actions{margin:8px 0;gap:6px}
+#materialPanel.compact-inspector .motion-actions button{min-height:32px;font-size:11px;padding:5px 8px}
+#materialPanel.compact-inspector .motion-actions:first-of-type button{flex:1}
+#materialPanel.compact-inspector .motion-actions .icon{width:15px;height:15px}
+#materialPanel.compact-inspector .compact-advanced,#materialPanel.compact-inspector .inspector-preview-options{border-top:1px solid var(--line);margin:8px 0 0;padding:0}
+#materialPanel.compact-inspector summary{min-height:32px;box-sizing:border-box;padding:8px 0;font-size:11px;line-height:16px}
+#materialPanel.compact-inspector .field-grid{gap:8px;margin-top:8px}
+#materialPanel.compact-inspector .motion-check{margin:9px 0}
+#materialPanel.compact-inspector .hint{font-size:11px;margin:5px 0}
+#materialPanel.compact-inspector #inspectorRetry{min-height:28px;padding:4px 8px;font-size:11px}
+#materialPanel.compact-inspector .background-intro{display:none}
+#materialPanel.compact-inspector .background-play-actions{margin:8px 0}
+#materialPanel.compact-inspector .background-play-actions button{min-height:32px;font-size:11px}
+#materialPanel.compact-inspector .background-shapes{grid-template-columns:repeat(4,minmax(0,1fr));gap:5px;margin:8px 0}
+#materialPanel.compact-inspector .background-shapes button{min-height:32px;padding:5px 2px;font-size:11px}
+#materialPanel.compact-inspector .background-palettes{margin:8px 0 4px;gap:5px}
+#materialPanel.compact-inspector .background-palettes button{padding:6px;min-height:30px}
+#materialPanel.compact-inspector .background-colors{margin:4px 0 8px}
+#materialPanel.compact-inspector .background-field{margin:8px 0;gap:4px;font-size:11px}
+#materialPanel.compact-inspector #logoutSession{margin:8px 0 0;padding:7px 8px;min-height:34px;font-size:11px}
+#stageCapture .compact-stage-preview{display:none;position:absolute;inset:0;width:100%;height:100%;margin:0;border-radius:0;background:transparent;pointer-events:none;z-index:3}
+#stageCapture .compact-stage-preview[data-motion-event]{display:block}
+#stageCapture.compact-preview-playing>#mainCanvas,#stageCapture.compact-preview-playing>#selection{opacity:0}
+/* Main workspace tabs use the same restrained underline vocabulary. */
+body.workspace-shell .workspace-main-tabs{padding:0;gap:20px;background:transparent;border-radius:0;border-bottom:1px solid var(--line)}
+body.workspace-shell .workspace-main-tabs button{padding:7px 4px;min-height:36px;border-radius:0;border-bottom:2px solid transparent;background:transparent;box-shadow:none}
+body.workspace-shell .workspace-main-tabs button[aria-selected=true]{color:var(--accent);border-bottom-color:var(--accent);background:transparent;box-shadow:none}
+@media(max-width:760px){
+ body.editor-page #materialPanel.compact-inspector{position:fixed;inset:auto 8px max(8px,env(safe-area-inset-bottom));width:auto;max-width:none;height:min(54dvh,520px);max-height:min(54dvh,520px);margin:0;flex:none;z-index:8;box-shadow:0 -6px 30px #00000016;border-radius:18px;will-change:transform}
+ body.inspector-open main{padding-bottom:calc(54dvh + 24px)}
+ body.inspector-open .editor-stage-column .stage{width:min(var(--workspace-size,240px),var(--compact-stage-limit,max(120px,calc(46dvh - 190px))),calc(100vw - 80px));min-width:0;min-height:0;height:auto}
+ body.inspector-open #editorWorkspace{z-index:8}
+ #materialPanel.compact-inspector .drawer-body{padding-inline:12px;-webkit-overflow-scrolling:touch}
+ #materialPanel.compact-inspector .compact-inspector-tabs{padding-inline:12px 6px}
+ #materialPanel .compact-choices button{min-height:36px}
+ #materialPanel.compact-inspector input[type=number],#materialPanel.compact-inspector input[type=text]{font-size:16px}
+ #materialPanel.sheet-dragging{user-select:none;transition:none!important}
+ #toast{bottom:calc(54dvh + 20px)}
+}
+@media(prefers-reduced-motion:reduce){#materialPanel.compact-inspector{will-change:auto}}
+@media(max-width:760px) and (max-height:660px){body.editor-page #materialPanel.compact-inspector{height:max(200px,calc(100dvh - 330px));max-height:max(200px,calc(100dvh - 330px))}}
+body.workspace-shell[data-focus-input=pointer] #materialPanel button:focus{outline:none}
+
+/* Both workspace switches stay in the top bar, with full accessible names. */
+body.workspace-shell>header,body.workspace-shell>header.avatar-auth-header{grid-template-columns:minmax(0,1fr) auto auto;gap:12px;min-height:64px;padding:10px 20px}
+body.workspace-shell>header h1,body.workspace-shell>header.avatar-auth-header h1{grid-column:1;grid-row:1;min-width:0}
+body.workspace-shell>header .workspace-main-tabs{grid-column:2;grid-row:1;width:auto;max-width:none;gap:4px;border:0;justify-self:end}
+body.workspace-shell>header .workspace-main-tabs button{display:grid;place-items:center;flex:none;width:42px;min-height:42px;padding:9px 8px 7px;position:relative;border-bottom:2px solid transparent}
+body.workspace-shell>header .workspace-main-tabs button[aria-selected=true]{border-bottom-color:var(--accent)}
+body.workspace-shell>header .workspace-main-tabs button:hover{background:var(--soft)}
+.workspace-tab-icon{width:22px;height:22px;display:block;background:currentColor;-webkit-mask:var(--workspace-tab-icon) center/contain no-repeat;mask:var(--workspace-tab-icon) center/contain no-repeat}
+body.workspace-shell>header nav,body.workspace-shell>header.avatar-auth-header nav{grid-column:3;grid-row:1;width:auto;gap:3px;justify-self:end}
+@media(max-width:650px){body.workspace-shell>header,body.workspace-shell>header.avatar-auth-header{padding:8px 10px;gap:5px;min-height:60px}body.workspace-shell>header .workspace-main-tabs{gap:0}body.workspace-shell>header .workspace-main-tabs button{width:40px;min-height:42px;padding-inline:8px}body.workspace-shell>header nav,body.workspace-shell>header.avatar-auth-header nav{gap:0}}
+@media(max-width:360px){body.workspace-shell>header .avatar-brand-copy small{display:none}body.workspace-shell>header h1{font-size:12px}}

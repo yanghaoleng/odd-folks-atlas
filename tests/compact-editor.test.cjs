@@ -1,0 +1,7 @@
+'use strict';
+const test=require('node:test'),assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path'),vm=require('node:vm');
+const source=fs.readFileSync(path.join(__dirname,'../dist/editor-compact.js'),'utf8');
+function boot(readyState){const events={},options={};let attempts=0;const window={addEventListener:(name,fn)=>events[name]=fn,get AvatarInspector(){attempts++;return {}}};const document={readyState,getElementById:()=>null,addEventListener:(name,fn,opts)=>{events[name]=fn;options[name]=opts}};vm.runInNewContext(source,{window,document,editorSetupReady:true,Map});return {events,options,get attempts(){return attempts}};}
+test('compact inspector retries setup at DOM ready as well as editor ready',()=>{const f=boot('loading');assert.equal(f.attempts,1);assert.equal(f.options.DOMContentLoaded.once,true);f.events.DOMContentLoaded();assert.equal(f.attempts,2);f.events['avatar-editor-ready']();assert.equal(f.attempts,3)});
+test('late compact script still attempts immediate setup and does not await an expired DOM event',()=>{const f=boot('complete');assert.equal(f.attempts,1);assert.equal(f.events.DOMContentLoaded,undefined);assert.equal(typeof f.events['avatar-editor-ready'],'function')});
+test('compact presentation introduces no network writer or browser persistence',()=>{assert.doesNotMatch(source,/\b(?:fetch|XMLHttpRequest|sendBeacon|localStorage|sessionStorage)\b/);assert.match(source,/select\.dispatchEvent/);assert.match(source,/prefers-reduced-motion/)});

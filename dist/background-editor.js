@@ -14,7 +14,7 @@ function refresh(){
  $('backgroundEvent').value=eventName;$('backgroundEmphasis').value=value.emphasis;$('backgroundOpacity').value=value.opacity;$('backgroundEnabled').checked=value[eventName].enabled;
  for(const key of ['delay','enter','hold','exit'])if(document.activeElement!==$('background-'+key))$('background-'+key).value=value[eventName][key];
  const colors=$('backgroundCustomColors');if(!colors.contains(document.activeElement)){colors.replaceChildren();value.colors.forEach((color,index)=>{const label=document.createElement('label');label.title='背景颜色 '+(index+1);const input=document.createElement('input');input.type='color';input.value=color;input.setAttribute('aria-label',label.title);input.onchange=()=>change(next=>{next.colors[index]=input.value});label.append(input);colors.append(label);});}
- renderMotionPreview(previewHost);AvatarMotion.configure(previewHost,motionConfig(),value);status();
+ renderMotionPreview(previewHost);AvatarMotion.configure(previewHost,motionConfig(),value);status();window.AvatarCompactInspector?.refresh();
 }
 function preview(event=eventName){
  if(!ready)return;renderMotionPreview(previewHost);const motion=motionConfig();motion[event].enabled=true;AvatarMotion.configure(previewHost,motion,config());AvatarMotion.play(previewHost,event);
