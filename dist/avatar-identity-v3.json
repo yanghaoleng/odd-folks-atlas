@@ -1,0 +1,2403 @@
+{
+  "mappingVersion": "refinetaste-assets-v3",
+  "manifestVersion": "odd-folks-atlas-v1",
+  "schemaVersion": 2,
+  "recipeOrder": [
+    "colorId",
+    "emotionId",
+    "animalId",
+    "accessoryId"
+  ],
+  "displayNameFormat": "wordOrder=trait_first: emotion.label+color.label+animal.label; wordOrder=color_first: color.label+emotion.label+animal.label",
+  "colorApplication": "exact-hex-accessory-and-label",
+  "colors": [
+    {
+      "id": "color:yellow",
+      "label": "黄",
+      "sourceLabel": "黄色",
+      "state": "active",
+      "hex": "#e7c86d"
+    },
+    {
+      "id": "color:blue",
+      "label": "蓝",
+      "sourceLabel": "蓝色",
+      "state": "active",
+      "hex": "#7197ca"
+    },
+    {
+      "id": "color:red",
+      "label": "红",
+      "sourceLabel": "红色",
+      "state": "active",
+      "hex": "#d98585"
+    },
+    {
+      "id": "color:green",
+      "label": "绿",
+      "sourceLabel": "绿色",
+      "state": "active",
+      "hex": "#87ae86"
+    },
+    {
+      "id": "color:purple",
+      "label": "紫",
+      "sourceLabel": "紫色",
+      "state": "active",
+      "hex": "#ae98c9"
+    },
+    {
+      "id": "color:orange",
+      "label": "橙",
+      "sourceLabel": "橙色",
+      "state": "active",
+      "hex": "#e8a267"
+    },
+    {
+      "id": "color:pink",
+      "label": "粉",
+      "sourceLabel": "粉色",
+      "state": "active",
+      "hex": "#d49dac"
+    },
+    {
+      "id": "color:white",
+      "label": "白",
+      "sourceLabel": "白色",
+      "state": "active",
+      "hex": "#e9eee7"
+    },
+    {
+      "id": "color:black",
+      "label": "黑",
+      "sourceLabel": "黑色",
+      "state": "active",
+      "hex": "#59615d"
+    },
+    {
+      "id": "color:gray",
+      "label": "灰",
+      "sourceLabel": "灰色",
+      "state": "active",
+      "hex": "#aeb7b3"
+    },
+    {
+      "id": "color:gold",
+      "label": "金",
+      "sourceLabel": "金色",
+      "state": "active",
+      "hex": "#cfb363"
+    },
+    {
+      "id": "color:silver",
+      "label": "银",
+      "sourceLabel": "银色",
+      "state": "active",
+      "hex": "#bdc6cb"
+    },
+    {
+      "id": "color:cyan",
+      "label": "青",
+      "sourceLabel": "青色",
+      "state": "active",
+      "hex": "#80bdbe"
+    },
+    {
+      "id": "color:brown",
+      "label": "棕",
+      "sourceLabel": "棕色",
+      "state": "active",
+      "hex": "#a88777"
+    },
+    {
+      "id": "color:beige",
+      "label": "米",
+      "sourceLabel": "米色",
+      "state": "active",
+      "hex": "#e5d7b6"
+    },
+    {
+      "id": "color:tea",
+      "label": "茶",
+      "sourceLabel": "茶色",
+      "state": "active",
+      "hex": "#c8a48c"
+    },
+    {
+      "id": "color:peach",
+      "label": "桃",
+      "sourceLabel": "桃色",
+      "state": "active",
+      "hex": "#e5a28c"
+    },
+    {
+      "id": "color:grass",
+      "label": "草",
+      "sourceLabel": "草色",
+      "state": "active",
+      "hex": "#b0c888"
+    },
+    {
+      "id": "color:sky",
+      "label": "天蓝",
+      "sourceLabel": "天蓝",
+      "state": "active",
+      "hex": "#82b6d7"
+    },
+    {
+      "id": "color:lake",
+      "label": "湖蓝",
+      "sourceLabel": "湖蓝",
+      "state": "active",
+      "hex": "#68aaa9"
+    }
+  ],
+  "animals": [
+    {
+      "id": "animal:seal",
+      "label": "海豹",
+      "sourceLabel": "海豹",
+      "state": "active",
+      "layerKey": "seal",
+      "asset": {
+        "id": "head:seal",
+        "url": "/assets/resources-v3/animal-seal.webp",
+        "sha256": "d9d07a36366540fe0573233002276f74a0018c490ab4165ad80d0f560000fe5d",
+        "sourceSha256": "b58bfca764e8c1b5cbd7db32fa36dff907f80198028d6277a58e7f128bc7d3ab",
+        "mimeType": "image/webp",
+        "bytes": 382240,
+        "thumbnail": {
+          "url": "/assets/resources-v3/128/animal-seal.webp",
+          "sha256": "afa36ac09f3a9fe9d92e897369ade745313d24012eb89a1e0aa19eb3e986151e",
+          "bytes": 2854,
+          "width": 128,
+          "height": 128,
+          "mimeType": "image/webp"
+        }
+      },
+      "legacyAnimalTokens": [
+        "海豹"
+      ]
+    },
+    {
+      "id": "animal:otter",
+      "label": "水獭",
+      "sourceLabel": "水獭",
+      "state": "active",
+      "layerKey": "otter",
+      "asset": {
+        "id": "head:otter",
+        "url": "/assets/resources-v3/animal-otter.webp",
+        "sha256": "dbae803f2a3d9609ad883f441a00c37438cd6db4ab1222139b727de1d5e77e3f",
+        "sourceSha256": "c8b0a6e9576268e8c44d9247cc139d14bd32a03b5d2a1862055521bc1d80ca67",
+        "mimeType": "image/webp",
+        "bytes": 405880,
+        "thumbnail": {
+          "url": "/assets/resources-v3/128/animal-otter.webp",
+          "sha256": "a56862839be1f5218f25eb0f580f4292fae734e09dae79033ba7bd144379fea2",
+          "bytes": 2844,
+          "width": 128,
+          "height": 128,
+          "mimeType": "image/webp"
+        }
+      },
+      "legacyAnimalTokens": [
+        "水獭"
+      ]
+    },
+    {
+      "id": "animal:fox",
+      "label": "狐狸",
+      "sourceLabel": "狐狸",
+      "state": "active",
+      "layerKey": "fox",
+      "asset": {
+        "id": "head:fox",
+        "url": "/assets/resources-v3/animal-fox.webp",
+        "sha256": "3832477c97ef3606031b7e44b5e60c591941b2dbbcd4d24179fa84703913c36c",
+        "sourceSha256": "d8de884d8d966f8ac9f3f175f05089244c55ff2c75d8d9390877571c4da13f8e",
+        "mimeType": "image/webp",
+        "bytes": 385756,
+        "thumbnail": {
+          "url": "/assets/resources-v3/128/animal-fox.webp",
+          "sha256": "b85360e9d9068d9be528961cafcd0125bd4e04e5011f7ac99390adc649c1968b",
+          "bytes": 2954,
+          "width": 128,
+          "height": 128,
+          "mimeType": "image/webp"
+        }
+      },
+      "legacyAnimalTokens": [
+        "狐狸"
+      ]
+    },
+    {
+      "id": "animal:panda",
+      "label": "熊猫",
+      "sourceLabel": "熊猫",
+      "state": "active",
+      "layerKey": "panda",
+      "asset": {
+        "id": "head:panda",
+        "url": "/assets/resources-v3/animal-panda.webp",
+        "sha256": "81e4c58c8aa2e657db490ab50375bb7c587459bc95d1810a253236862d68f99b",
+        "sourceSha256": "68d34b81f39632b4066c5c83d94b62656f9fbbf6c2b018c54cb7883caab43383",
+        "mimeType": "image/webp",
+        "bytes": 439894,
+        "thumbnail": {
+          "url": "/assets/resources-v3/128/animal-panda.webp",
+          "sha256": "5eb48e3e25efa8e860bedc6b9a4252a057a5158939e443c801370b96e79c7298",
+          "bytes": 2982,
+          "width": 128,
+          "height": 128,
+          "mimeType": "image/webp"
+        }
+      },
+      "legacyAnimalTokens": [
+        "熊猫"
+      ]
+    },
+    {
+      "id": "animal:rabbit",
+      "label": "兔子",
+      "sourceLabel": "兔子",
+      "state": "active",
+      "layerKey": "rabbit",
+      "asset": {
+        "id": "head:rabbit",
+        "url": "/assets/resources-v3/animal-rabbit.webp",
+        "sha256": "3b29874029c6e9728c27163869814804dbcc6cf8b6b8838ae1e26eb8fa0e39c1",
+        "sourceSha256": "c188cb3410d24e539dc09a9ff955b2df6dfe7eb56c64aa7fd87fd5fba85628c1",
+        "mimeType": "image/webp",
+        "bytes": 331478,
+        "thumbnail": {
+          "url": "/assets/resources-v3/128/animal-rabbit.webp",
+          "sha256": "b695f6667ce774f1c2ca61eff35cd778d343b7bdfab87e182c6a64eed9e687f1",
+          "bytes": 2448,
+          "width": 128,
+          "height": 128,
+          "mimeType": "image/webp"
+        }
+      },
+      "legacyAnimalTokens": [
+        "兔子"
+      ]
+    },
+    {
+      "id": "animal:penguin",
+      "label": "企鹅",
+      "sourceLabel": "企鹅",
+      "state": "active",
+      "layerKey": "penguin",
+      "asset": {
+        "id": "head:penguin",
+        "url": "/assets/resources-v3/animal-penguin.webp",
+        "sha256": "25010610966512a4abfb19a9e17716cd65a5eabcdd2433f272990812ee838e9f",
+        "sourceSha256": "7203a7309320f349058a5a8da1501aa786a19f1e614a7b4964d9493e7bf0a563",
+        "mimeType": "image/webp",
+        "bytes": 445264,
+        "thumbnail": {
+          "url": "/assets/resources-v3/128/animal-penguin.webp",
+          "sha256": "790174f7302b41f8af4aacca04a8b3d90c889b0ab45a0642601f8731c70b3129",
+          "bytes": 2572,
+          "width": 128,
+          "height": 128,
+          "mimeType": "image/webp"
+        }
+      },
+      "legacyAnimalTokens": [
+        "企鹅"
+      ]
+    },
+    {
+      "id": "animal:cat",
+      "label": "猫",
+      "sourceLabel": "猫",
+      "state": "active",
+      "layerKey": "cat",
+      "asset": {
+        "id": "head:cat",
+        "url": "/assets/resources-v3/animal-cat.webp",
+        "sha256": "0588f3c6438e5be53acee0545bd11236c70d149cf8b5ff53861537652646697e",
+        "sourceSha256": "c6f1fb6e2129da14268e1634d2dd2fe09fc710a23e654132f4a9b08c198a3a66",
+        "mimeType": "image/webp",
+        "bytes": 519936,
+        "thumbnail": {
+          "url": "/assets/resources-v3/128/animal-cat.webp",
+          "sha256": "5636413edadc9b07bc32c20f1113048907b99186ac95e4195a16375e5ea21f9e",
+          "bytes": 3368,
+          "width": 128,
+          "height": 128,
+          "mimeType": "image/webp"
+        }
+      },
+      "legacyAnimalTokens": [
+        "小猫",
+        "猫"
+      ]
+    },
+    {
+      "id": "animal:bear",
+      "label": "熊",
+      "sourceLabel": "熊",
+      "state": "active",
+      "layerKey": "bear",
+      "asset": {
+        "id": "head:bear",
+        "url": "/assets/resources-v3/animal-bear.webp",
+        "sha256": "395465aa86637e49f2e62e5b630f6aab86d7235b7a6adfb5c2641ac56e0ed307",
+        "sourceSha256": "d75a26987df78173f3921a8698e1d8b4671ac185e7ab767a47d8c7b4605a6b05",
+        "mimeType": "image/webp",
+        "bytes": 553318,
+        "thumbnail": {
+          "url": "/assets/resources-v3/128/animal-bear.webp",
+          "sha256": "6b316decdcc3d00c3b5d89e9608b5f20feb7ac77b546136cbcfe3815001beb38",
+          "bytes": 3222,
+          "width": 128,
+          "height": 128,
+          "mimeType": "image/webp"
+        }
+      },
+      "legacyAnimalTokens": [
+        "熊熊",
+        "熊"
+      ]
+    },
+    {
+      "id": "animal:owl",
+      "label": "猫头鹰",
+      "sourceLabel": "猫头鹰",
+      "state": "active",
+      "layerKey": "owl",
+      "asset": {
+        "id": "head:owl",
+        "url": "/assets/resources-v3/animal-owl.webp",
+        "sha256": "2ddb01c75f0dfe3f54942028f07920bfd821f32bacaaed6bd59e0e6c4886da8a",
+        "sourceSha256": "d094717fbb5571e799e7f699d31af2e95bcb04ec91e586c9f6acb951af8c528c",
+        "mimeType": "image/webp",
+        "bytes": 542770,
+        "thumbnail": {
+          "url": "/assets/resources-v3/128/animal-owl.webp",
+          "sha256": "863597e179f9ab686169785e6697292adb0d0d579ea8776f2fb7dc27e3a2720b",
+          "bytes": 3772,
+          "width": 128,
+          "height": 128,
+          "mimeType": "image/webp"
+        }
+      },
+      "legacyAnimalTokens": [
+        "猫头鹰"
+      ]
+    },
+    {
+      "id": "animal:deer",
+      "label": "鹿",
+      "sourceLabel": "鹿",
+      "state": "active",
+      "layerKey": "deer",
+      "asset": {
+        "id": "head:deer",
+        "url": "/assets/resources-v3/animal-deer.webp",
+        "sha256": "7937ca4d03d1b550d209c50e0b167c9590e7b0b3e1033fec32291aad0a4ca99e",
+        "sourceSha256": "0d788d32c26ecc2a7aa6a10e416556400ef7dc12cb77eedd58b64e1283af491c",
+        "mimeType": "image/webp",
+        "bytes": 434952,
+        "thumbnail": {
+          "url": "/assets/resources-v3/128/animal-deer.webp",
+          "sha256": "77274691a44b8a44b477b6c6b8f221de5c83d9618a999affcf817b79cabf49cd",
+          "bytes": 4038,
+          "width": 128,
+          "height": 128,
+          "mimeType": "image/webp"
+        }
+      },
+      "legacyAnimalTokens": [
+        "小鹿",
+        "鹿"
+      ]
+    },
+    {
+      "id": "animal:dog",
+      "label": "狗",
+      "sourceLabel": "狗",
+      "state": "active",
+      "layerKey": "dog",
+      "asset": {
+        "id": "head:dog",
+        "url": "/assets/resources-v3/animal-dog.webp",
+        "sha256": "eebc12f3e825f94216c708ca5859cceebe84b059a0b335f761841c6ca8142358",
+        "sourceSha256": "dd89c962398f294de8545411a45dfcec3f228528090f3f1e74803bd92fc456b9",
+        "mimeType": "image/webp",
+        "bytes": 400932,
+        "thumbnail": {
+          "url": "/assets/resources-v3/128/animal-dog.webp",
+          "sha256": "49cc9c48a9b00d912f1133dedc637567a6f78b2ade770e28e772d52bf86cb283",
+          "bytes": 2622,
+          "width": 128,
+          "height": 128,
+          "mimeType": "image/webp"
+        }
+      },
+      "legacyAnimalTokens": [
+        "小狗",
+        "狗"
+      ]
+    },
+    {
+      "id": "animal:goldfish",
+      "label": "金鱼",
+      "sourceLabel": "金鱼",
+      "state": "active",
+      "layerKey": "goldfish",
+      "asset": {
+        "id": "head:goldfish",
+        "url": "/assets/resources-v3/animal-goldfish.webp",
+        "sha256": "55e6b7d8c82131a6b2366cfb7b49b4062494ad39c5ea7c09a3040a3e87b0a48b",
+        "sourceSha256": "f30c5f21d28f4037c25017294ed70b17205b367115c42e4f4f9c1f89050d915d",
+        "mimeType": "image/webp",
+        "bytes": 377032,
+        "thumbnail": {
+          "url": "/assets/resources-v3/128/animal-goldfish.webp",
+          "sha256": "22d1217351243da662c62f256c7d8ea2a15929c180892bd510476f88b6740c54",
+          "bytes": 2790,
+          "width": 128,
+          "height": 128,
+          "mimeType": "image/webp"
+        }
+      },
+      "legacyAnimalTokens": [
+        "金鱼"
+      ]
+    },
+    {
+      "id": "animal:lion",
+      "label": "狮子",
+      "sourceLabel": "狮子",
+      "state": "pending",
+      "layerKey": "lion",
+      "asset": {
+        "id": "head:lion",
+        "url": "/assets/resources-v3/animal-lion.webp",
+        "sha256": "02d4102470cee86478c47a07bbfb2fd3055b4b934397ff63442c7c7ad4a5e5f9",
+        "sourceSha256": "9e9d7001983674b2cbe2605f49a44a2c12cb3cb7e4e22920638283b94e123b1c",
+        "mimeType": "image/webp",
+        "bytes": 452584,
+        "thumbnail": {
+          "url": "/assets/resources-v3/128/animal-lion.webp",
+          "sha256": "23802782991fd441d451a7d8c5a0f0b0f61fee5ef92afb1c0d0a170a4500a68a",
+          "bytes": 3352,
+          "width": 128,
+          "height": 128,
+          "mimeType": "image/webp"
+        }
+      },
+      "sourceCode": "A1"
+    },
+    {
+      "id": "animal:tiger",
+      "label": "老虎",
+      "sourceLabel": "老虎",
+      "state": "pending",
+      "layerKey": "tiger",
+      "asset": {
+        "id": "head:tiger",
+        "url": "/assets/resources-v3/animal-tiger.webp",
+        "sha256": "101d288e862453997d4d81d53d56ed7465544b8ff62220a088a9610f9eb7a5b8",
+        "sourceSha256": "f8f91b2aa78d604d9177a4c6ce8e2385d0cd7f1d853cc34518d554b85528cd4f",
+        "mimeType": "image/webp",
+        "bytes": 541358,
+        "thumbnail": {
+          "url": "/assets/resources-v3/128/animal-tiger.webp",
+          "sha256": "7ff49ae7aeddbc9534f8d4b437735a45368082fd37b38400310c7c4ee7a375e4",
+          "bytes": 3882,
+          "width": 128,
+          "height": 128,
+          "mimeType": "image/webp"
+        }
+      },
+      "sourceCode": "A2"
+    },
+    {
+      "id": "animal:elephant",
+      "label": "大象",
+      "sourceLabel": "大象",
+      "state": "pending",
+      "layerKey": "elephant",
+      "asset": {
+        "id": "head:elephant",
+        "url": "/assets/resources-v3/animal-elephant.webp",
+        "sha256": "66d60e905599058102c06aee8a8f05c29ffe3454ecee801ff1c223e9b8d1c051",
+        "sourceSha256": "f32a14e77ad1243b612f38298975c88ca16755e5eee31308a827fd1160ae07c3",
+        "mimeType": "image/webp",
+        "bytes": 425778,
+        "thumbnail": {
+          "url": "/assets/resources-v3/128/animal-elephant.webp",
+          "sha256": "08903b98aba4c214e59bcb07a312fdf37b0cbd94b3c4b8915da0a2824aab2854",
+          "bytes": 2598,
+          "width": 128,
+          "height": 128,
+          "mimeType": "image/webp"
+        }
+      },
+      "sourceCode": "A3",
+      "legacyAnimalTokens": [
+        "大象"
+      ]
+    },
+    {
+      "id": "animal:giraffe",
+      "label": "长颈鹿",
+      "sourceLabel": "长颈鹿",
+      "state": "pending",
+      "layerKey": "giraffe",
+      "asset": {
+        "id": "head:giraffe",
+        "url": "/assets/resources-v3/animal-giraffe.webp",
+        "sha256": "d820c250ab3887d720d3c8f2aa65069a0612b009ada049b06535950980c511be",
+        "sourceSha256": "c40a374fe5c2269aab509a575dcb4bd48477f3889aea24804107bb59628dd197",
+        "mimeType": "image/webp",
+        "bytes": 455710,
+        "thumbnail": {
+          "url": "/assets/resources-v3/128/animal-giraffe.webp",
+          "sha256": "abc22e82ef27489fc06ad77481578aec5e5be8fb3835168e1e82dd7b3947b4b5",
+          "bytes": 3636,
+          "width": 128,
+          "height": 128,
+          "mimeType": "image/webp"
+        }
+      },
+      "sourceCode": "A4",
+      "legacyAnimalTokens": [
+        "长颈鹿"
+      ]
+    },
+    {
+      "id": "animal:zebra",
+      "label": "斑马",
+      "sourceLabel": "斑马",
+      "state": "pending",
+      "layerKey": "zebra",
+      "asset": {
+        "id": "head:zebra",
+        "url": "/assets/resources-v3/animal-zebra.webp",
+        "sha256": "897e871e6d92c932599364ffc6f795efaeedad0ea7cf4b701125dfc254e46b2b",
+        "sourceSha256": "906ba6c0ae259aaa5b3b82e4052158c474ce9eebcd5b892ce7a5121b6564453d",
+        "mimeType": "image/webp",
+        "bytes": 453284,
+        "thumbnail": {
+          "url": "/assets/resources-v3/128/animal-zebra.webp",
+          "sha256": "51bbf67b954558ea27895b11f0e5f4009fa4d33c9d5f77db941931e801a2af87",
+          "bytes": 3804,
+          "width": 128,
+          "height": 128,
+          "mimeType": "image/webp"
+        }
+      },
+      "sourceCode": "A5",
+      "legacyAnimalTokens": [
+        "斑马"
+      ]
+    },
+    {
+      "id": "animal:koala",
+      "label": "考拉",
+      "sourceLabel": "考拉",
+      "state": "pending",
+      "layerKey": "koala",
+      "asset": {
+        "id": "head:koala",
+        "url": "/assets/resources-v3/animal-koala.webp",
+        "sha256": "89ef8dfbb07db7d440f899365567435b278a7125dfa69029104f923300945f07",
+        "sourceSha256": "f946045da593f5f70dbe842dac9f7bedb1c778d976f39d18bdf2cacd14919dc1",
+        "mimeType": "image/webp",
+        "bytes": 470560,
+        "thumbnail": {
+          "url": "/assets/resources-v3/128/animal-koala.webp",
+          "sha256": "faaac707fd4bec076dacc16dd0362ebd2aaab38d374d4756c1c765aa1ca53a1b",
+          "bytes": 2636,
+          "width": 128,
+          "height": 128,
+          "mimeType": "image/webp"
+        }
+      },
+      "sourceCode": "A6",
+      "legacyAnimalTokens": [
+        "考拉"
+      ]
+    },
+    {
+      "id": "animal:raccoon",
+      "label": "浣熊",
+      "sourceLabel": "浣熊",
+      "state": "pending",
+      "layerKey": "raccoon",
+      "asset": {
+        "id": "head:raccoon",
+        "url": "/assets/resources-v3/animal-raccoon.webp",
+        "sha256": "f46e02ca9bdeaa685cfdc9b2da25e55cabdcb6295969eb4945c5fe898bc5b1c1",
+        "sourceSha256": "f32f05ec00f98df2741f7909a7272e0da953b38d932f108970d6aa7f6c3824f4",
+        "mimeType": "image/webp",
+        "bytes": 444760,
+        "thumbnail": {
+          "url": "/assets/resources-v3/128/animal-raccoon.webp",
+          "sha256": "e455c07aaf94e52a91e2ad47a181002dfef904b12267631a4a12d97cc339befb",
+          "bytes": 3100,
+          "width": 128,
+          "height": 128,
+          "mimeType": "image/webp"
+        }
+      },
+      "sourceCode": "A7",
+      "legacyAnimalTokens": [
+        "浣熊"
+      ]
+    },
+    {
+      "id": "animal:squirrel",
+      "label": "松鼠",
+      "sourceLabel": "松鼠",
+      "state": "pending",
+      "layerKey": "squirrel",
+      "asset": {
+        "id": "head:squirrel",
+        "url": "/assets/resources-v3/animal-squirrel.webp",
+        "sha256": "17b8eff918cd5d87c887ca398ca94681fa450d939bcd6dcab61ef782f9ba7431",
+        "sourceSha256": "3eaf047faea370b0eec8e878a9f92bb45e68f9a9683682fd0d0d9ba56c6af832",
+        "mimeType": "image/webp",
+        "bytes": 390068,
+        "thumbnail": {
+          "url": "/assets/resources-v3/128/animal-squirrel.webp",
+          "sha256": "90709afa4694604be9a0598a58ba7813a983b6a691cabdb0501d9cfd129c9eef",
+          "bytes": 2742,
+          "width": 128,
+          "height": 128,
+          "mimeType": "image/webp"
+        }
+      },
+      "sourceCode": "A8",
+      "legacyAnimalTokens": [
+        "松鼠"
+      ]
+    },
+    {
+      "id": "animal:hedgehog",
+      "label": "刺猬",
+      "sourceLabel": "刺猬",
+      "state": "pending",
+      "layerKey": "hedgehog",
+      "asset": {
+        "id": "head:hedgehog",
+        "url": "/assets/resources-v3/animal-hedgehog.webp",
+        "sha256": "8e0ce12e720a6f90b37a825ae00bc445d2321fccb0c60c8615b1afae92e1ab1e",
+        "sourceSha256": "9a00b11a70651aac9ddad10b952d46b5b9357be29d4c0e918e81a0329d0ab305",
+        "mimeType": "image/webp",
+        "bytes": 469660,
+        "thumbnail": {
+          "url": "/assets/resources-v3/128/animal-hedgehog.webp",
+          "sha256": "afca0ca4e8197175b69aea4af6a1a7197dd3015b727774b95639c648461333d1",
+          "bytes": 3732,
+          "width": 128,
+          "height": 128,
+          "mimeType": "image/webp"
+        }
+      },
+      "sourceCode": "A9",
+      "legacyAnimalTokens": [
+        "刺猬"
+      ]
+    },
+    {
+      "id": "animal:pig",
+      "label": "小猪",
+      "sourceLabel": "小猪",
+      "state": "pending",
+      "layerKey": "pig",
+      "asset": {
+        "id": "head:pig",
+        "url": "/assets/resources-v3/animal-pig.webp",
+        "sha256": "ed8dc312910b0e6eac3c992c6b965fbe5828a868dbd060a3f4c5b5b578fdd940",
+        "sourceSha256": "59013d20bb48b19363587fc091f8abc708a767dab088c145e3b06e62f2eaa2f4",
+        "mimeType": "image/webp",
+        "bytes": 384308,
+        "thumbnail": {
+          "url": "/assets/resources-v3/128/animal-pig.webp",
+          "sha256": "12d1d906a5c6d2ca62bab5309b695f9fadcacf215134d394fd38d7ac3c9186d7",
+          "bytes": 2604,
+          "width": 128,
+          "height": 128,
+          "mimeType": "image/webp"
+        }
+      },
+      "sourceCode": "B1"
+    },
+    {
+      "id": "animal:cow",
+      "label": "奶牛",
+      "sourceLabel": "奶牛",
+      "state": "pending",
+      "layerKey": "cow",
+      "asset": {
+        "id": "head:cow",
+        "url": "/assets/resources-v3/animal-cow.webp",
+        "sha256": "3727b0c49b14e7d210a0f10bc4766c354423acb712edf0e10a20693755d1afb2",
+        "sourceSha256": "9a69a0c783ba216ad7b6bb5379af83e59753bca28e8750f692121c5c58c62d23",
+        "mimeType": "image/webp",
+        "bytes": 420918,
+        "thumbnail": {
+          "url": "/assets/resources-v3/128/animal-cow.webp",
+          "sha256": "ffe62602386b013046531aed24c24e04a1be5a964ba238ead872689c1c1cce28",
+          "bytes": 3270,
+          "width": 128,
+          "height": 128,
+          "mimeType": "image/webp"
+        }
+      },
+      "sourceCode": "B2"
+    },
+    {
+      "id": "animal:sheep",
+      "label": "绵羊",
+      "sourceLabel": "绵羊",
+      "state": "pending",
+      "layerKey": "sheep",
+      "asset": {
+        "id": "head:sheep",
+        "url": "/assets/resources-v3/animal-sheep.webp",
+        "sha256": "517784d0853cb8ebb7ea4149784ce9e81a40a17fe3ef119959f20a73b4eeaf4e",
+        "sourceSha256": "5638023e8afe080c90c9be520a647bbed332037be6b068ab227e3ab8d49f29e8",
+        "mimeType": "image/webp",
+        "bytes": 340286,
+        "thumbnail": {
+          "url": "/assets/resources-v3/128/animal-sheep.webp",
+          "sha256": "81f73606a4fb2da4c625940c0f515c6875d842abd494440632f29072c2ede65e",
+          "bytes": 2392,
+          "width": 128,
+          "height": 128,
+          "mimeType": "image/webp"
+        }
+      },
+      "sourceCode": "B3",
+      "legacyAnimalTokens": [
+        "绵羊"
+      ]
+    },
+    {
+      "id": "animal:horse",
+      "label": "小马",
+      "sourceLabel": "小马",
+      "state": "pending",
+      "layerKey": "horse",
+      "asset": {
+        "id": "head:horse",
+        "url": "/assets/resources-v3/animal-horse.webp",
+        "sha256": "d689c76a66f595e6a6fae4e25a82b2bac28980ae61c041eab744ac0bbfe28157",
+        "sourceSha256": "d2401829b035ca0ff5fceedb869eac361fb781a909ebd4de6ad1e07d16d1ad04",
+        "mimeType": "image/webp",
+        "bytes": 366122,
+        "thumbnail": {
+          "url": "/assets/resources-v3/128/animal-horse.webp",
+          "sha256": "3c6486fccf299ebe553d88981fd0abb3f05f559f25539e1c080d67386c9c05f6",
+          "bytes": 3236,
+          "width": 128,
+          "height": 128,
+          "mimeType": "image/webp"
+        }
+      },
+      "sourceCode": "B4"
+    },
+    {
+      "id": "animal:monkey",
+      "label": "猴子",
+      "sourceLabel": "猴子",
+      "state": "pending",
+      "layerKey": "monkey",
+      "asset": {
+        "id": "head:monkey",
+        "url": "/assets/resources-v3/animal-monkey.webp",
+        "sha256": "e9616fbbd4cbb308520067984c78eb7100a127b41157f6da07436208fe43ab88",
+        "sourceSha256": "a44b0107092e109798754beeb58b8f34809976d37cad4604f825b607a656621d",
+        "mimeType": "image/webp",
+        "bytes": 416688,
+        "thumbnail": {
+          "url": "/assets/resources-v3/128/animal-monkey.webp",
+          "sha256": "a92af10587d51ca8023cee861ccae3618281b9ca030ac6c5fabd479bf25a305e",
+          "bytes": 2964,
+          "width": 128,
+          "height": 128,
+          "mimeType": "image/webp"
+        }
+      },
+      "sourceCode": "B5"
+    },
+    {
+      "id": "animal:frog",
+      "label": "青蛙",
+      "sourceLabel": "青蛙",
+      "state": "pending",
+      "layerKey": "frog",
+      "asset": {
+        "id": "head:frog",
+        "url": "/assets/resources-v3/animal-frog.webp",
+        "sha256": "5acea872e1ed6850ed6f81a311fc5a36a1e12c4e61896fbe7a2dd0a1d5e95401",
+        "sourceSha256": "4044623f6b3f960f1e08dead1217a04048107c633ca2da154722f6db029f8e18",
+        "mimeType": "image/webp",
+        "bytes": 474068,
+        "thumbnail": {
+          "url": "/assets/resources-v3/128/animal-frog.webp",
+          "sha256": "c987442b027fdb99b56515cdf952f9d2e675f2a425bef1eaffac96673503a09e",
+          "bytes": 3026,
+          "width": 128,
+          "height": 128,
+          "mimeType": "image/webp"
+        }
+      },
+      "sourceCode": "B6",
+      "legacyAnimalTokens": [
+        "青蛙"
+      ]
+    },
+    {
+      "id": "animal:duck",
+      "label": "小鸭",
+      "sourceLabel": "小鸭",
+      "state": "pending",
+      "layerKey": "duck",
+      "asset": {
+        "id": "head:duck",
+        "url": "/assets/resources-v3/animal-duck.webp",
+        "sha256": "a370e015b4713038348f16f9006922c0a0eee3d474720cfcd0835a09d499c870",
+        "sourceSha256": "2563e4a309a91f56671722445ae72f7b23eb2e69866df33e91332a759842979b",
+        "mimeType": "image/webp",
+        "bytes": 394842,
+        "thumbnail": {
+          "url": "/assets/resources-v3/128/animal-duck.webp",
+          "sha256": "6e4f9c24f7c542107e46528afc502beef704fd76e7501c3e2e32398f9ebc96eb",
+          "bytes": 2790,
+          "width": 128,
+          "height": 128,
+          "mimeType": "image/webp"
+        }
+      },
+      "sourceCode": "B7",
+      "legacyAnimalTokens": [
+        "鸭子"
+      ]
+    },
+    {
+      "id": "animal:chick",
+      "label": "小鸡",
+      "sourceLabel": "小鸡",
+      "state": "pending",
+      "layerKey": "chick",
+      "asset": {
+        "id": "head:chick",
+        "url": "/assets/resources-v3/animal-chick.webp",
+        "sha256": "387d6ea746ac2def5c0aa65bcc63892a22cf09dbb74720f3ab23268ce147ff4f",
+        "sourceSha256": "08f46e565b92ee75b31013a6a1d7b4eec147d702eb71d8e379a539f09056650f",
+        "mimeType": "image/webp",
+        "bytes": 484882,
+        "thumbnail": {
+          "url": "/assets/resources-v3/128/animal-chick.webp",
+          "sha256": "546534627023518a4c58bc5762584eac9ca2ee538e92a92b2041e1347fd8002a",
+          "bytes": 3790,
+          "width": 128,
+          "height": 128,
+          "mimeType": "image/webp"
+        }
+      },
+      "sourceCode": "B8",
+      "legacyAnimalTokens": [
+        "小鸡"
+      ]
+    },
+    {
+      "id": "animal:hamster",
+      "label": "仓鼠",
+      "sourceLabel": "仓鼠",
+      "state": "pending",
+      "layerKey": "hamster",
+      "asset": {
+        "id": "head:hamster",
+        "url": "/assets/resources-v3/animal-hamster.webp",
+        "sha256": "6b43f8844e56888019897455e5e2210318e615f277f35ce86ce8881f693cb24c",
+        "sourceSha256": "148c245a38103df9d6f945d2a2c3aa4d498e590ed8f9b924ca66f9a1531877c4",
+        "mimeType": "image/webp",
+        "bytes": 467936,
+        "thumbnail": {
+          "url": "/assets/resources-v3/128/animal-hamster.webp",
+          "sha256": "ff51a43a51b5e30139e358fb41ee5fdcbefc70791152e74b698ae01a4fdf8d16",
+          "bytes": 2854,
+          "width": 128,
+          "height": 128,
+          "mimeType": "image/webp"
+        }
+      },
+      "sourceCode": "B9",
+      "legacyAnimalTokens": [
+        "仓鼠"
+      ]
+    },
+    {
+      "id": "animal:wolf",
+      "label": "灰狼",
+      "sourceLabel": "灰狼",
+      "state": "pending",
+      "layerKey": "wolf",
+      "asset": {
+        "id": "head:wolf",
+        "url": "/assets/resources-v3/animal-wolf.webp",
+        "sha256": "bf928717527f1c619f52c5e4187dbbeac0f8e318daac074ee6dc811bfbbdbddf",
+        "sourceSha256": "aef4516023b7f85213ad0bc64c72d1fb2884fecb53a4e4da68b9b44622a7704e",
+        "mimeType": "image/webp",
+        "bytes": 462630,
+        "thumbnail": {
+          "url": "/assets/resources-v3/128/animal-wolf.webp",
+          "sha256": "5cf832070944b8eeddd307b2185b3a2b0f5ef6cb27cc03d9121b45d729ceb930",
+          "bytes": 3354,
+          "width": 128,
+          "height": 128,
+          "mimeType": "image/webp"
+        }
+      },
+      "sourceCode": "C1"
+    },
+    {
+      "id": "animal:kangaroo",
+      "label": "袋鼠",
+      "sourceLabel": "袋鼠",
+      "state": "pending",
+      "layerKey": "kangaroo",
+      "asset": {
+        "id": "head:kangaroo",
+        "url": "/assets/resources-v3/animal-kangaroo.webp",
+        "sha256": "d9edcc29a314f8cf4c2719e5d87967469a705630760455d6476e268e266831cb",
+        "sourceSha256": "f521979149a7be1a55da11286099dde108d238618e2c5be705512c1b8e4b57c5",
+        "mimeType": "image/webp",
+        "bytes": 378198,
+        "thumbnail": {
+          "url": "/assets/resources-v3/128/animal-kangaroo.webp",
+          "sha256": "9a6addced6f821cd7464b7d21f802a9d11056d4cb20fc1c0c5a943992764ac6d",
+          "bytes": 3028,
+          "width": 128,
+          "height": 128,
+          "mimeType": "image/webp"
+        }
+      },
+      "sourceCode": "C2",
+      "legacyAnimalTokens": [
+        "袋鼠"
+      ]
+    },
+    {
+      "id": "animal:hippo",
+      "label": "河马",
+      "sourceLabel": "河马",
+      "state": "pending",
+      "layerKey": "hippo",
+      "asset": {
+        "id": "head:hippo",
+        "url": "/assets/resources-v3/animal-hippo.webp",
+        "sha256": "6d3bddc178b48b58cfab0cf31c5c46be732d5689a7bb6f515f0fdfae2b7c7021",
+        "sourceSha256": "0e732aa8519791c7fc281368c14b12d1479bd5b73bc8b5eb623d087a4146d3cc",
+        "mimeType": "image/webp",
+        "bytes": 475202,
+        "thumbnail": {
+          "url": "/assets/resources-v3/128/animal-hippo.webp",
+          "sha256": "e97d0dce86633144e56f5ce72756f61160df7fbbe8a42ebd50f54d9c4696356c",
+          "bytes": 2972,
+          "width": 128,
+          "height": 128,
+          "mimeType": "image/webp"
+        }
+      },
+      "sourceCode": "C3",
+      "legacyAnimalTokens": [
+        "河马"
+      ]
+    },
+    {
+      "id": "animal:rhino",
+      "label": "犀牛",
+      "sourceLabel": "犀牛",
+      "state": "pending",
+      "layerKey": "rhino",
+      "asset": {
+        "id": "head:rhino",
+        "url": "/assets/resources-v3/animal-rhino.webp",
+        "sha256": "e56c2cdf760fef7b03eb34604748d61243922ca04151cdad1b22d81596b9fd16",
+        "sourceSha256": "00e02ff38d001ce838b6bcdef53c7a4c35982ef266065cc1362cc8172aa30f39",
+        "mimeType": "image/webp",
+        "bytes": 394692,
+        "thumbnail": {
+          "url": "/assets/resources-v3/128/animal-rhino.webp",
+          "sha256": "4023366a161f722d44307aa52bb80b81406ad37fdf64617b67e5e7c56492f795",
+          "bytes": 2700,
+          "width": 128,
+          "height": 128,
+          "mimeType": "image/webp"
+        }
+      },
+      "sourceCode": "C4",
+      "legacyAnimalTokens": [
+        "犀牛"
+      ]
+    },
+    {
+      "id": "animal:sloth",
+      "label": "树懒",
+      "sourceLabel": "树懒",
+      "state": "pending",
+      "layerKey": "sloth",
+      "asset": {
+        "id": "head:sloth",
+        "url": "/assets/resources-v3/animal-sloth.webp",
+        "sha256": "8e12156e98190a6a553c8dc686881cfac48bf224590ed7129fe6276c7a2616af",
+        "sourceSha256": "133f5c1667cb8d4b4670f6a6f5d131e4724025992a58f9b1e7185abf40fcacf8",
+        "mimeType": "image/webp",
+        "bytes": 489668,
+        "thumbnail": {
+          "url": "/assets/resources-v3/128/animal-sloth.webp",
+          "sha256": "3e36e5815221378fa1f8ec436ea7b74bbe8323ca908c133bc3558998a27cfbbf",
+          "bytes": 3122,
+          "width": 128,
+          "height": 128,
+          "mimeType": "image/webp"
+        }
+      },
+      "sourceCode": "C5",
+      "legacyAnimalTokens": [
+        "树懒"
+      ]
+    },
+    {
+      "id": "animal:redpanda",
+      "label": "小熊猫",
+      "sourceLabel": "小熊猫",
+      "state": "pending",
+      "layerKey": "redpanda",
+      "asset": {
+        "id": "head:redpanda",
+        "url": "/assets/resources-v3/animal-redpanda.webp",
+        "sha256": "736a773c63c9ee6c801a123c6ab02bc6a682e69f864ea44150cf191089957e9c",
+        "sourceSha256": "41c91a75d212197f5ae52034711b34fb97e3a0d11df6380338707f8f38fed043",
+        "mimeType": "image/webp",
+        "bytes": 529946,
+        "thumbnail": {
+          "url": "/assets/resources-v3/128/animal-redpanda.webp",
+          "sha256": "fd03fbd1772e3a105c7b60805a94dff950c7f2cf20d6e9187875218278bcbe1a",
+          "bytes": 3880,
+          "width": 128,
+          "height": 128,
+          "mimeType": "image/webp"
+        }
+      },
+      "sourceCode": "C6"
+    },
+    {
+      "id": "animal:dolphin",
+      "label": "海豚",
+      "sourceLabel": "海豚",
+      "state": "pending",
+      "layerKey": "dolphin",
+      "asset": {
+        "id": "head:dolphin",
+        "url": "/assets/resources-v3/animal-dolphin.webp",
+        "sha256": "c331ccadc7085306b2aaf188a8376683f103fdf1778f53bfce78a94379e7b304",
+        "sourceSha256": "c2e4174dffdd4347047cf45b594a66cfaae29d1a15b0be3758557a45fdc7d22e",
+        "mimeType": "image/webp",
+        "bytes": 420228,
+        "thumbnail": {
+          "url": "/assets/resources-v3/128/animal-dolphin.webp",
+          "sha256": "d26682c9305d2dc174a591283b97363134f75b1d10a8ac0ff1000cff80544533",
+          "bytes": 2944,
+          "width": 128,
+          "height": 128,
+          "mimeType": "image/webp"
+        }
+      },
+      "sourceCode": "C7",
+      "legacyAnimalTokens": [
+        "海豚"
+      ]
+    },
+    {
+      "id": "animal:turtle",
+      "label": "乌龟",
+      "sourceLabel": "乌龟",
+      "state": "pending",
+      "layerKey": "turtle",
+      "asset": {
+        "id": "head:turtle",
+        "url": "/assets/resources-v3/animal-turtle.webp",
+        "sha256": "be2bdcdf2229525024e6481790258d35fef3d903169b157e12ea6cddde366223",
+        "sourceSha256": "ac2f5e266a9eeeadcdf0123f4c5892958541274a9a3047043c41082a3ccfa9e2",
+        "mimeType": "image/webp",
+        "bytes": 399538,
+        "thumbnail": {
+          "url": "/assets/resources-v3/128/animal-turtle.webp",
+          "sha256": "e721f7a4e98aa35aea186240a7bef858086e81e1dceb604154485b465a350d4b",
+          "bytes": 2918,
+          "width": 128,
+          "height": 128,
+          "mimeType": "image/webp"
+        }
+      },
+      "sourceCode": "C9"
+    },
+    {
+      "id": "animal:alpaca",
+      "label": "羊驼",
+      "sourceLabel": "羊驼",
+      "state": "active",
+      "layerKey": "alpaca",
+      "asset": {
+        "id": "head:alpaca",
+        "url": "/assets/resources-v3/animal-alpaca.webp",
+        "sha256": "6c0c8d4d49f7ca6d6e822ce51d27285fd8830c0a19d5f0534b03565b3d71b1dc",
+        "sourceSha256": "a4c661cd3d4b939f1740002f8a58320bba5940816c48adaa95b8627054e99917",
+        "mimeType": "image/webp",
+        "bytes": 302272,
+        "thumbnail": {
+          "url": "/assets/resources-v3/128/animal-alpaca.webp",
+          "sha256": "5559be5d4e9b1147d0da66984957603f59f0b1d8076333c72eb8f7652928b6a1",
+          "bytes": 2452,
+          "width": 128,
+          "height": 128,
+          "mimeType": "image/webp"
+        }
+      },
+      "sourceCode": "D1",
+      "legacyAnimalTokens": [
+        "羊驼"
+      ]
+    },
+    {
+      "id": "animal:capybara",
+      "label": "水豚",
+      "sourceLabel": "水豚",
+      "state": "pending",
+      "layerKey": "capybara",
+      "asset": {
+        "id": "head:capybara",
+        "url": "/assets/resources-v3/animal-capybara.webp",
+        "sha256": "1c414b63a2c74d737e618cbbe26891365714be79b85f4cb555118ff14badf19b",
+        "sourceSha256": "81959d179550d5e933fdec2643794bbee54527e260d81a222c74772e0c040d9c",
+        "mimeType": "image/webp",
+        "bytes": 462790,
+        "thumbnail": {
+          "url": "/assets/resources-v3/128/animal-capybara.webp",
+          "sha256": "00bca5627d50fa8608e2f725e2da261141d0d558cd74ebfc79d6aba0e7505ed9",
+          "bytes": 2832,
+          "width": 128,
+          "height": 128,
+          "mimeType": "image/webp"
+        }
+      },
+      "sourceCode": "D2"
+    },
+    {
+      "id": "animal:beaver",
+      "label": "海狸",
+      "sourceLabel": "海狸",
+      "state": "pending",
+      "layerKey": "beaver",
+      "asset": {
+        "id": "head:beaver",
+        "url": "/assets/resources-v3/animal-beaver.webp",
+        "sha256": "e9221f1a4452d899207050108ee3fc2ff2e70cbe99bea9acd0d37ac068ab001d",
+        "sourceSha256": "580aabb4b91634e54897314041256c7453c9912143cdf578705e1d2ad26945c8",
+        "mimeType": "image/webp",
+        "bytes": 464002,
+        "thumbnail": {
+          "url": "/assets/resources-v3/128/animal-beaver.webp",
+          "sha256": "c59f1011ca2f8009af0c0ff3d47ae73be2d8e9ca0604b74a985f8d59e7ebd616",
+          "bytes": 2976,
+          "width": 128,
+          "height": 128,
+          "mimeType": "image/webp"
+        }
+      },
+      "sourceCode": "D3"
+    },
+    {
+      "id": "animal:bat",
+      "label": "蝙蝠",
+      "sourceLabel": "蝙蝠",
+      "state": "pending",
+      "layerKey": "bat",
+      "asset": {
+        "id": "head:bat",
+        "url": "/assets/resources-v3/animal-bat.webp",
+        "sha256": "9cbb487319b106160c04c0f7172b5f7be32e4c2d4022c43ff77460204cf65609",
+        "sourceSha256": "297487194dc779a291becf127bf3a2842e767e19bc9c9547b6e6ba293ced579b",
+        "mimeType": "image/webp",
+        "bytes": 466872,
+        "thumbnail": {
+          "url": "/assets/resources-v3/128/animal-bat.webp",
+          "sha256": "3589921f3eb9394f872c312d64d47b54b8c4ccb4db051695cf4ff6e97c85b367",
+          "bytes": 3228,
+          "width": 128,
+          "height": 128,
+          "mimeType": "image/webp"
+        }
+      },
+      "sourceCode": "D4"
+    },
+    {
+      "id": "animal:parrot",
+      "label": "鹦鹉",
+      "sourceLabel": "鹦鹉",
+      "state": "pending",
+      "layerKey": "parrot",
+      "asset": {
+        "id": "head:parrot",
+        "url": "/assets/resources-v3/animal-parrot.webp",
+        "sha256": "dee4500b7d5b3e019fbead046a107941d2e794ec2d406e2f1d1e6ac2387b67d3",
+        "sourceSha256": "bd3eaf4a6aa90ef022dcce3afe6d2750ce418b0a7099bcf48925b45f17aef5cc",
+        "mimeType": "image/webp",
+        "bytes": 483128,
+        "thumbnail": {
+          "url": "/assets/resources-v3/128/animal-parrot.webp",
+          "sha256": "e8bffca8c3547c13ca96a617d8a7ff0018e877a085221e305232bc835e8da8b5",
+          "bytes": 3604,
+          "width": 128,
+          "height": 128,
+          "mimeType": "image/webp"
+        }
+      },
+      "sourceCode": "D5",
+      "legacyAnimalTokens": [
+        "鹦鹉"
+      ]
+    },
+    {
+      "id": "animal:flamingo",
+      "label": "火烈鸟",
+      "sourceLabel": "火烈鸟",
+      "state": "active",
+      "layerKey": "flamingo",
+      "asset": {
+        "id": "head:flamingo",
+        "url": "/assets/resources-v3/animal-flamingo.webp",
+        "sha256": "70a454478a34baae683c80c4400d5476dd965eee7f0d886f33b364ebbf18c926",
+        "sourceSha256": "756d84c27b352e74ca05010a5ee3e1e2e53597bd17849c467c170b844ae0c5f0",
+        "mimeType": "image/webp",
+        "bytes": 419734,
+        "thumbnail": {
+          "url": "/assets/resources-v3/128/animal-flamingo.webp",
+          "sha256": "acbea1bb30a7ae527e2840ac58d0bbabc985187f4515da5569b6f49b84263693",
+          "bytes": 2588,
+          "width": 128,
+          "height": 128,
+          "mimeType": "image/webp"
+        }
+      },
+      "sourceCode": "D6"
+    },
+    {
+      "id": "animal:whale",
+      "label": "鲸鱼",
+      "sourceLabel": "鲸鱼",
+      "state": "pending",
+      "layerKey": "whale",
+      "asset": {
+        "id": "head:whale",
+        "url": "/assets/resources-v3/animal-whale.webp",
+        "sha256": "0fe2b4dfdd5bfe24536345701b0218d02bbd372e19d641318e273a134eb3497e",
+        "sourceSha256": "af44c41dce2183217620e20da994d8e8846fc66b74d69927381a892766ae5e71",
+        "mimeType": "image/webp",
+        "bytes": 325134,
+        "thumbnail": {
+          "url": "/assets/resources-v3/128/animal-whale.webp",
+          "sha256": "c721550b2aa802e638798ba431afe571761244516bcddfafd75bc8a62c246903",
+          "bytes": 2530,
+          "width": 128,
+          "height": 128,
+          "mimeType": "image/webp"
+        }
+      },
+      "sourceCode": "D8",
+      "legacyAnimalTokens": [
+        "鲸鱼"
+      ]
+    },
+    {
+      "id": "animal:axolotl",
+      "label": "美西螈",
+      "sourceLabel": "美西螈",
+      "state": "pending",
+      "layerKey": "axolotl",
+      "asset": {
+        "id": "head:axolotl",
+        "url": "/assets/resources-v3/animal-axolotl.webp",
+        "sha256": "180415de2108ddd8d21d0ff38147a7b7582d9d3fb5f0e4ef9c3a9f7ebf2f1455",
+        "sourceSha256": "b015a33cdd54226894270a9560f0f25a35ece7c66781917f35555c8837778d3e",
+        "mimeType": "image/webp",
+        "bytes": 369452,
+        "thumbnail": {
+          "url": "/assets/resources-v3/128/animal-axolotl.webp",
+          "sha256": "080fceff689843323a52f3a0fa68b5bf0190255618c97185227cb61b09e0f9ca",
+          "bytes": 3624,
+          "width": 128,
+          "height": 128,
+          "mimeType": "image/webp"
+        }
+      },
+      "sourceCode": "D9"
+    },
+    {
+      "id": "animal:character-unicorn",
+      "label": "独角团子",
+      "sourceLabel": "独角团子",
+      "state": "active",
+      "layerKey": "character-unicorn",
+      "sourceCode": "R1",
+      "sourceBatch": "approved-character-heads-v1",
+      "defaultTransform": {
+        "x": 0,
+        "y": 0,
+        "scale": 1,
+        "rotation": 0
+      },
+      "asset": {
+        "id": "head:character-unicorn",
+        "url": "/assets/characters-v1/character-unicorn.png",
+        "sha256": "8ab9a1fea304d65319545ca02c39a2d1adea05bd7ee9cc9c900d9967c816c9c1",
+        "sourceSha256": "8ab9a1fea304d65319545ca02c39a2d1adea05bd7ee9cc9c900d9967c816c9c1",
+        "mimeType": "image/png",
+        "bytes": 915696,
+        "width": 1254,
+        "height": 1254,
+        "thumbnail": {
+          "url": "/assets/resources-v3/128/character-unicorn.webp",
+          "sha256": "4650fd9dfe31ccafce8296db5d4f0cadc27014a515c3db6a56b1e6c9d44041d8",
+          "bytes": 3572,
+          "width": 128,
+          "height": 128,
+          "mimeType": "image/webp"
+        }
+      }
+    },
+    {
+      "id": "animal:character-robot",
+      "label": "小机器人",
+      "sourceLabel": "小机器人",
+      "state": "active",
+      "layerKey": "character-robot",
+      "sourceCode": "R2",
+      "sourceBatch": "approved-character-heads-v1",
+      "defaultTransform": {
+        "x": 0,
+        "y": 0,
+        "scale": 1,
+        "rotation": 0
+      },
+      "asset": {
+        "id": "head:character-robot",
+        "url": "/assets/characters-v1/character-robot.png",
+        "sha256": "d490bbbb1bc898467672cf3942e30d21ce2efa6460b6b7a35d50c0f9567b8631",
+        "sourceSha256": "d490bbbb1bc898467672cf3942e30d21ce2efa6460b6b7a35d50c0f9567b8631",
+        "mimeType": "image/png",
+        "bytes": 717979,
+        "width": 1254,
+        "height": 1254,
+        "thumbnail": {
+          "url": "/assets/resources-v3/128/character-robot.webp",
+          "sha256": "5b7b328069a36b7693c1a5ef8fb819974677e667bf07cf222443dbfd45f7f702",
+          "bytes": 2820,
+          "width": 128,
+          "height": 128,
+          "mimeType": "image/webp"
+        }
+      }
+    },
+    {
+      "id": "animal:character-axolotl",
+      "label": "桃粉六角龙",
+      "sourceLabel": "桃粉六角龙",
+      "state": "active",
+      "layerKey": "character-axolotl",
+      "sourceCode": "R3",
+      "sourceBatch": "approved-character-heads-v1",
+      "defaultTransform": {
+        "x": 0,
+        "y": 0,
+        "scale": 1,
+        "rotation": 0
+      },
+      "asset": {
+        "id": "head:character-axolotl",
+        "url": "/assets/characters-v1/character-axolotl.png",
+        "sha256": "5b012ee219588771c15060760c659fe975183339591a5d7ee9a99cfd98bc2963",
+        "sourceSha256": "5b012ee219588771c15060760c659fe975183339591a5d7ee9a99cfd98bc2963",
+        "mimeType": "image/png",
+        "bytes": 824616,
+        "width": 1254,
+        "height": 1254,
+        "thumbnail": {
+          "url": "/assets/resources-v3/128/character-axolotl.webp",
+          "sha256": "9412b8504e52a1020c6560fa158bf15472cbc870aaf034dfd60a772cd9eb7a4c",
+          "bytes": 3830,
+          "width": 128,
+          "height": 128,
+          "mimeType": "image/webp"
+        }
+      }
+    },
+    {
+      "id": "animal:character-cloud",
+      "label": "蓝色云灵",
+      "sourceLabel": "蓝色云灵",
+      "state": "active",
+      "layerKey": "character-cloud",
+      "sourceCode": "R4",
+      "sourceBatch": "approved-character-heads-v1",
+      "defaultTransform": {
+        "x": 0,
+        "y": 0,
+        "scale": 1,
+        "rotation": 0
+      },
+      "asset": {
+        "id": "head:character-cloud",
+        "url": "/assets/characters-v1/character-cloud.png",
+        "sha256": "970f59d3684dd494196ca67b9341bf7c7e0dd2a46c8a67410f801585928b285a",
+        "sourceSha256": "970f59d3684dd494196ca67b9341bf7c7e0dd2a46c8a67410f801585928b285a",
+        "mimeType": "image/png",
+        "bytes": 777274,
+        "width": 1254,
+        "height": 1254,
+        "thumbnail": {
+          "url": "/assets/resources-v3/128/character-cloud.webp",
+          "sha256": "715870538544569e4eb50229cf2bb95c13fd316879a795c9710dcf99c8c4f524",
+          "bytes": 2828,
+          "width": 128,
+          "height": 128,
+          "mimeType": "image/webp"
+        }
+      }
+    },
+    {
+      "id": "animal:character-mushroom",
+      "label": "蘑菇精灵",
+      "sourceLabel": "蘑菇精灵",
+      "state": "active",
+      "layerKey": "character-mushroom",
+      "sourceCode": "R5",
+      "sourceBatch": "approved-character-heads-v1",
+      "defaultTransform": {
+        "x": 0,
+        "y": 0,
+        "scale": 1,
+        "rotation": 0
+      },
+      "asset": {
+        "id": "head:character-mushroom",
+        "url": "/assets/characters-v1/character-mushroom.png",
+        "sha256": "61997230171ee44ec9e74a12f309cca606443f717574f90f939ee3f32f2bbe08",
+        "sourceSha256": "61997230171ee44ec9e74a12f309cca606443f717574f90f939ee3f32f2bbe08",
+        "mimeType": "image/png",
+        "bytes": 846958,
+        "width": 1254,
+        "height": 1254,
+        "thumbnail": {
+          "url": "/assets/resources-v3/128/character-mushroom.webp",
+          "sha256": "c6b7a0488fa169a08d313c7452f80e3b6c071c631658671e732c66ef34bed140",
+          "bytes": 3324,
+          "width": 128,
+          "height": 128,
+          "mimeType": "image/webp"
+        }
+      }
+    },
+    {
+      "id": "animal:character-star",
+      "label": "星星怪",
+      "sourceLabel": "星星怪",
+      "state": "active",
+      "layerKey": "character-star",
+      "sourceCode": "R6",
+      "sourceBatch": "approved-character-heads-v1",
+      "defaultTransform": {
+        "x": 0,
+        "y": 0,
+        "scale": 1,
+        "rotation": 0
+      },
+      "asset": {
+        "id": "head:character-star",
+        "url": "/assets/characters-v1/character-star.png",
+        "sha256": "bd0c69418be3a91240e081c84bb353c62fbe48b1e50248316759444f009f66f0",
+        "sourceSha256": "bd0c69418be3a91240e081c84bb353c62fbe48b1e50248316759444f009f66f0",
+        "mimeType": "image/png",
+        "bytes": 791644,
+        "width": 1254,
+        "height": 1254,
+        "thumbnail": {
+          "url": "/assets/resources-v3/128/character-star.webp",
+          "sha256": "74cc436b78fa368fe4a4898e468a01dce6f996d8feb8eed35685c32226dcfd18",
+          "bytes": 3002,
+          "width": 128,
+          "height": 128,
+          "mimeType": "image/webp"
+        }
+      }
+    }
+  ],
+  "emotions": [
+    {
+      "id": "emotion:sweat",
+      "label": "紧张",
+      "sourceLabel": "汗滴",
+      "state": "active",
+      "layerKey": "sweat",
+      "asset": {
+        "id": "mood:sweat",
+        "url": "/assets/resources-v3/mood-sweat.webp",
+        "sha256": "dcd1eb0ac05991fecd73ebbf18d417cc8bc4d4f82848e8ca5873f7b63301b232",
+        "sourceSha256": "03fa43a746887fcece9f421fa8b76362378fcc30da6fbc315aa08a89c17c4d2d",
+        "mimeType": "image/webp",
+        "bytes": 53104,
+        "thumbnail": {
+          "url": "/assets/resources-v3/128/mood-sweat.webp",
+          "sha256": "67071adbe9bce69099c116cbe933cc299d8ab26305f0b418c8a93b66158eb0eb",
+          "bytes": 1036,
+          "width": 128,
+          "height": 128,
+          "mimeType": "image/webp"
+        }
+      },
+      "accessoryId": "accessory:bow"
+    },
+    {
+      "id": "emotion:surprise",
+      "label": "惊讶",
+      "sourceLabel": "惊叹号",
+      "state": "active",
+      "layerKey": "surprise",
+      "asset": {
+        "id": "mood:surprise",
+        "url": "/assets/resources-v3/mood-surprise.webp",
+        "sha256": "eed8098d378e808fea16431a562adfd18dd73dbb22443a5fd88a25b7645f7674",
+        "sourceSha256": "085e01bc6ea09cb15e1f723a73807ef70dbc94fe0841da6b77ee95f4c382f27c",
+        "mimeType": "image/webp",
+        "bytes": 37382,
+        "thumbnail": {
+          "url": "/assets/resources-v3/128/mood-surprise.webp",
+          "sha256": "69281c2b1bdb1e301faf71903d73479cffceef474b0a2f49873d848ab58f05e8",
+          "bytes": 1068,
+          "width": 128,
+          "height": 128,
+          "mimeType": "image/webp"
+        }
+      },
+      "accessoryId": "accessory:tie"
+    },
+    {
+      "id": "emotion:sparkle",
+      "label": "闪亮",
+      "sourceLabel": "闪光",
+      "state": "active",
+      "layerKey": "sparkle",
+      "asset": {
+        "id": "mood:sparkle",
+        "url": "/assets/resources-v3/mood-sparkle.webp",
+        "sha256": "3f55af7a450ffa3a67d5bb3b65af3d75cf5860073dedf0c046e1673c75c71ddc",
+        "sourceSha256": "4e19cd7bb7245da4d28456bb2c46c5bbfa377229cab5a67644c18d49236a3087",
+        "mimeType": "image/webp",
+        "bytes": 39894,
+        "thumbnail": {
+          "url": "/assets/resources-v3/128/mood-sparkle.webp",
+          "sha256": "c2119339daffbee79c4f373194c77e7f3acb50ebdecc4c2dc3f9d5a36769fe02",
+          "bytes": 1080,
+          "width": 128,
+          "height": 128,
+          "mimeType": "image/webp"
+        }
+      },
+      "accessoryId": "accessory:bow"
+    },
+    {
+      "id": "emotion:heart",
+      "label": "心动",
+      "sourceLabel": "爱心",
+      "state": "active",
+      "layerKey": "heart",
+      "asset": {
+        "id": "mood:heart",
+        "url": "/assets/resources-v3/mood-heart.webp",
+        "sha256": "5e7dfe2f8e5763467bb1288818ec5f87fe1ce4ed2cd57edb20290ba9997bcfb3",
+        "sourceSha256": "7230101f5783fc665a1b332ba5a62715ef6eb9d27042b44faa79441993197643",
+        "mimeType": "image/webp",
+        "bytes": 44378,
+        "thumbnail": {
+          "url": "/assets/resources-v3/128/mood-heart.webp",
+          "sha256": "6fdb521e287bf4e231b734d9b19d743086cc0a8939055595c8f3f719e2979a50",
+          "bytes": 1020,
+          "width": 128,
+          "height": 128,
+          "mimeType": "image/webp"
+        }
+      },
+      "accessoryId": "accessory:bow"
+    },
+    {
+      "id": "emotion:music",
+      "label": "爱唱歌",
+      "sourceLabel": "音符",
+      "state": "active",
+      "layerKey": "music",
+      "asset": {
+        "id": "mood:music",
+        "url": "/assets/resources-v3/mood-music.webp",
+        "sha256": "b742fcd4e0fc0e96a35508e8c7dba0694d7528fed598beb9bf01a1e1432f969a",
+        "sourceSha256": "39cf614280fd1817d1b9f31b6372895dfa82d50a59e5f8406d5ab207266f13d3",
+        "mimeType": "image/webp",
+        "bytes": 52726,
+        "thumbnail": {
+          "url": "/assets/resources-v3/128/mood-music.webp",
+          "sha256": "a4ecbe2b6ad70e919a4f17da67b968dc698ce3a1cca6216b03d97c380ab6c350",
+          "bytes": 1326,
+          "width": 128,
+          "height": 128,
+          "mimeType": "image/webp"
+        }
+      },
+      "accessoryId": "accessory:scarf"
+    },
+    {
+      "id": "emotion:idea",
+      "label": "灵感",
+      "sourceLabel": "灯泡",
+      "state": "active",
+      "layerKey": "idea",
+      "asset": {
+        "id": "mood:idea",
+        "url": "/assets/resources-v3/mood-idea.webp",
+        "sha256": "f69b5dfd49fc4b7356f9ce4f6a30737fb2f75724ab90b1c02b766f94462014aa",
+        "sourceSha256": "fa4c140f82ef6284d82db0da9f7f70a3ffc834bc7235c0e9bfa4458363fd0953",
+        "mimeType": "image/webp",
+        "bytes": 40184,
+        "thumbnail": {
+          "url": "/assets/resources-v3/128/mood-idea.webp",
+          "sha256": "937a762baa556157b9a18dda844138524cf630bbba160a0f412ff23a3f7c9661",
+          "bytes": 1068,
+          "width": 128,
+          "height": 128,
+          "mimeType": "image/webp"
+        }
+      },
+      "accessoryId": "accessory:tie"
+    },
+    {
+      "id": "emotion:sleep",
+      "label": "困困",
+      "sourceLabel": "睡眠",
+      "state": "active",
+      "layerKey": "sleep",
+      "asset": {
+        "id": "mood:sleep",
+        "url": "/assets/resources-v3/mood-sleep.webp",
+        "sha256": "76aec8288474ddd88ef5e7d00cd03906f500dac3827a8a9f7de825c11ebe614b",
+        "sourceSha256": "d979025ae5bf5625b0e3d8b10df8a0597f75d4db96a8289d8a854a03f0ae77a8",
+        "mimeType": "image/webp",
+        "bytes": 30084,
+        "thumbnail": {
+          "url": "/assets/resources-v3/128/mood-sleep.webp",
+          "sha256": "895cfc0d6f58c208b875ee98d7f06c4fbfd5b9d815667f37da35bbfe8f474502",
+          "bytes": 1006,
+          "width": 128,
+          "height": 128,
+          "mimeType": "image/webp"
+        }
+      },
+      "accessoryId": "accessory:scarf"
+    },
+    {
+      "id": "emotion:question",
+      "label": "好奇",
+      "sourceLabel": "问号",
+      "state": "pending",
+      "layerKey": "question",
+      "asset": {
+        "id": "mood:question",
+        "url": "/assets/resources-v3/mood-question.webp",
+        "sha256": "b6a3f74b4ca3a2a85434ea2f2ad8ad3012312780e083bb1cfcb5bb4f582737b5",
+        "sourceSha256": "bb6216c891a1b664c3a0715aa49017f8b983d798b1f8c0292031ef0bdc3d4052",
+        "mimeType": "image/webp",
+        "bytes": 34768,
+        "thumbnail": {
+          "url": "/assets/resources-v3/128/mood-question.webp",
+          "sha256": "4a34d3821d74ddde03e57ccfce69a6b5915ee15720099fc7b760c98015bc8469",
+          "bytes": 898,
+          "width": 128,
+          "height": 128,
+          "mimeType": "image/webp"
+        }
+      },
+      "accessoryId": "accessory:bandana"
+    },
+    {
+      "id": "emotion:anger",
+      "label": "生气",
+      "sourceLabel": "生气符号",
+      "state": "active",
+      "layerKey": "anger",
+      "asset": {
+        "id": "mood:anger",
+        "url": "/assets/resources-v3/mood-anger.webp",
+        "sha256": "5466fb64d463d6f7ba0b644925dfcdfa22e4a78cf0f24ca53330ab5151f1111e",
+        "sourceSha256": "806d40d892b26eb8ae326194f19058fec8235a2904e6b226dcb4a999cbc35219",
+        "mimeType": "image/webp",
+        "bytes": 53990,
+        "thumbnail": {
+          "url": "/assets/resources-v3/128/mood-anger.webp",
+          "sha256": "281bbeda1db013fec30c30e5bf78f94ee5591829ab533c6fadd64eae2737e4e7",
+          "bytes": 1374,
+          "width": 128,
+          "height": 128,
+          "mimeType": "image/webp"
+        }
+      },
+      "accessoryId": "accessory:ruffle"
+    },
+    {
+      "id": "emotion:blush",
+      "label": "雀跃",
+      "sourceLabel": "粉色强调线",
+      "state": "pending",
+      "layerKey": "blush",
+      "asset": {
+        "id": "mood:blush",
+        "url": "/assets/resources-v3/mood-blush.webp",
+        "sha256": "ff54abb1cfd38210713941d114164b7b3ba1247384150c6567d0e00766e60ce4",
+        "sourceSha256": "c492bcb42d63cf0291acc9d871d1f65fcc8920326d08d285f0a86fbf943e2167",
+        "mimeType": "image/webp",
+        "bytes": 30310,
+        "thumbnail": {
+          "url": "/assets/resources-v3/128/mood-blush.webp",
+          "sha256": "004eb9e2968078fde75d4131f16a8062df8d70247a8d56da1503e8c76c20f359",
+          "bytes": 900,
+          "width": 128,
+          "height": 128,
+          "mimeType": "image/webp"
+        }
+      },
+      "accessoryId": "accessory:ribbon"
+    },
+    {
+      "id": "emotion:flower",
+      "label": "花花",
+      "sourceLabel": "小花",
+      "state": "active",
+      "layerKey": "flower",
+      "asset": {
+        "id": "mood:flower",
+        "url": "/assets/resources-v3/mood-flower.webp",
+        "sha256": "98421b75125997813ae979b8d4f842fc32b7283e194cb133d4f21fd073cacf3a",
+        "sourceSha256": "e581ab7cfe40b41233de1f77f3388c893ddfb59c0e0524f0afccd4bc7d4d704f",
+        "mimeType": "image/webp",
+        "bytes": 65642,
+        "thumbnail": {
+          "url": "/assets/resources-v3/128/mood-flower.webp",
+          "sha256": "4b4b5af7e089549caf7b5cd13ae8958412554f2b23ed715d41922120a5478b31",
+          "bytes": 1148,
+          "width": 128,
+          "height": 128,
+          "mimeType": "image/webp"
+        }
+      },
+      "accessoryId": "accessory:cowl"
+    },
+    {
+      "id": "emotion:raincloud",
+      "label": "低落",
+      "sourceLabel": "雨云",
+      "state": "pending",
+      "layerKey": "raincloud",
+      "asset": {
+        "id": "mood:raincloud",
+        "url": "/assets/resources-v3/mood-raincloud.webp",
+        "sha256": "acf6724a54d1d6d8f5c75c60d26e3212a2f1cedbce589ef185e4b4b8c2d0e779",
+        "sourceSha256": "029d654a2571901f9fd6151096a30d6101eda057c8dd84e946efd390102c667d",
+        "mimeType": "image/webp",
+        "bytes": 49024,
+        "thumbnail": {
+          "url": "/assets/resources-v3/128/mood-raincloud.webp",
+          "sha256": "3473e5008e45e29ba330014e74049ddf65feb730bdc2693019523f57957c66bf",
+          "bytes": 974,
+          "width": 128,
+          "height": 128,
+          "mimeType": "image/webp"
+        }
+      },
+      "accessoryId": "accessory:bandana"
+    },
+    {
+      "id": "emotion:rainbow",
+      "label": "多彩",
+      "sourceLabel": "彩虹",
+      "state": "active",
+      "layerKey": "rainbow",
+      "asset": {
+        "id": "mood:rainbow",
+        "url": "/assets/resources-v3/mood-rainbow.webp",
+        "sha256": "b0285498f7e524fb8f747bad87ece22738d4a2f85276db8cdad9ce2d3f04b814",
+        "sourceSha256": "0aeabce15fbe6aaebd83771b2b5a2d0b348155cef401d7175ba8591d8b3d4037",
+        "mimeType": "image/webp",
+        "bytes": 49130,
+        "thumbnail": {
+          "url": "/assets/resources-v3/128/mood-rainbow.webp",
+          "sha256": "e1cd8aa73c5ad59cb2100b153475e91beda1ae508605a9699f9983a57ed2b357",
+          "bytes": 1018,
+          "width": 128,
+          "height": 128,
+          "mimeType": "image/webp"
+        }
+      },
+      "accessoryId": "accessory:ruffle"
+    },
+    {
+      "id": "emotion:leaf",
+      "label": "清新",
+      "sourceLabel": "叶子",
+      "state": "pending",
+      "layerKey": "leaf",
+      "asset": {
+        "id": "mood:leaf",
+        "url": "/assets/resources-v3/mood-leaf.webp",
+        "sha256": "12af5e368ec61564f11809d228d318dcf86dc25d5d883d26058af433668ecab2",
+        "sourceSha256": "7eb87fe0fd508225329b2044455810917a71e96121fac489d9f2d100afcb6cca",
+        "mimeType": "image/webp",
+        "bytes": 56376,
+        "thumbnail": {
+          "url": "/assets/resources-v3/128/mood-leaf.webp",
+          "sha256": "2fd0dab8adfe3daa485fea351c9bd752a2a184a3b12f09d9e770470193e3e36c",
+          "bytes": 944,
+          "width": 128,
+          "height": 128,
+          "mimeType": "image/webp"
+        }
+      },
+      "accessoryId": "accessory:sailor"
+    },
+    {
+      "id": "emotion:moon",
+      "label": "晚安",
+      "sourceLabel": "月亮",
+      "state": "active",
+      "layerKey": "moon",
+      "asset": {
+        "id": "mood:moon",
+        "url": "/assets/resources-v3/mood-moon.webp",
+        "sha256": "3e8a16369531b48a317cd56c72c7d0fe5a573fc67ae347eeeabbefd9ad51c223",
+        "sourceSha256": "7497e910e89a2ae5076c15c61913be1248f024b2098c9dcf330a9c57b7d9ba35",
+        "mimeType": "image/webp",
+        "bytes": 64718,
+        "thumbnail": {
+          "url": "/assets/resources-v3/128/mood-moon.webp",
+          "sha256": "929e11b987b8602021e79ea111b4a13ed699f260ffed3c4c5b4fddc6cb794359",
+          "bytes": 1284,
+          "width": 128,
+          "height": 128,
+          "mimeType": "image/webp"
+        }
+      },
+      "accessoryId": "accessory:cowl"
+    },
+    {
+      "id": "emotion:dream-single-bubble",
+      "label": "梦幻",
+      "sourceLabel": "单颗半透明彩色气泡",
+      "editorLabel": "梦幻 · 单颗半透明彩色气泡",
+      "state": "active",
+      "layerKey": "dream-single-bubble",
+      "accessoryId": "accessory:scarf",
+      "defaultTransform": {
+        "x": 230,
+        "y": -200,
+        "scale": 0.55,
+        "rotation": 0
+      },
+      "sourceBatch": "approved-decoration-v2",
+      "asset": {
+        "id": "mood:dream-single-bubble",
+        "url": "/assets/resources-v3/mood-dream-single-bubble.webp",
+        "sha256": "ff4020e3140bf92100bf6869c8bdcf847ab6ac4769fab015427c7a298bd93449",
+        "sourceSha256": "92db191315bfa7678e36087957e8fd898c8458574532b127db5aa2ad1666085b",
+        "mimeType": "image/webp",
+        "bytes": 793804,
+        "width": 1254,
+        "height": 1254,
+        "sourceWidth": 1254,
+        "sourceHeight": 1254,
+        "normalization": "transparent-square-padding-only",
+        "thumbnail": {
+          "url": "/assets/resources-v3/128/mood-dream-single-bubble.webp",
+          "sha256": "e444b9e632b2cfaa5df89b0c5aa52b9fefcaf2816e9d7ba7c1087202465671a0",
+          "bytes": 6986,
+          "width": 128,
+          "height": 128,
+          "mimeType": "image/webp"
+        }
+      }
+    },
+    {
+      "id": "emotion:sunglasses-aqua-shield",
+      "label": "酷酷",
+      "sourceLabel": "青蓝连片运动镜",
+      "editorLabel": "酷酷 · 青蓝连片运动镜",
+      "state": "active",
+      "layerKey": "sunglasses-aqua-shield",
+      "accessoryId": "accessory:scarf",
+      "defaultTransform": {
+        "x": 190,
+        "y": -270,
+        "scale": 0.48,
+        "rotation": 0
+      },
+      "sourceBatch": "approved-decoration-v2",
+      "asset": {
+        "id": "mood:sunglasses-aqua-shield",
+        "url": "/assets/resources-v3/mood-sunglasses-aqua-shield.webp",
+        "sha256": "3d49a05d19fe4ad99dd98ed029b65fed09ecfdeb4d5c9d9ebce1fff1b60626b8",
+        "sourceSha256": "ddf58120e91c2702b8e1c03e5d6ecabb750b30b813b6e865fa32b405729e5015",
+        "mimeType": "image/webp",
+        "bytes": 702124,
+        "width": 1774,
+        "height": 1774,
+        "sourceWidth": 1774,
+        "sourceHeight": 887,
+        "normalization": "transparent-square-padding-only",
+        "thumbnail": {
+          "url": "/assets/resources-v3/128/mood-sunglasses-aqua-shield.webp",
+          "sha256": "2d5b310d9a0721b3e9930b753382d248313d28e01f1e1fdc2a0b1aba7b7431f2",
+          "bytes": 3836,
+          "width": 128,
+          "height": 128,
+          "mimeType": "image/webp"
+        }
+      }
+    },
+    {
+      "id": "emotion:sunglasses-lilac-angular",
+      "label": "飒爽",
+      "sourceLabel": "紫粉细长猫眼镜",
+      "editorLabel": "飒爽 · 紫粉细长猫眼镜",
+      "state": "active",
+      "layerKey": "sunglasses-lilac-angular",
+      "accessoryId": "accessory:scarf",
+      "defaultTransform": {
+        "x": 190,
+        "y": -270,
+        "scale": 0.48,
+        "rotation": 0
+      },
+      "sourceBatch": "approved-decoration-v2",
+      "asset": {
+        "id": "mood:sunglasses-lilac-angular",
+        "url": "/assets/resources-v3/mood-sunglasses-lilac-angular.webp",
+        "sha256": "bd79e9ce835d92788166125cb24e97de8a69903ea970e9f36080592fd3ce4f5e",
+        "sourceSha256": "1dfd8c05fe7ecd40c56661600fce801190a8f6d7c32651430e8db389718d7b58",
+        "mimeType": "image/webp",
+        "bytes": 267558,
+        "width": 1254,
+        "height": 1254,
+        "sourceWidth": 1254,
+        "sourceHeight": 1254,
+        "normalization": "transparent-square-padding-only",
+        "thumbnail": {
+          "url": "/assets/resources-v3/128/mood-sunglasses-lilac-angular.webp",
+          "sha256": "fb876ba64d6e99af3fd1cb359d21680402d9dd9191bb598babc7c82f848cb4aa",
+          "bytes": 3130,
+          "width": 128,
+          "height": 128,
+          "mimeType": "image/webp"
+        }
+      }
+    },
+    {
+      "id": "emotion:sunglasses-rose-star",
+      "label": "俏皮",
+      "sourceLabel": "粉橙星形派对镜",
+      "editorLabel": "俏皮 · 粉橙星形派对镜",
+      "state": "active",
+      "layerKey": "sunglasses-rose-star",
+      "accessoryId": "accessory:scarf",
+      "defaultTransform": {
+        "x": 190,
+        "y": -270,
+        "scale": 0.48,
+        "rotation": 0
+      },
+      "sourceBatch": "approved-decoration-v2",
+      "asset": {
+        "id": "mood:sunglasses-rose-star",
+        "url": "/assets/resources-v3/mood-sunglasses-rose-star.webp",
+        "sha256": "8238f2c0887dd148d8942ea86d683621e9c846bf74c161143f64d834bcf70a98",
+        "sourceSha256": "ed2d83cfe04d3df257df0eec98a5c89db8ec88a61dc3324f1ebe99e889ffe5c1",
+        "mimeType": "image/webp",
+        "bytes": 455154,
+        "width": 1254,
+        "height": 1254,
+        "sourceWidth": 1254,
+        "sourceHeight": 1254,
+        "normalization": "transparent-square-padding-only",
+        "thumbnail": {
+          "url": "/assets/resources-v3/128/mood-sunglasses-rose-star.webp",
+          "sha256": "7fe93326bb9358ce3292f432319ce683b0bb5ccdeeb72812c10de26edd5fd334",
+          "bytes": 6140,
+          "width": 128,
+          "height": 128,
+          "mimeType": "image/webp"
+        }
+      }
+    },
+    {
+      "id": "emotion:headband-front-only",
+      "label": "勇敢",
+      "sourceLabel": "前侧头巾与右侧系结",
+      "editorLabel": "勇敢 · 前侧头巾与右侧系结",
+      "state": "active",
+      "layerKey": "headband-front-only",
+      "accessoryId": "accessory:scarf",
+      "defaultTransform": {
+        "x": 0,
+        "y": -150,
+        "scale": 0.85,
+        "rotation": 0
+      },
+      "sourceBatch": "approved-decoration-v2",
+      "asset": {
+        "id": "mood:headband-front-only",
+        "url": "/assets/resources-v3/mood-headband-front-only.webp",
+        "sha256": "6ecf5474f648b5a1bf23e7017ceeb492461050a8107eeba41d7a5221ada5d698",
+        "sourceSha256": "1bf9d8ac61f77ebd099c88cebcd40af56cf24916f8a6cd80baa6354adaa76540",
+        "mimeType": "image/webp",
+        "bytes": 586538,
+        "width": 1774,
+        "height": 1774,
+        "sourceWidth": 1774,
+        "sourceHeight": 887,
+        "normalization": "transparent-square-padding-only",
+        "thumbnail": {
+          "url": "/assets/resources-v3/128/mood-headband-front-only.webp",
+          "sha256": "6f40c627c97a4056ae9c2852a83d3834b295c5cdf852ac8f73da6c5e7f1b48f7",
+          "bytes": 2388,
+          "width": 128,
+          "height": 128,
+          "mimeType": "image/webp"
+        }
+      }
+    },
+    {
+      "id": "emotion:visor-mecha-ice",
+      "label": "冰蓝机械",
+      "sourceLabel": "冰蓝机械墨镜",
+      "editorLabel": "冰蓝机械墨镜",
+      "state": "active",
+      "layerKey": "visor-mecha-ice",
+      "sourceCode": "V1",
+      "sourceBatch": "approved-visors-1-and-5",
+      "accessoryId": "accessory:scarf",
+      "defaultTransform": {
+        "x": 0,
+        "y": 45,
+        "scale": 0.65,
+        "rotation": 0
+      },
+      "asset": {
+        "id": "mood:visor-mecha-ice",
+        "url": "/assets/characters-v1/visor-mecha-ice.png",
+        "sha256": "440986c6c9374092a77a3cf3a3cf2a34a9e2301e088edc42a5a9e4f868755211",
+        "sourceSha256": "440986c6c9374092a77a3cf3a3cf2a34a9e2301e088edc42a5a9e4f868755211",
+        "mimeType": "image/png",
+        "bytes": 569475,
+        "width": 1774,
+        "height": 887,
+        "editorFit": "contain",
+        "thumbnail": {
+          "url": "/assets/resources-v3/128/visor-mecha-ice.webp",
+          "sha256": "2c7bc95f4bda7d46cba30c431bf7c14e9a1bb723009d36604a832e255c17c4f9",
+          "bytes": 2148,
+          "width": 128,
+          "height": 128,
+          "mimeType": "image/webp"
+        }
+      }
+    },
+    {
+      "id": "emotion:visor-sport-mint",
+      "label": "薄荷运动",
+      "sourceLabel": "薄荷运动墨镜",
+      "editorLabel": "薄荷运动墨镜",
+      "state": "active",
+      "layerKey": "visor-sport-mint",
+      "sourceCode": "V5",
+      "sourceBatch": "approved-visors-1-and-5",
+      "accessoryId": "accessory:scarf",
+      "defaultTransform": {
+        "x": 0,
+        "y": 45,
+        "scale": 0.65,
+        "rotation": 0
+      },
+      "asset": {
+        "id": "mood:visor-sport-mint",
+        "url": "/assets/characters-v1/visor-sport-mint.png",
+        "sha256": "40e05ff8006d5fa1b7acd42c6e41f6cb9ca170183fcec60047602e0caab3deff",
+        "sourceSha256": "40e05ff8006d5fa1b7acd42c6e41f6cb9ca170183fcec60047602e0caab3deff",
+        "mimeType": "image/png",
+        "bytes": 928252,
+        "width": 1774,
+        "height": 887,
+        "editorFit": "contain",
+        "thumbnail": {
+          "url": "/assets/resources-v3/128/visor-sport-mint.webp",
+          "sha256": "51b7b721dd2d8e2274b23a95b4a62c4f5f477eb4d61e0d10d6aca980827dd0ed",
+          "bytes": 3652,
+          "width": 128,
+          "height": 128,
+          "mimeType": "image/webp"
+        }
+      }
+    }
+  ],
+  "accessories": [
+    {
+      "id": "accessory:bow",
+      "label": "蝴蝶结",
+      "sourceLabel": "蝴蝶结",
+      "state": "active",
+      "layerKey": "bow",
+      "asset": {
+        "id": "accessory:bow",
+        "url": "/assets/resources-v3/accessory-bow-white.webp",
+        "sha256": "d206fe1091a372900d7c459a99ca1643fa587630326824de51bb0102f044350a",
+        "sourceSha256": "c1730e341d79bd13cc22d477d91e850fbae5b24b965208d454488630aaa266e6",
+        "mimeType": "image/webp",
+        "bytes": 69086,
+        "thumbnail": {
+          "url": "/assets/resources-v3/128/accessory-bow-white.webp",
+          "sha256": "a1152f10a1aabf357731b23d36bb7b3901337e5539cd1d63c2b6101b24ed8729",
+          "bytes": 1082,
+          "width": 128,
+          "height": 128,
+          "mimeType": "image/webp"
+        }
+      }
+    },
+    {
+      "id": "accessory:scarf",
+      "label": "围巾",
+      "sourceLabel": "围巾",
+      "state": "active",
+      "layerKey": "scarf",
+      "asset": {
+        "id": "accessory:scarf",
+        "url": "/assets/resources-v3/accessory-scarf-white.webp",
+        "sha256": "5ef50962dafc8906d14dca8847053ea0f9d5c2e06f3b52a921282c5c7b466643",
+        "sourceSha256": "83000d677fe4f65b2569aa48d1b5f15b8bb78cf4a4ec0d5cb195e7bd40bda7b9",
+        "mimeType": "image/webp",
+        "bytes": 135606,
+        "thumbnail": {
+          "url": "/assets/resources-v3/128/accessory-scarf-white.webp",
+          "sha256": "6bfc886871c68eec4950e421b5aa47ae5219f2bfc0dfa7eb70887ceaf9ceaca1",
+          "bytes": 1514,
+          "width": 128,
+          "height": 128,
+          "mimeType": "image/webp"
+        }
+      }
+    },
+    {
+      "id": "accessory:tie",
+      "label": "领带",
+      "sourceLabel": "领带",
+      "state": "active",
+      "layerKey": "tie",
+      "asset": {
+        "id": "accessory:tie",
+        "url": "/assets/resources-v3/accessory-tie-white.webp",
+        "sha256": "dbde5dda103a9dd20b94bb80dd1f9556ba11e020a37a67453266db126b3bcefc",
+        "sourceSha256": "aa26d5e4014d900983d5ca094b2786d7150953b61da2e46b72b720f3ec146d0f",
+        "mimeType": "image/webp",
+        "bytes": 54434,
+        "thumbnail": {
+          "url": "/assets/resources-v3/128/accessory-tie-white.webp",
+          "sha256": "abe3530eb2f66315ea25f626a07762df72de74e4971b77b12fb2d9a9acfb9536",
+          "bytes": 938,
+          "width": 128,
+          "height": 128,
+          "mimeType": "image/webp"
+        }
+      }
+    },
+    {
+      "id": "accessory:sailor",
+      "label": "水手领",
+      "sourceLabel": "水手领",
+      "state": "pending",
+      "layerKey": "sailor",
+      "asset": {
+        "id": "accessory:sailor",
+        "url": "/assets/resources-v3/accessory-sailor-white.webp",
+        "sha256": "4771e32cfa09792cec1297698461b3c6ceac909649026f294bb649e8be7bf088",
+        "sourceSha256": "216a6437de8bc733b5dcd584d020d1a619f8bbdbc0e0f5c7e022cca0c3542308",
+        "mimeType": "image/webp",
+        "bytes": 53012,
+        "thumbnail": {
+          "url": "/assets/resources-v3/128/accessory-sailor-white.webp",
+          "sha256": "f2098c02caf971a7ae533fc8122e537a831d964584a8f850306f50c6aefa4eb6",
+          "bytes": 1004,
+          "width": 128,
+          "height": 128,
+          "mimeType": "image/webp"
+        }
+      }
+    },
+    {
+      "id": "accessory:bandana",
+      "label": "三角巾",
+      "sourceLabel": "三角巾",
+      "state": "pending",
+      "layerKey": "bandana",
+      "asset": {
+        "id": "accessory:bandana",
+        "url": "/assets/resources-v3/accessory-bandana-white.webp",
+        "sha256": "7d9aa2e81e28a469d6aa8e596e01569dd281c66e03945a983d9974879212022b",
+        "sourceSha256": "dce2c37eb09416b358ba4d04dede8e0be401be6886fd9df02dd130e5cc2af9f9",
+        "mimeType": "image/webp",
+        "bytes": 52680,
+        "thumbnail": {
+          "url": "/assets/resources-v3/128/accessory-bandana-white.webp",
+          "sha256": "f2d12e4b48baf7388d467f5042c92cb8825dc0a669874750e0c980edab173ad7",
+          "bytes": 952,
+          "width": 128,
+          "height": 128,
+          "mimeType": "image/webp"
+        }
+      }
+    },
+    {
+      "id": "accessory:ruffle",
+      "label": "褶领",
+      "sourceLabel": "褶领",
+      "state": "active",
+      "layerKey": "ruffle",
+      "asset": {
+        "id": "accessory:ruffle",
+        "url": "/assets/resources-v3/accessory-ruffle-white.webp",
+        "sha256": "91d4659cd008d6b2c42e15389969018d546cfcacef1d779226e9ff7fbbc6ca81",
+        "sourceSha256": "faa04ce4efa167de7c8c79aee8d67ae9cbe086e4910ed9762355973a1ce20579",
+        "mimeType": "image/webp",
+        "bytes": 89748,
+        "thumbnail": {
+          "url": "/assets/resources-v3/128/accessory-ruffle-white.webp",
+          "sha256": "73e6775c09c20a07750de2f04b5a59811dd4715530838367ea0b4a951e9839ac",
+          "bytes": 1246,
+          "width": 128,
+          "height": 128,
+          "mimeType": "image/webp"
+        }
+      }
+    },
+    {
+      "id": "accessory:ribbon",
+      "label": "长尾蝴蝶结",
+      "sourceLabel": "长尾蝴蝶结",
+      "state": "pending",
+      "layerKey": "ribbon",
+      "asset": {
+        "id": "accessory:ribbon",
+        "url": "/assets/resources-v3/accessory-ribbon-white.webp",
+        "sha256": "4f4111920550dfcb725f22a77104034307cf2582da627ac11baf26059e1a7322",
+        "sourceSha256": "2e8eb607df8aba049a7d46bf9fd66b3adb6284f8ad555e85a08e1be915876e08",
+        "mimeType": "image/webp",
+        "bytes": 53136,
+        "thumbnail": {
+          "url": "/assets/resources-v3/128/accessory-ribbon-white.webp",
+          "sha256": "778f6d45bb045865a35124acf0d5c7ee65077d4baf88cb222db2df67850178be",
+          "bytes": 1006,
+          "width": 128,
+          "height": 128,
+          "mimeType": "image/webp"
+        }
+      }
+    },
+    {
+      "id": "accessory:cowl",
+      "label": "围脖",
+      "sourceLabel": "围脖",
+      "state": "active",
+      "layerKey": "cowl",
+      "asset": {
+        "id": "accessory:cowl",
+        "url": "/assets/resources-v3/accessory-cowl-white.webp",
+        "sha256": "c11507d4cb22d09cbfd378bd0ef2e9ca02b1d5a3be2a18d1ee2de105f46c3ecf",
+        "sourceSha256": "c8163566dcb497e42fb53209b38638425c633c5a0b6f8b70e257c6d2eb690072",
+        "mimeType": "image/webp",
+        "bytes": 93480,
+        "thumbnail": {
+          "url": "/assets/resources-v3/128/accessory-cowl-white.webp",
+          "sha256": "0e161f20d870dfd06c6180a21f502d901e24eed72fe6efdf9d8a0cb7a9c2a5be",
+          "bytes": 1162,
+          "width": 128,
+          "height": 128,
+          "mimeType": "image/webp"
+        }
+      }
+    }
+  ],
+  "activationPolicy": "Only active assets may be assigned to production identities. Pending assets are editor-only until calibrated and approved.",
+  "recipeConstraint": "accessoryId must equal the selected emotion.accessoryId",
+  "identityDimensions": [
+    "colorId",
+    "emotionId",
+    "animalId",
+    "accessoryId",
+    "wordOrder"
+  ],
+  "wordOrderPolicy": {
+    "singleCharacterColor": [
+      "trait_first"
+    ],
+    "twoCharacterColorAndEmotion": [
+      "color_first",
+      "trait_first"
+    ],
+    "otherwise": [
+      "color_first"
+    ]
+  },
+  "configurationRequired": {
+    "head": [
+      "seal",
+      "otter",
+      "fox",
+      "panda",
+      "rabbit",
+      "penguin",
+      "cat",
+      "bear",
+      "owl",
+      "deer",
+      "dog",
+      "goldfish"
+    ],
+    "accessory": [
+      "bow",
+      "scarf",
+      "tie"
+    ],
+    "mood": [
+      "sweat",
+      "surprise",
+      "sparkle",
+      "heart",
+      "music",
+      "idea",
+      "sleep"
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+.avatar-brand-heading{display:flex;align-items:center;gap:7px}
+.avatar-app-icon{display:block;flex:none;width:32px;height:32px;object-fit:contain}
+#avatarSoundControls{display:inline-flex;flex:none;align-items:center;position:relative}
+.avatar-sound-settings{position:relative;font-weight:400;line-height:1.4}
+.avatar-sound-settings summary{list-style:none;display:flex;width:36px;height:36px;align-items:center;justify-content:center;border-radius:10px;cursor:pointer;color:var(--muted,#626268)}
+.avatar-sound-settings summary::-webkit-details-marker{display:none}
+.avatar-sound-settings summary:hover,.avatar-sound-settings[open] summary{background:var(--soft,#f0f0f3);color:var(--ink,#1d1d1f)}
+.avatar-sound-settings summary:focus-visible{outline:2px solid var(--select,#0071e3);outline-offset:3px}
+/* Iconoir 7.12.2 regular icons, MIT; unchanged source SVGs. */
+.avatar-sound-glyph{width:20px;height:20px;flex:none;background:currentColor;-webkit-mask:url('brand/sound-high.svg') center/contain no-repeat;mask:url('brand/sound-high.svg') center/contain no-repeat}
+.avatar-sound-settings[data-muted="true"] .avatar-sound-glyph{-webkit-mask-image:url('brand/sound-off.svg');mask-image:url('brand/sound-off.svg')}
+.avatar-sound-popover{position:absolute;z-index:80;right:0;top:calc(100% + 8px);width:220px;max-width:calc(100vw - 28px);padding:16px;border:1px solid var(--line,#dedee3);border-radius:16px;background:var(--panel,#fff);color:var(--ink,#1d1d1f);box-shadow:0 10px 35px #0002;font-family:inherit;font-size:13px;box-sizing:border-box}
+.avatar-sound-switch{display:flex;align-items:center;justify-content:space-between;gap:16px}
+.avatar-sound-switch input{width:18px;height:18px;min-height:0;margin:0;accent-color:var(--accent,#0066cc)}
+.avatar-sound-volume{display:block;margin-top:16px}
+.avatar-sound-volume>span{display:flex;align-items:center;justify-content:space-between}
+.avatar-sound-volume output{color:var(--muted,#626268);font-variant-numeric:tabular-nums}
+.avatar-sound-volume input{display:block;width:100%;height:26px;min-height:0;margin:8px 0 0;padding:0;accent-color:var(--accent,#0066cc)}
+.avatar-sound-popover p{font-size:11px;line-height:1.6;color:var(--muted,#626268);margin:12px 0 0}
+@media(max-width:650px){.avatar-app-icon{width:28px;height:28px}.avatar-brand-heading{gap:6px}.avatar-sound-settings summary{width:32px;height:32px}}
+@media(prefers-reduced-motion:reduce){.avatar-sound-settings *{scroll-behavior:auto}}

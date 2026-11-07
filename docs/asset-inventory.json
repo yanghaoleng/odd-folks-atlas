@@ -1,0 +1,1658 @@
+{
+  "project": "Odd Folks Atlas",
+  "version": "1.0.0",
+  "assets": [
+    {
+      "path": "dist/assets/accessory-bow-white.png",
+      "bytes": 111099,
+      "sha256": "c1730e341d79bd13cc22d477d91e850fbae5b24b965208d454488630aaa266e6",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/accessory-scarf-white.png",
+      "bytes": 193009,
+      "sha256": "83000d677fe4f65b2569aa48d1b5f15b8bb78cf4a4ec0d5cb195e7bd40bda7b9",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/accessory-tie-white.png",
+      "bytes": 93483,
+      "sha256": "aa26d5e4014d900983d5ca094b2786d7150953b61da2e46b72b720f3ec146d0f",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/animal-bear.png",
+      "bytes": 804211,
+      "sha256": "d75a26987df78173f3921a8698e1d8b4671ac185e7ab767a47d8c7b4605a6b05",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/animal-cat.png",
+      "bytes": 783679,
+      "sha256": "c6f1fb6e2129da14268e1634d2dd2fe09fc710a23e654132f4a9b08c198a3a66",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/animal-deer.png",
+      "bytes": 637564,
+      "sha256": "0d788d32c26ecc2a7aa6a10e416556400ef7dc12cb77eedd58b64e1283af491c",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/animal-dog.png",
+      "bytes": 568822,
+      "sha256": "dd89c962398f294de8545411a45dfcec3f228528090f3f1e74803bd92fc456b9",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/animal-fox.png",
+      "bytes": 548560,
+      "sha256": "d8de884d8d966f8ac9f3f175f05089244c55ff2c75d8d9390877571c4da13f8e",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/animal-goldfish.png",
+      "bytes": 533166,
+      "sha256": "f30c5f21d28f4037c25017294ed70b17205b367115c42e4f4f9c1f89050d915d",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/animal-otter.png",
+      "bytes": 597464,
+      "sha256": "c8b0a6e9576268e8c44d9247cc139d14bd32a03b5d2a1862055521bc1d80ca67",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/animal-owl.png",
+      "bytes": 825837,
+      "sha256": "d094717fbb5571e799e7f699d31af2e95bcb04ec91e586c9f6acb951af8c528c",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/animal-panda.png",
+      "bytes": 658598,
+      "sha256": "68d34b81f39632b4066c5c83d94b62656f9fbbf6c2b018c54cb7883caab43383",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/animal-penguin.png",
+      "bytes": 655342,
+      "sha256": "7203a7309320f349058a5a8da1501aa786a19f1e614a7b4964d9493e7bf0a563",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/animal-rabbit.png",
+      "bytes": 492639,
+      "sha256": "c188cb3410d24e539dc09a9ff955b2df6dfe7eb56c64aa7fd87fd5fba85628c1",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/animal-seal.png",
+      "bytes": 559214,
+      "sha256": "b58bfca764e8c1b5cbd7db32fa36dff907f80198028d6277a58e7f128bc7d3ab",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/avatar-128/accessory-bow-white.webp",
+      "bytes": 1050,
+      "sha256": "7bce80b663eb7db1f346a01539cc4e794104b6fc092e02c85ca429618e26936c",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/avatar-128/accessory-scarf-white.webp",
+      "bytes": 1422,
+      "sha256": "1013c27423be22ae0ff207a9120834609d37c2f3b98439d1f193167f18d638d4",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/avatar-128/accessory-tie-white.webp",
+      "bytes": 930,
+      "sha256": "2c9068135410c6b1c42ee30ee16dc7662abac67b71b51eb11fc46d89c6abb4b5",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/avatar-128/animal-bear.webp",
+      "bytes": 2734,
+      "sha256": "988a11e8b5f846a954b683f0a0649e0d6065f0d84efede9ec50ab37946386523",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/avatar-128/animal-cat.webp",
+      "bytes": 2892,
+      "sha256": "58aee86a8df04ae55a5cdb20d2db8a717fa497898331bd69ccd1a38ef47e1d10",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/avatar-128/animal-deer.webp",
+      "bytes": 3500,
+      "sha256": "0b06e9d5b25e07f95693c356a9c445453e2d36f154e50775e35894ee23c28cbc",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/avatar-128/animal-dog.webp",
+      "bytes": 2228,
+      "sha256": "41ac5ccaa6710e7607a6d342fdf438bca1579299f1340df45c58e4f95fa00e4a",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/avatar-128/animal-fox.webp",
+      "bytes": 2472,
+      "sha256": "5101cf9666a28d0b7bc5f19c4142bf9d1b500c66ec63c5630583f860fea81c3a",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/avatar-128/animal-goldfish.webp",
+      "bytes": 2434,
+      "sha256": "39372d28808113aaadf88e7b033c8a793c4f00ff5613487c3938d662da999be7",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/avatar-128/animal-otter.webp",
+      "bytes": 2414,
+      "sha256": "c223c79df16e0225ebbfc80b5a827f9995be27f09385231566d56f51ff227b75",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/avatar-128/animal-owl.webp",
+      "bytes": 3196,
+      "sha256": "9f8b58ae46de792ad7cd871fa8e66feb2d5515687552b2d2d987e0ebafe01e3a",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/avatar-128/animal-panda.webp",
+      "bytes": 2632,
+      "sha256": "ca928861196e1ad74a9c68e5eea9b2dcc9b9ffc3a1180781ee2139ceaf88dd12",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/avatar-128/animal-penguin.webp",
+      "bytes": 2292,
+      "sha256": "6df9efe08c36e8087bcf7f200709cfbae1fca64e671e3cedb4b4730b70bd0742",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/avatar-128/animal-rabbit.webp",
+      "bytes": 2182,
+      "sha256": "8bdd7788eb10b1fe52dac60911d3ec44afb28f15a02105bc860d1dea3885a4ff",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/avatar-128/animal-seal.webp",
+      "bytes": 2394,
+      "sha256": "c9f7388dc07890610c5e2b5b24b1cf2cdcb499b7315e82ce30450d9067d20d95",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/avatar-128/mood-heart.webp",
+      "bytes": 912,
+      "sha256": "b587980ed3306006ee29b05d19de8e9ea20a094c709437df41af78ed391edb21",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/avatar-128/mood-idea.webp",
+      "bytes": 1040,
+      "sha256": "a5bff026487172775f884ba4ded64e04ad91acaf347a61eec9aa64f45b80ad08",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/avatar-128/mood-music.webp",
+      "bytes": 1168,
+      "sha256": "d871efe1ab65b3d37cc2f6781c470afe9c339bc447d4789007ae5f26b48049b1",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/avatar-128/mood-sleep.webp",
+      "bytes": 970,
+      "sha256": "154fdd3ba929d450732eddc8f92f72b7f90278f2fcea0ba14ebc946fe85e5199",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/avatar-128/mood-sparkle.webp",
+      "bytes": 930,
+      "sha256": "1fa2a56b74b3cd26812de7fd1ea0a2b76333137098d19bc9e3b588ebcf3b8bdb",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/avatar-128/mood-surprise.webp",
+      "bytes": 998,
+      "sha256": "5b73637352c18bdf4b5e3535389f4f2fe2ddc82152c5038539fb943571c80bbb",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/avatar-128/mood-sweat.webp",
+      "bytes": 980,
+      "sha256": "8b3410df51dd28f25ffb6ea8feebce9ededf8e6b02f01956c34bcb70a64e4bc4",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/characters-v1/character-axolotl.png",
+      "bytes": 824616,
+      "sha256": "5b012ee219588771c15060760c659fe975183339591a5d7ee9a99cfd98bc2963",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/characters-v1/character-cloud.png",
+      "bytes": 777274,
+      "sha256": "970f59d3684dd494196ca67b9341bf7c7e0dd2a46c8a67410f801585928b285a",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/characters-v1/character-mushroom.png",
+      "bytes": 846958,
+      "sha256": "61997230171ee44ec9e74a12f309cca606443f717574f90f939ee3f32f2bbe08",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/characters-v1/character-robot.png",
+      "bytes": 717979,
+      "sha256": "d490bbbb1bc898467672cf3942e30d21ce2efa6460b6b7a35d50c0f9567b8631",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/characters-v1/character-star.png",
+      "bytes": 791644,
+      "sha256": "bd0c69418be3a91240e081c84bb353c62fbe48b1e50248316759444f009f66f0",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/characters-v1/character-unicorn.png",
+      "bytes": 915696,
+      "sha256": "8ab9a1fea304d65319545ca02c39a2d1adea05bd7ee9cc9c900d9967c816c9c1",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/characters-v1/visor-mecha-ice.png",
+      "bytes": 569475,
+      "sha256": "440986c6c9374092a77a3cf3a3cf2a34a9e2301e088edc42a5a9e4f868755211",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/characters-v1/visor-sport-mint.png",
+      "bytes": 928252,
+      "sha256": "40e05ff8006d5fa1b7acd42c6e41f6cb9ca170183fcec60047602e0caab3deff",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/mood-heart.png",
+      "bytes": 69922,
+      "sha256": "7230101f5783fc665a1b332ba5a62715ef6eb9d27042b44faa79441993197643",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/mood-idea.png",
+      "bytes": 64973,
+      "sha256": "fa4c140f82ef6284d82db0da9f7f70a3ffc834bc7235c0e9bfa4458363fd0953",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/mood-music.png",
+      "bytes": 77936,
+      "sha256": "39cf614280fd1817d1b9f31b6372895dfa82d50a59e5f8406d5ab207266f13d3",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/mood-sleep.png",
+      "bytes": 50778,
+      "sha256": "d979025ae5bf5625b0e3d8b10df8a0597f75d4db96a8289d8a854a03f0ae77a8",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/mood-sparkle.png",
+      "bytes": 61326,
+      "sha256": "4e19cd7bb7245da4d28456bb2c46c5bbfa377229cab5a67644c18d49236a3087",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/mood-surprise.png",
+      "bytes": 61355,
+      "sha256": "085e01bc6ea09cb15e1f723a73807ef70dbc94fe0841da6b77ee95f4c382f27c",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/mood-sweat.png",
+      "bytes": 84762,
+      "sha256": "03fa43a746887fcece9f421fa8b76362378fcc30da6fbc315aa08a89c17c4d2d",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/resources-v3/128/accessory-bandana-white.webp",
+      "bytes": 952,
+      "sha256": "f2d12e4b48baf7388d467f5042c92cb8825dc0a669874750e0c980edab173ad7",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/resources-v3/128/accessory-bow-white.webp",
+      "bytes": 1082,
+      "sha256": "a1152f10a1aabf357731b23d36bb7b3901337e5539cd1d63c2b6101b24ed8729",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/resources-v3/128/accessory-cowl-white.webp",
+      "bytes": 1162,
+      "sha256": "0e161f20d870dfd06c6180a21f502d901e24eed72fe6efdf9d8a0cb7a9c2a5be",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/resources-v3/128/accessory-ribbon-white.webp",
+      "bytes": 1006,
+      "sha256": "778f6d45bb045865a35124acf0d5c7ee65077d4baf88cb222db2df67850178be",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/resources-v3/128/accessory-ruffle-white.webp",
+      "bytes": 1246,
+      "sha256": "73e6775c09c20a07750de2f04b5a59811dd4715530838367ea0b4a951e9839ac",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/resources-v3/128/accessory-sailor-white.webp",
+      "bytes": 1004,
+      "sha256": "f2098c02caf971a7ae533fc8122e537a831d964584a8f850306f50c6aefa4eb6",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/resources-v3/128/accessory-scarf-white.webp",
+      "bytes": 1514,
+      "sha256": "6bfc886871c68eec4950e421b5aa47ae5219f2bfc0dfa7eb70887ceaf9ceaca1",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/resources-v3/128/accessory-tie-white.webp",
+      "bytes": 938,
+      "sha256": "abe3530eb2f66315ea25f626a07762df72de74e4971b77b12fb2d9a9acfb9536",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/resources-v3/128/animal-alpaca.webp",
+      "bytes": 2452,
+      "sha256": "5559be5d4e9b1147d0da66984957603f59f0b1d8076333c72eb8f7652928b6a1",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/resources-v3/128/animal-axolotl.webp",
+      "bytes": 3624,
+      "sha256": "080fceff689843323a52f3a0fa68b5bf0190255618c97185227cb61b09e0f9ca",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/resources-v3/128/animal-bat.webp",
+      "bytes": 3228,
+      "sha256": "3589921f3eb9394f872c312d64d47b54b8c4ccb4db051695cf4ff6e97c85b367",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/resources-v3/128/animal-bear.webp",
+      "bytes": 3222,
+      "sha256": "6b316decdcc3d00c3b5d89e9608b5f20feb7ac77b546136cbcfe3815001beb38",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/resources-v3/128/animal-beaver.webp",
+      "bytes": 2976,
+      "sha256": "c59f1011ca2f8009af0c0ff3d47ae73be2d8e9ca0604b74a985f8d59e7ebd616",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/resources-v3/128/animal-capybara.webp",
+      "bytes": 2832,
+      "sha256": "00bca5627d50fa8608e2f725e2da261141d0d558cd74ebfc79d6aba0e7505ed9",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/resources-v3/128/animal-cat.webp",
+      "bytes": 3368,
+      "sha256": "5636413edadc9b07bc32c20f1113048907b99186ac95e4195a16375e5ea21f9e",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/resources-v3/128/animal-chick.webp",
+      "bytes": 3790,
+      "sha256": "546534627023518a4c58bc5762584eac9ca2ee538e92a92b2041e1347fd8002a",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/resources-v3/128/animal-cow.webp",
+      "bytes": 3270,
+      "sha256": "ffe62602386b013046531aed24c24e04a1be5a964ba238ead872689c1c1cce28",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/resources-v3/128/animal-deer.webp",
+      "bytes": 4038,
+      "sha256": "77274691a44b8a44b477b6c6b8f221de5c83d9618a999affcf817b79cabf49cd",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/resources-v3/128/animal-dog.webp",
+      "bytes": 2622,
+      "sha256": "49cc9c48a9b00d912f1133dedc637567a6f78b2ade770e28e772d52bf86cb283",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/resources-v3/128/animal-dolphin.webp",
+      "bytes": 2944,
+      "sha256": "d26682c9305d2dc174a591283b97363134f75b1d10a8ac0ff1000cff80544533",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/resources-v3/128/animal-duck.webp",
+      "bytes": 2790,
+      "sha256": "6e4f9c24f7c542107e46528afc502beef704fd76e7501c3e2e32398f9ebc96eb",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/resources-v3/128/animal-elephant.webp",
+      "bytes": 2598,
+      "sha256": "08903b98aba4c214e59bcb07a312fdf37b0cbd94b3c4b8915da0a2824aab2854",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/resources-v3/128/animal-flamingo.webp",
+      "bytes": 2588,
+      "sha256": "acbea1bb30a7ae527e2840ac58d0bbabc985187f4515da5569b6f49b84263693",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/resources-v3/128/animal-fox.webp",
+      "bytes": 2954,
+      "sha256": "b85360e9d9068d9be528961cafcd0125bd4e04e5011f7ac99390adc649c1968b",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/resources-v3/128/animal-frog.webp",
+      "bytes": 3026,
+      "sha256": "c987442b027fdb99b56515cdf952f9d2e675f2a425bef1eaffac96673503a09e",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/resources-v3/128/animal-giraffe.webp",
+      "bytes": 3636,
+      "sha256": "abc22e82ef27489fc06ad77481578aec5e5be8fb3835168e1e82dd7b3947b4b5",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/resources-v3/128/animal-goldfish.webp",
+      "bytes": 2790,
+      "sha256": "22d1217351243da662c62f256c7d8ea2a15929c180892bd510476f88b6740c54",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/resources-v3/128/animal-hamster.webp",
+      "bytes": 2854,
+      "sha256": "ff51a43a51b5e30139e358fb41ee5fdcbefc70791152e74b698ae01a4fdf8d16",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/resources-v3/128/animal-hedgehog.webp",
+      "bytes": 3732,
+      "sha256": "afca0ca4e8197175b69aea4af6a1a7197dd3015b727774b95639c648461333d1",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/resources-v3/128/animal-hippo.webp",
+      "bytes": 2972,
+      "sha256": "e97d0dce86633144e56f5ce72756f61160df7fbbe8a42ebd50f54d9c4696356c",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/resources-v3/128/animal-horse.webp",
+      "bytes": 3236,
+      "sha256": "3c6486fccf299ebe553d88981fd0abb3f05f559f25539e1c080d67386c9c05f6",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/resources-v3/128/animal-kangaroo.webp",
+      "bytes": 3028,
+      "sha256": "9a6addced6f821cd7464b7d21f802a9d11056d4cb20fc1c0c5a943992764ac6d",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/resources-v3/128/animal-koala.webp",
+      "bytes": 2636,
+      "sha256": "faaac707fd4bec076dacc16dd0362ebd2aaab38d374d4756c1c765aa1ca53a1b",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/resources-v3/128/animal-lion.webp",
+      "bytes": 3352,
+      "sha256": "23802782991fd441d451a7d8c5a0f0b0f61fee5ef92afb1c0d0a170a4500a68a",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/resources-v3/128/animal-monkey.webp",
+      "bytes": 2964,
+      "sha256": "a92af10587d51ca8023cee861ccae3618281b9ca030ac6c5fabd479bf25a305e",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/resources-v3/128/animal-otter.webp",
+      "bytes": 2844,
+      "sha256": "a56862839be1f5218f25eb0f580f4292fae734e09dae79033ba7bd144379fea2",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/resources-v3/128/animal-owl.webp",
+      "bytes": 3772,
+      "sha256": "863597e179f9ab686169785e6697292adb0d0d579ea8776f2fb7dc27e3a2720b",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/resources-v3/128/animal-panda.webp",
+      "bytes": 2982,
+      "sha256": "5eb48e3e25efa8e860bedc6b9a4252a057a5158939e443c801370b96e79c7298",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/resources-v3/128/animal-parrot.webp",
+      "bytes": 3604,
+      "sha256": "e8bffca8c3547c13ca96a617d8a7ff0018e877a085221e305232bc835e8da8b5",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/resources-v3/128/animal-penguin.webp",
+      "bytes": 2572,
+      "sha256": "790174f7302b41f8af4aacca04a8b3d90c889b0ab45a0642601f8731c70b3129",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/resources-v3/128/animal-pig.webp",
+      "bytes": 2604,
+      "sha256": "12d1d906a5c6d2ca62bab5309b695f9fadcacf215134d394fd38d7ac3c9186d7",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/resources-v3/128/animal-rabbit.webp",
+      "bytes": 2448,
+      "sha256": "b695f6667ce774f1c2ca61eff35cd778d343b7bdfab87e182c6a64eed9e687f1",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/resources-v3/128/animal-raccoon.webp",
+      "bytes": 3100,
+      "sha256": "e455c07aaf94e52a91e2ad47a181002dfef904b12267631a4a12d97cc339befb",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/resources-v3/128/animal-redpanda.webp",
+      "bytes": 3880,
+      "sha256": "fd03fbd1772e3a105c7b60805a94dff950c7f2cf20d6e9187875218278bcbe1a",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/resources-v3/128/animal-rhino.webp",
+      "bytes": 2700,
+      "sha256": "4023366a161f722d44307aa52bb80b81406ad37fdf64617b67e5e7c56492f795",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/resources-v3/128/animal-seal.webp",
+      "bytes": 2854,
+      "sha256": "afa36ac09f3a9fe9d92e897369ade745313d24012eb89a1e0aa19eb3e986151e",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/resources-v3/128/animal-sheep.webp",
+      "bytes": 2392,
+      "sha256": "81f73606a4fb2da4c625940c0f515c6875d842abd494440632f29072c2ede65e",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/resources-v3/128/animal-sloth.webp",
+      "bytes": 3122,
+      "sha256": "3e36e5815221378fa1f8ec436ea7b74bbe8323ca908c133bc3558998a27cfbbf",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/resources-v3/128/animal-squirrel.webp",
+      "bytes": 2742,
+      "sha256": "90709afa4694604be9a0598a58ba7813a983b6a691cabdb0501d9cfd129c9eef",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/resources-v3/128/animal-tiger.webp",
+      "bytes": 3882,
+      "sha256": "7ff49ae7aeddbc9534f8d4b437735a45368082fd37b38400310c7c4ee7a375e4",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/resources-v3/128/animal-turtle.webp",
+      "bytes": 2918,
+      "sha256": "e721f7a4e98aa35aea186240a7bef858086e81e1dceb604154485b465a350d4b",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/resources-v3/128/animal-whale.webp",
+      "bytes": 2530,
+      "sha256": "c721550b2aa802e638798ba431afe571761244516bcddfafd75bc8a62c246903",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/resources-v3/128/animal-wolf.webp",
+      "bytes": 3354,
+      "sha256": "5cf832070944b8eeddd307b2185b3a2b0f5ef6cb27cc03d9121b45d729ceb930",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/resources-v3/128/animal-zebra.webp",
+      "bytes": 3804,
+      "sha256": "51bbf67b954558ea27895b11f0e5f4009fa4d33c9d5f77db941931e801a2af87",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/resources-v3/128/character-axolotl.webp",
+      "bytes": 3830,
+      "sha256": "9412b8504e52a1020c6560fa158bf15472cbc870aaf034dfd60a772cd9eb7a4c",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/resources-v3/128/character-cloud.webp",
+      "bytes": 2828,
+      "sha256": "715870538544569e4eb50229cf2bb95c13fd316879a795c9710dcf99c8c4f524",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/resources-v3/128/character-mushroom.webp",
+      "bytes": 3324,
+      "sha256": "c6b7a0488fa169a08d313c7452f80e3b6c071c631658671e732c66ef34bed140",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/resources-v3/128/character-robot.webp",
+      "bytes": 2820,
+      "sha256": "5b7b328069a36b7693c1a5ef8fb819974677e667bf07cf222443dbfd45f7f702",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/resources-v3/128/character-star.webp",
+      "bytes": 3002,
+      "sha256": "74cc436b78fa368fe4a4898e468a01dce6f996d8feb8eed35685c32226dcfd18",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/resources-v3/128/character-unicorn.webp",
+      "bytes": 3572,
+      "sha256": "4650fd9dfe31ccafce8296db5d4f0cadc27014a515c3db6a56b1e6c9d44041d8",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/resources-v3/128/mood-anger.webp",
+      "bytes": 1374,
+      "sha256": "281bbeda1db013fec30c30e5bf78f94ee5591829ab533c6fadd64eae2737e4e7",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/resources-v3/128/mood-blush.webp",
+      "bytes": 900,
+      "sha256": "004eb9e2968078fde75d4131f16a8062df8d70247a8d56da1503e8c76c20f359",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/resources-v3/128/mood-dream-single-bubble.webp",
+      "bytes": 6986,
+      "sha256": "e444b9e632b2cfaa5df89b0c5aa52b9fefcaf2816e9d7ba7c1087202465671a0",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/resources-v3/128/mood-flower.webp",
+      "bytes": 1148,
+      "sha256": "4b4b5af7e089549caf7b5cd13ae8958412554f2b23ed715d41922120a5478b31",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/resources-v3/128/mood-headband-front-only.webp",
+      "bytes": 2388,
+      "sha256": "6f40c627c97a4056ae9c2852a83d3834b295c5cdf852ac8f73da6c5e7f1b48f7",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/resources-v3/128/mood-heart.webp",
+      "bytes": 1020,
+      "sha256": "6fdb521e287bf4e231b734d9b19d743086cc0a8939055595c8f3f719e2979a50",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/resources-v3/128/mood-idea.webp",
+      "bytes": 1068,
+      "sha256": "937a762baa556157b9a18dda844138524cf630bbba160a0f412ff23a3f7c9661",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/resources-v3/128/mood-leaf.webp",
+      "bytes": 944,
+      "sha256": "2fd0dab8adfe3daa485fea351c9bd752a2a184a3b12f09d9e770470193e3e36c",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/resources-v3/128/mood-moon.webp",
+      "bytes": 1284,
+      "sha256": "929e11b987b8602021e79ea111b4a13ed699f260ffed3c4c5b4fddc6cb794359",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/resources-v3/128/mood-music.webp",
+      "bytes": 1326,
+      "sha256": "a4ecbe2b6ad70e919a4f17da67b968dc698ce3a1cca6216b03d97c380ab6c350",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/resources-v3/128/mood-question.webp",
+      "bytes": 898,
+      "sha256": "4a34d3821d74ddde03e57ccfce69a6b5915ee15720099fc7b760c98015bc8469",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/resources-v3/128/mood-rainbow.webp",
+      "bytes": 1018,
+      "sha256": "e1cd8aa73c5ad59cb2100b153475e91beda1ae508605a9699f9983a57ed2b357",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/resources-v3/128/mood-raincloud.webp",
+      "bytes": 974,
+      "sha256": "3473e5008e45e29ba330014e74049ddf65feb730bdc2693019523f57957c66bf",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/resources-v3/128/mood-sleep.webp",
+      "bytes": 1006,
+      "sha256": "895cfc0d6f58c208b875ee98d7f06c4fbfd5b9d815667f37da35bbfe8f474502",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/resources-v3/128/mood-sparkle.webp",
+      "bytes": 1080,
+      "sha256": "c2119339daffbee79c4f373194c77e7f3acb50ebdecc4c2dc3f9d5a36769fe02",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/resources-v3/128/mood-sunglasses-aqua-shield.webp",
+      "bytes": 3836,
+      "sha256": "2d5b310d9a0721b3e9930b753382d248313d28e01f1e1fdc2a0b1aba7b7431f2",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/resources-v3/128/mood-sunglasses-lilac-angular.webp",
+      "bytes": 3130,
+      "sha256": "fb876ba64d6e99af3fd1cb359d21680402d9dd9191bb598babc7c82f848cb4aa",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/resources-v3/128/mood-sunglasses-rose-star.webp",
+      "bytes": 6140,
+      "sha256": "7fe93326bb9358ce3292f432319ce683b0bb5ccdeeb72812c10de26edd5fd334",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/resources-v3/128/mood-surprise.webp",
+      "bytes": 1068,
+      "sha256": "69281c2b1bdb1e301faf71903d73479cffceef474b0a2f49873d848ab58f05e8",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/resources-v3/128/mood-sweat.webp",
+      "bytes": 1036,
+      "sha256": "67071adbe9bce69099c116cbe933cc299d8ab26305f0b418c8a93b66158eb0eb",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/resources-v3/128/visor-mecha-ice.webp",
+      "bytes": 2148,
+      "sha256": "2c7bc95f4bda7d46cba30c431bf7c14e9a1bb723009d36604a832e255c17c4f9",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/resources-v3/128/visor-sport-mint.webp",
+      "bytes": 3652,
+      "sha256": "51b7b721dd2d8e2274b23a95b4a62c4f5f477eb4d61e0d10d6aca980827dd0ed",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/resources-v3/accessory-bandana-white.webp",
+      "bytes": 52680,
+      "sha256": "7d9aa2e81e28a469d6aa8e596e01569dd281c66e03945a983d9974879212022b",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/resources-v3/accessory-bow-white.webp",
+      "bytes": 69086,
+      "sha256": "d206fe1091a372900d7c459a99ca1643fa587630326824de51bb0102f044350a",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/resources-v3/accessory-cowl-white.webp",
+      "bytes": 93480,
+      "sha256": "c11507d4cb22d09cbfd378bd0ef2e9ca02b1d5a3be2a18d1ee2de105f46c3ecf",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/resources-v3/accessory-ribbon-white.webp",
+      "bytes": 53136,
+      "sha256": "4f4111920550dfcb725f22a77104034307cf2582da627ac11baf26059e1a7322",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/resources-v3/accessory-ruffle-white.webp",
+      "bytes": 89748,
+      "sha256": "91d4659cd008d6b2c42e15389969018d546cfcacef1d779226e9ff7fbbc6ca81",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/resources-v3/accessory-sailor-white.webp",
+      "bytes": 53012,
+      "sha256": "4771e32cfa09792cec1297698461b3c6ceac909649026f294bb649e8be7bf088",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/resources-v3/accessory-scarf-white.webp",
+      "bytes": 135606,
+      "sha256": "5ef50962dafc8906d14dca8847053ea0f9d5c2e06f3b52a921282c5c7b466643",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/resources-v3/accessory-tie-white.webp",
+      "bytes": 54434,
+      "sha256": "dbde5dda103a9dd20b94bb80dd1f9556ba11e020a37a67453266db126b3bcefc",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/resources-v3/animal-alpaca.webp",
+      "bytes": 302272,
+      "sha256": "6c0c8d4d49f7ca6d6e822ce51d27285fd8830c0a19d5f0534b03565b3d71b1dc",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/resources-v3/animal-axolotl.webp",
+      "bytes": 369452,
+      "sha256": "180415de2108ddd8d21d0ff38147a7b7582d9d3fb5f0e4ef9c3a9f7ebf2f1455",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/resources-v3/animal-bat.webp",
+      "bytes": 466872,
+      "sha256": "9cbb487319b106160c04c0f7172b5f7be32e4c2d4022c43ff77460204cf65609",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/resources-v3/animal-bear.webp",
+      "bytes": 553318,
+      "sha256": "395465aa86637e49f2e62e5b630f6aab86d7235b7a6adfb5c2641ac56e0ed307",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/resources-v3/animal-beaver.webp",
+      "bytes": 464002,
+      "sha256": "e9221f1a4452d899207050108ee3fc2ff2e70cbe99bea9acd0d37ac068ab001d",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/resources-v3/animal-capybara.webp",
+      "bytes": 462790,
+      "sha256": "1c414b63a2c74d737e618cbbe26891365714be79b85f4cb555118ff14badf19b",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/resources-v3/animal-cat.webp",
+      "bytes": 519936,
+      "sha256": "0588f3c6438e5be53acee0545bd11236c70d149cf8b5ff53861537652646697e",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/resources-v3/animal-chick.webp",
+      "bytes": 484882,
+      "sha256": "387d6ea746ac2def5c0aa65bcc63892a22cf09dbb74720f3ab23268ce147ff4f",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/resources-v3/animal-cow.webp",
+      "bytes": 420918,
+      "sha256": "3727b0c49b14e7d210a0f10bc4766c354423acb712edf0e10a20693755d1afb2",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/resources-v3/animal-deer.webp",
+      "bytes": 434952,
+      "sha256": "7937ca4d03d1b550d209c50e0b167c9590e7b0b3e1033fec32291aad0a4ca99e",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/resources-v3/animal-dog.webp",
+      "bytes": 400932,
+      "sha256": "eebc12f3e825f94216c708ca5859cceebe84b059a0b335f761841c6ca8142358",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/resources-v3/animal-dolphin.webp",
+      "bytes": 420228,
+      "sha256": "c331ccadc7085306b2aaf188a8376683f103fdf1778f53bfce78a94379e7b304",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/resources-v3/animal-duck.webp",
+      "bytes": 394842,
+      "sha256": "a370e015b4713038348f16f9006922c0a0eee3d474720cfcd0835a09d499c870",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/resources-v3/animal-elephant.webp",
+      "bytes": 425778,
+      "sha256": "66d60e905599058102c06aee8a8f05c29ffe3454ecee801ff1c223e9b8d1c051",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/resources-v3/animal-flamingo.webp",
+      "bytes": 419734,
+      "sha256": "70a454478a34baae683c80c4400d5476dd965eee7f0d886f33b364ebbf18c926",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/resources-v3/animal-fox.webp",
+      "bytes": 385756,
+      "sha256": "3832477c97ef3606031b7e44b5e60c591941b2dbbcd4d24179fa84703913c36c",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/resources-v3/animal-frog.webp",
+      "bytes": 474068,
+      "sha256": "5acea872e1ed6850ed6f81a311fc5a36a1e12c4e61896fbe7a2dd0a1d5e95401",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/resources-v3/animal-giraffe.webp",
+      "bytes": 455710,
+      "sha256": "d820c250ab3887d720d3c8f2aa65069a0612b009ada049b06535950980c511be",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/resources-v3/animal-goldfish.webp",
+      "bytes": 377032,
+      "sha256": "55e6b7d8c82131a6b2366cfb7b49b4062494ad39c5ea7c09a3040a3e87b0a48b",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/resources-v3/animal-hamster.webp",
+      "bytes": 467936,
+      "sha256": "6b43f8844e56888019897455e5e2210318e615f277f35ce86ce8881f693cb24c",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/resources-v3/animal-hedgehog.webp",
+      "bytes": 469660,
+      "sha256": "8e0ce12e720a6f90b37a825ae00bc445d2321fccb0c60c8615b1afae92e1ab1e",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/resources-v3/animal-hippo.webp",
+      "bytes": 475202,
+      "sha256": "6d3bddc178b48b58cfab0cf31c5c46be732d5689a7bb6f515f0fdfae2b7c7021",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/resources-v3/animal-horse.webp",
+      "bytes": 366122,
+      "sha256": "d689c76a66f595e6a6fae4e25a82b2bac28980ae61c041eab744ac0bbfe28157",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/resources-v3/animal-kangaroo.webp",
+      "bytes": 378198,
+      "sha256": "d9edcc29a314f8cf4c2719e5d87967469a705630760455d6476e268e266831cb",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/resources-v3/animal-koala.webp",
+      "bytes": 470560,
+      "sha256": "89ef8dfbb07db7d440f899365567435b278a7125dfa69029104f923300945f07",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/resources-v3/animal-lion.webp",
+      "bytes": 452584,
+      "sha256": "02d4102470cee86478c47a07bbfb2fd3055b4b934397ff63442c7c7ad4a5e5f9",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/resources-v3/animal-monkey.webp",
+      "bytes": 416688,
+      "sha256": "e9616fbbd4cbb308520067984c78eb7100a127b41157f6da07436208fe43ab88",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/resources-v3/animal-otter.webp",
+      "bytes": 405880,
+      "sha256": "dbae803f2a3d9609ad883f441a00c37438cd6db4ab1222139b727de1d5e77e3f",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/resources-v3/animal-owl.webp",
+      "bytes": 542770,
+      "sha256": "2ddb01c75f0dfe3f54942028f07920bfd821f32bacaaed6bd59e0e6c4886da8a",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/resources-v3/animal-panda.webp",
+      "bytes": 439894,
+      "sha256": "81e4c58c8aa2e657db490ab50375bb7c587459bc95d1810a253236862d68f99b",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/resources-v3/animal-parrot.webp",
+      "bytes": 483128,
+      "sha256": "dee4500b7d5b3e019fbead046a107941d2e794ec2d406e2f1d1e6ac2387b67d3",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/resources-v3/animal-penguin.webp",
+      "bytes": 445264,
+      "sha256": "25010610966512a4abfb19a9e17716cd65a5eabcdd2433f272990812ee838e9f",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/resources-v3/animal-pig.webp",
+      "bytes": 384308,
+      "sha256": "ed8dc312910b0e6eac3c992c6b965fbe5828a868dbd060a3f4c5b5b578fdd940",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/resources-v3/animal-rabbit.webp",
+      "bytes": 331478,
+      "sha256": "3b29874029c6e9728c27163869814804dbcc6cf8b6b8838ae1e26eb8fa0e39c1",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/resources-v3/animal-raccoon.webp",
+      "bytes": 444760,
+      "sha256": "f46e02ca9bdeaa685cfdc9b2da25e55cabdcb6295969eb4945c5fe898bc5b1c1",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/resources-v3/animal-redpanda.webp",
+      "bytes": 529946,
+      "sha256": "736a773c63c9ee6c801a123c6ab02bc6a682e69f864ea44150cf191089957e9c",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/resources-v3/animal-rhino.webp",
+      "bytes": 394692,
+      "sha256": "e56c2cdf760fef7b03eb34604748d61243922ca04151cdad1b22d81596b9fd16",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/resources-v3/animal-seal.webp",
+      "bytes": 382240,
+      "sha256": "d9d07a36366540fe0573233002276f74a0018c490ab4165ad80d0f560000fe5d",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/resources-v3/animal-sheep.webp",
+      "bytes": 340286,
+      "sha256": "517784d0853cb8ebb7ea4149784ce9e81a40a17fe3ef119959f20a73b4eeaf4e",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/resources-v3/animal-sloth.webp",
+      "bytes": 489668,
+      "sha256": "8e12156e98190a6a553c8dc686881cfac48bf224590ed7129fe6276c7a2616af",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/resources-v3/animal-squirrel.webp",
+      "bytes": 390068,
+      "sha256": "17b8eff918cd5d87c887ca398ca94681fa450d939bcd6dcab61ef782f9ba7431",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/resources-v3/animal-tiger.webp",
+      "bytes": 541358,
+      "sha256": "101d288e862453997d4d81d53d56ed7465544b8ff62220a088a9610f9eb7a5b8",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/resources-v3/animal-turtle.webp",
+      "bytes": 399538,
+      "sha256": "be2bdcdf2229525024e6481790258d35fef3d903169b157e12ea6cddde366223",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/resources-v3/animal-whale.webp",
+      "bytes": 325134,
+      "sha256": "0fe2b4dfdd5bfe24536345701b0218d02bbd372e19d641318e273a134eb3497e",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/resources-v3/animal-wolf.webp",
+      "bytes": 462630,
+      "sha256": "bf928717527f1c619f52c5e4187dbbeac0f8e318daac074ee6dc811bfbbdbddf",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/resources-v3/animal-zebra.webp",
+      "bytes": 453284,
+      "sha256": "897e871e6d92c932599364ffc6f795efaeedad0ea7cf4b701125dfc254e46b2b",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/resources-v3/mood-anger.webp",
+      "bytes": 53990,
+      "sha256": "5466fb64d463d6f7ba0b644925dfcdfa22e4a78cf0f24ca53330ab5151f1111e",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/resources-v3/mood-blush.webp",
+      "bytes": 30310,
+      "sha256": "ff54abb1cfd38210713941d114164b7b3ba1247384150c6567d0e00766e60ce4",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/resources-v3/mood-dream-single-bubble.webp",
+      "bytes": 793804,
+      "sha256": "ff4020e3140bf92100bf6869c8bdcf847ab6ac4769fab015427c7a298bd93449",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/resources-v3/mood-flower.webp",
+      "bytes": 65642,
+      "sha256": "98421b75125997813ae979b8d4f842fc32b7283e194cb133d4f21fd073cacf3a",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/resources-v3/mood-headband-front-only.webp",
+      "bytes": 586538,
+      "sha256": "6ecf5474f648b5a1bf23e7017ceeb492461050a8107eeba41d7a5221ada5d698",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/resources-v3/mood-heart.webp",
+      "bytes": 44378,
+      "sha256": "5e7dfe2f8e5763467bb1288818ec5f87fe1ce4ed2cd57edb20290ba9997bcfb3",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/resources-v3/mood-idea.webp",
+      "bytes": 40184,
+      "sha256": "f69b5dfd49fc4b7356f9ce4f6a30737fb2f75724ab90b1c02b766f94462014aa",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/resources-v3/mood-leaf.webp",
+      "bytes": 56376,
+      "sha256": "12af5e368ec61564f11809d228d318dcf86dc25d5d883d26058af433668ecab2",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/resources-v3/mood-moon.webp",
+      "bytes": 64718,
+      "sha256": "3e8a16369531b48a317cd56c72c7d0fe5a573fc67ae347eeeabbefd9ad51c223",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/resources-v3/mood-music.webp",
+      "bytes": 52726,
+      "sha256": "b742fcd4e0fc0e96a35508e8c7dba0694d7528fed598beb9bf01a1e1432f969a",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/resources-v3/mood-question.webp",
+      "bytes": 34768,
+      "sha256": "b6a3f74b4ca3a2a85434ea2f2ad8ad3012312780e083bb1cfcb5bb4f582737b5",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/resources-v3/mood-rainbow.webp",
+      "bytes": 49130,
+      "sha256": "b0285498f7e524fb8f747bad87ece22738d4a2f85276db8cdad9ce2d3f04b814",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/resources-v3/mood-raincloud.webp",
+      "bytes": 49024,
+      "sha256": "acf6724a54d1d6d8f5c75c60d26e3212a2f1cedbce589ef185e4b4b8c2d0e779",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/resources-v3/mood-sleep.webp",
+      "bytes": 30084,
+      "sha256": "76aec8288474ddd88ef5e7d00cd03906f500dac3827a8a9f7de825c11ebe614b",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/resources-v3/mood-sparkle.webp",
+      "bytes": 39894,
+      "sha256": "3f55af7a450ffa3a67d5bb3b65af3d75cf5860073dedf0c046e1673c75c71ddc",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/resources-v3/mood-sunglasses-aqua-shield.webp",
+      "bytes": 702124,
+      "sha256": "3d49a05d19fe4ad99dd98ed029b65fed09ecfdeb4d5c9d9ebce1fff1b60626b8",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/resources-v3/mood-sunglasses-lilac-angular.webp",
+      "bytes": 267558,
+      "sha256": "bd79e9ce835d92788166125cb24e97de8a69903ea970e9f36080592fd3ce4f5e",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/resources-v3/mood-sunglasses-rose-star.webp",
+      "bytes": 455154,
+      "sha256": "8238f2c0887dd148d8942ea86d683621e9c846bf74c161143f64d834bcf70a98",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/resources-v3/mood-surprise.webp",
+      "bytes": 37382,
+      "sha256": "eed8098d378e808fea16431a562adfd18dd73dbb22443a5fd88a25b7645f7674",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/assets/resources-v3/mood-sweat.webp",
+      "bytes": 53104,
+      "sha256": "dcd1eb0ac05991fecd73ebbf18d417cc8bc4d4f82848e8ca5873f7b63301b232",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/brand/apple-touch-icon.png",
+      "bytes": 24198,
+      "sha256": "e778472ddb242b7ccdb191a70ed1d5a37ec140f2814241a1aae1542e8c1a182b",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/brand/avatar-cat-128.png",
+      "bytes": 18688,
+      "sha256": "343e1fa844d420d880b589ba038e56308511c3a6b0d14ad2530306a7a045f1f2",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/brand/avatar-fox-128.png",
+      "bytes": 16808,
+      "sha256": "fee54a8afeb9750952a84ea0d911c32452d928e97f021e62c278ab552e6a76b5",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/brand/avatar-panda-128.png",
+      "bytes": 17279,
+      "sha256": "a0b3060a44f83804c93843a7c364fded6270f80c8e8e658676226d64c05e05ca",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/brand/avatar-seal-128.png",
+      "bytes": 15404,
+      "sha256": "626f10c47677a1658ec714f02483412684c4f5ab829a2e99b01336dc9921651f",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "dist/brand/sound-high.svg",
+      "bytes": 744,
+      "sha256": "12b7fcad0e7a4649c5891fc14cb41e430f22277c99ef3f74e74162c2357c8ce7",
+      "license": "MIT",
+      "source": "Iconoir 7.12.2; see THIRD_PARTY_NOTICES.md"
+    },
+    {
+      "path": "dist/brand/sound-off.svg",
+      "bytes": 616,
+      "sha256": "b861bb4c7eb77585b62912b2568afc87563c55433ae0dfc30727701ac7c5ef1e",
+      "license": "MIT",
+      "source": "Iconoir 7.12.2; see THIRD_PARTY_NOTICES.md"
+    },
+    {
+      "path": "dist/fonts/JOJOWenYuanUI-Bold.woff2",
+      "bytes": 186964,
+      "sha256": "1d036cdcfe612daec5a1a62b3d82e6394995442027a3d72d623267459c5d5737",
+      "license": "OFL-1.1",
+      "source": "WenYuan Rounded SC 1.100; see dist/fonts/OFL.md and SOURCE.md"
+    },
+    {
+      "path": "dist/fonts/JOJOWenYuanUI-Regular.woff2",
+      "bytes": 179800,
+      "sha256": "2a94c192e5bd87d58c50dcf68d45c8b3cbb881b833172ec61c62faad2dcaa42b",
+      "license": "OFL-1.1",
+      "source": "WenYuan Rounded SC 1.100; see dist/fonts/OFL.md and SOURCE.md"
+    },
+    {
+      "path": "dist/icons/arrow-left.svg",
+      "bytes": 244,
+      "sha256": "28262da7fc0844b07b88154766936b19de19c7fc44804602b41eddc2509ad1bd",
+      "license": "MIT",
+      "source": "Iconoir 7.12.2; see THIRD_PARTY_NOTICES.md"
+    },
+    {
+      "path": "dist/icons/arrow-separate-vertical.svg",
+      "bytes": 317,
+      "sha256": "96b8479db6c7113121cc4dbe4e71b35eddc17c11188c020a9093326c8c8a904b",
+      "license": "MIT",
+      "source": "Iconoir 7.12.2; see THIRD_PARTY_NOTICES.md"
+    },
+    {
+      "path": "dist/icons/book.svg",
+      "bytes": 601,
+      "sha256": "0d19a68dd66e61f0784e821f86a12b7a8707114d8a5689d7fafe0e099a64e364",
+      "license": "MIT",
+      "source": "Iconoir 7.12.2; see THIRD_PARTY_NOTICES.md"
+    },
+    {
+      "path": "dist/icons/cloud-upload.svg",
+      "bytes": 472,
+      "sha256": "f6069d22e564f61268e54e4d64e434ead29d3eb7b920cb259352a056f486375d",
+      "license": "MIT",
+      "source": "Iconoir 7.12.2; see THIRD_PARTY_NOTICES.md"
+    },
+    {
+      "path": "dist/icons/control-slider.svg",
+      "bytes": 500,
+      "sha256": "8b4586dc9b4268917783dbf3cbed14b70e5dc5372e3955ba7f3da08855f0bd4e",
+      "license": "MIT",
+      "source": "Iconoir 7.12.2; see THIRD_PARTY_NOTICES.md"
+    },
+    {
+      "path": "dist/icons/cursor-pointer.svg",
+      "bytes": 437,
+      "sha256": "8e7c0bef36bdd64e292aa89e51342a565a3451c2e6e5b8bbca0279fcf72c47ad",
+      "license": "MIT",
+      "source": "Iconoir 7.12.2; see THIRD_PARTY_NOTICES.md"
+    },
+    {
+      "path": "dist/icons/download.svg",
+      "bytes": 336,
+      "sha256": "f189b865ef0fff2926d268f0d812a2d6635e26b5fbd1ce789859947340eb9db2",
+      "license": "MIT",
+      "source": "Iconoir 7.12.2; see THIRD_PARTY_NOTICES.md"
+    },
+    {
+      "path": "dist/icons/log-out.svg",
+      "bytes": 440,
+      "sha256": "a02e98288d4cd8cf9fe5982d270dc35eb18017021fd117c3516bb0de9774354a",
+      "license": "MIT",
+      "source": "Iconoir 7.12.2; see THIRD_PARTY_NOTICES.md"
+    },
+    {
+      "path": "dist/icons/menu.svg",
+      "bytes": 391,
+      "sha256": "f32e91fcee89cc9c99eed6a6ea059a31d8c65468547cad885bd40bc40ec50c61",
+      "license": "MIT",
+      "source": "Iconoir 7.12.2; see THIRD_PARTY_NOTICES.md"
+    },
+    {
+      "path": "dist/icons/play.svg",
+      "bytes": 383,
+      "sha256": "96f8a58bf714e83a554a478fdc43ee2e21950aef9f0e2fb32e27f922362f6adf",
+      "license": "MIT",
+      "source": "Iconoir 7.12.2; see THIRD_PARTY_NOTICES.md"
+    },
+    {
+      "path": "dist/icons/plus.svg",
+      "bytes": 238,
+      "sha256": "dbd0c9ec345745994d219d9bf30252abe534304e8f006316e14c32c8dbf3fb79",
+      "license": "MIT",
+      "source": "Iconoir 7.12.2; see THIRD_PARTY_NOTICES.md"
+    },
+    {
+      "path": "dist/icons/redo.svg",
+      "bytes": 475,
+      "sha256": "f8519fef188a8e5cbb0a62b8d992b55266673f824b952a732a5caee04daa4ea9",
+      "license": "MIT",
+      "source": "Iconoir 7.12.2; see THIRD_PARTY_NOTICES.md"
+    },
+    {
+      "path": "dist/icons/refresh.svg",
+      "bytes": 458,
+      "sha256": "d7d5ded772fa339b0185d97958606f2214c2f3893f6232402a28633aed8ed282",
+      "license": "MIT",
+      "source": "Iconoir 7.12.2; see THIRD_PARTY_NOTICES.md"
+    },
+    {
+      "path": "dist/icons/shuffle.svg",
+      "bytes": 681,
+      "sha256": "983690045b85a14cfd8e2ff58f87fd8f649fc5770c3c1911eff9d421f4169f75",
+      "license": "MIT",
+      "source": "Iconoir 7.12.2; see THIRD_PARTY_NOTICES.md"
+    },
+    {
+      "path": "dist/icons/undo.svg",
+      "bytes": 480,
+      "sha256": "b460b2f7faea4185b1e3f7497d5d71b992e276655a4a2076302c107067674f02",
+      "license": "MIT",
+      "source": "Iconoir 7.12.2; see THIRD_PARTY_NOTICES.md"
+    },
+    {
+      "path": "dist/icons/xmark.svg",
+      "bytes": 312,
+      "sha256": "61aa0a4913a440aaafcc45064a87e24fe8eb22ba4abc4c5ef020530928ed8daf",
+      "license": "MIT",
+      "source": "Iconoir 7.12.2; see THIRD_PARTY_NOTICES.md"
+    },
+    {
+      "path": "docs/screenshots/catalog-desktop.png",
+      "bytes": 202878,
+      "sha256": "77c7e4b6034b8164563167a6a1307fa879907ac0d255a3c97eb522d2542863a4",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "docs/screenshots/editor-desktop.png",
+      "bytes": 441058,
+      "sha256": "ef67668f988e5f94dbb3d51963698a20fe38657eff2516493072743b8117265c",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "docs/screenshots/editor-mobile.png",
+      "bytes": 227386,
+      "sha256": "cab443212f8f86e3b0ec11e7316d3d6d63734eaa03ec22a8fa10faa9f306fddc",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    }
+  ]
+}

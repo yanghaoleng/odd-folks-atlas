@@ -1,0 +1,83 @@
+/* Scoped to the editor: these guides are DOM decoration, never canvas pixels. */
+.editor-page main{max-width:1140px}
+.editor-stage-column{min-width:0;width:100%;display:flex;flex-direction:column;align-items:center}
+.editor-reference-grid{position:absolute;inset:0;z-index:-1;border-radius:22%;overflow:hidden;pointer-events:none;color:color-mix(in srgb,var(--ink) 10%,transparent);background:color-mix(in srgb,var(--panel) 42%,transparent)}
+.editor-reference-grid svg{display:block;width:100%;height:100%;stroke:currentColor;stroke-width:1.5}
+header nav .catalog-entry{font-size:13px;color:var(--muted);text-decoration:none;display:inline-flex;align-items:center;justify-content:center;min-height:40px;padding:8px 12px;border-radius:10px}
+header nav .catalog-entry:hover{background:var(--soft);color:var(--ink)}
+body.editor-page #materialPanel{position:relative;inset:auto;margin:0;flex:0 0 320px;align-self:flex-start;width:320px;height:auto;max-height:min(670px,calc(100dvh - 110px));max-width:100%;border:1px solid var(--line);border-radius:20px;box-shadow:0 8px 28px #00000008;overflow:auto;overscroll-behavior:contain;padding:0;z-index:5;animation:none}
+body.editor-page #materialPanel:not([open]){display:none}
+body.editor-page #materialPanel[open]{display:block}
+body.inspector-open #editorWorkspace{flex-direction:row;align-items:flex-start;gap:28px}
+body.inspector-open .editor-stage-column{flex:1;padding-top:12px}
+body.inspector-open .editor-stage-column .stage{width:min(var(--workspace-size,360px),100%);height:auto}
+#materialPanel .drawer-head{padding:14px 16px;border-bottom:0}
+#materialPanel .drawer-head h2{font-size:15px}
+#materialPanel .drawer-head button{width:30px;min-height:30px;padding:5px}
+#materialPanel .drawer-body{padding:0 16px 18px}
+#materialPanel .tabs{margin:0 0 18px;gap:2px;border-radius:12px;padding:4px}
+#materialPanel .tabs button{font-size:12px;min-height:36px}
+#layerProperties>label{display:block;margin:14px 0}
+#layerProperties h3{font-size:14px;margin:14px 0 6px}
+#materialPanel #assetLabel{font-size:11px;margin:10px 0 16px}
+#materialPanel .motion-section{margin:18px 0 0;padding:16px 0 0;border-top:1px solid var(--line);border-bottom:0}
+#materialPanel .motion-section h2{font-size:13px}
+#materialPanel .motion-preview{width:100px;height:100px;margin:12px auto}
+#materialPanel .motion-section .hint{font-size:11px}
+#materialPanel .motion-actions{gap:6px;margin:12px 0}
+#materialPanel .motion-actions button{font-size:11px;min-height:34px;padding:6px 9px}
+#materialPanel .field-grid{gap:12px 8px}
+#materialPanel .motion-check{margin:12px 0}
+#materialPanel input,#materialPanel select{padding:8px;font-size:13px}
+#materialPanel .direct-edit-hint{font-size:11px;margin:4px 0 14px}
+#materialPanel .inspector-preview-options{border-top:1px solid var(--line);margin-top:16px;padding-top:14px}
+#materialPanel summary{font-size:12px;color:var(--muted);cursor:pointer;padding:4px 0}
+#materialPanel .menu-primary{margin:14px 0;padding:0;border:0}
+#materialPanel .uid-controls{margin-top:16px;padding-top:16px}
+#materialPanel .sliders{display:none!important}
+@media(min-width:761px){body.inspector-open .editor-stage-column{position:sticky;top:20px}body.inspector-open #editorWorkspace{min-height:390px}}
+@media(max-width:760px){
+ body.inspector-open #editorWorkspace{display:flex;flex-direction:column;gap:0}
+ body.inspector-open .editor-stage-column{padding:0;width:100%}
+ body.editor-page #materialPanel{position:fixed;inset:auto 8px 8px;margin:0;width:auto;max-width:none;max-height:43dvh;height:43dvh;flex:none;border:1px solid var(--line);border-radius:22px;box-shadow:0 -6px 30px #00000012;padding-bottom:env(safe-area-inset-bottom);z-index:8}
+ body.inspector-open main{padding-bottom:calc(43dvh + 24px)}
+ body.inspector-open .editor-stage-column .stage{width:min(var(--workspace-size,280px),calc(50dvh - 174px),calc(100vw - 90px));height:min(var(--workspace-size,280px),calc(50dvh - 174px),calc(100vw - 90px));min-width:140px;min-height:140px}
+ #materialPanel .drawer-head{padding:10px 16px 6px}
+ #materialPanel .drawer-body{padding:0 16px 18px}
+ #materialPanel .tabs{margin-bottom:12px}
+ #materialPanel .motion-preview{width:84px;height:84px}
+ #materialPanel .drawer-head h2{font-size:14px}
+ #materialPanel #assetLabel{margin:8px 0}
+ #materialPanel .motion-section{margin-top:14px;padding-top:12px}
+ header nav .catalog-entry{font-size:12px;padding:8px}
+ body.editor-page header.avatar-auth-header nav{justify-content:space-between;gap:0}
+ body.editor-page header.avatar-auth-header nav button{padding-inline:8px}
+ #redo{margin-right:0}
+ #toast{bottom:calc(43dvh + 22px)}
+}
+@media(prefers-color-scheme:dark){.editor-reference-grid{color:color-mix(in srgb,var(--ink) 9%,transparent)}body.editor-page #materialPanel{box-shadow:0 8px 30px #0003}}
+
+@media(max-width:420px){body.editor-page header nav #batchButton span,body.editor-page header nav #motionOpen span,body.editor-page header nav #panelToggle span{display:none}body.editor-page header nav #batchButton,body.editor-page header nav #motionOpen,body.editor-page header nav #panelToggle{width:36px;padding:8px}body.editor-page header nav #undo,body.editor-page header nav #redo{width:36px;padding:8px}body.editor-page header nav .catalog-entry{padding:8px 6px}}
+
+body.inspector-open #editorWorkspace{z-index:4}
+
+header nav .catalog-entry{gap:5px}header nav .catalog-entry .icon{width:18px;height:18px}
+@media(max-width:420px){header nav .catalog-entry span{display:none}header nav .catalog-entry{width:36px}}
+
+/* One compact, in-flow inspector. Layout never changes the saved avatar. */
+body.editor-page #materialPanel{height:var(--inspector-height,430px);max-height:none;box-sizing:border-box}
+body.inspector-open .editor-stage-column{padding-top:0}
+#materialPanel .drawer-head{position:sticky;top:0;background:var(--panel);z-index:2}
+#materialPanel :focus-visible,#workspaceResize:focus-visible,#mainCanvas:focus-visible{outline:2px solid var(--accent,#667f72);outline-offset:3px}
+@media(max-width:760px){
+ body.editor-page #materialPanel{position:relative;inset:auto;width:100%;max-width:440px;height:var(--inspector-height,300px);min-height:0;max-height:none;margin:10px auto 0;flex:none;border-radius:18px;padding-bottom:0;z-index:5}
+ body.inspector-open main{padding-bottom:24px}
+ body.inspector-open .editor-stage-column .stage{width:min(var(--workspace-size,240px),28dvh,calc(100vw - 80px));height:auto;min-width:0;min-height:0;aspect-ratio:1}
+ body.inspector-open #editorWorkspace{gap:0}
+ #toast{bottom:22px}
+}
+@media(prefers-reduced-motion:reduce){#materialPanel{animation:none!important;transition:none!important}}
+/* Slightly clearer editor-only construction grid; never part of canvas pixels. */
+.editor-reference-grid{color:color-mix(in srgb,var(--ink) 16%,transparent);background:color-mix(in srgb,var(--soft) 55%,var(--panel));box-shadow:inset 0 0 0 1px color-mix(in srgb,var(--ink) 15%,transparent)}
+.editor-reference-grid svg{stroke-width:1.75}
+@media(prefers-color-scheme:dark){.editor-reference-grid{color:color-mix(in srgb,var(--ink) 15%,transparent);background:color-mix(in srgb,var(--soft) 45%,var(--panel));box-shadow:inset 0 0 0 1px color-mix(in srgb,var(--ink) 18%,transparent)}}

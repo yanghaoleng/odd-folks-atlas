@@ -1,0 +1,9 @@
+/* App-like touch behavior without intercepting keyboard shortcuts or OS magnification.
+   pan-x pan-y allows ordinary page scrolling but omits browser pinch/double-tap zoom.
+   Browsers and accessibility settings can override this; no global touch listener. */
+@media (any-pointer:coarse) {
+  html,body{touch-action:pan-x pan-y}
+  body{-webkit-user-select:none;user-select:none;-webkit-touch-callout:none}
+  input:not([type="range"]):not([type="checkbox"]):not([type="radio"]),textarea,[contenteditable="true"]{-webkit-user-select:text;user-select:text;-webkit-touch-callout:default}
+  input,textarea,select,[contenteditable="true"]{font-size: max(16px,1em)!important}
+}

@@ -1,0 +1,8 @@
+:host{display:block;background:var(--bg);color:var(--text,var(--ink));font-family:JOJOWenYuanUI,Wenyuan,system-ui,sans-serif;font-size:16px;line-height:1.5;color-scheme:light dark}
+.catalog-document{min-height:100%;background:var(--bg);color:var(--text,var(--ink))}
+.catalog-document .back{display:none!important}
+.catalog-document main{padding-top:20px}
+.catalog-document .icon{display:inline-block;width:20px;height:20px;vertical-align:middle;flex:none}
+.catalog-document :is(button,a,summary,td,input,select):focus:not(:focus-visible){outline:none;box-shadow:none}
+.catalog-document :is(button,a,summary,td,input,select):focus-visible{outline:2px solid var(--accent,#0066cc);outline-offset:2px}
+@media(max-width:650px){.catalog-document main{padding-top:14px}.catalog-document input,.catalog-document select{font-size:16px}}

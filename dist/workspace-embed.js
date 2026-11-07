@@ -1,0 +1,2 @@
+/* Keep shared links inside the same workspace; the embedded table owns its own draft. */
+(()=>{const embedded=new URL(location.href).searchParams.get('embedded')==='1';if(embedded){document.documentElement.classList.add('workspace-embedded');return}if(window.top===window){document.documentElement.style.visibility='hidden';document.addEventListener('DOMContentLoaded',()=>location.replace(new URL('./?view=resources',location.href).href),{once:true})}})();

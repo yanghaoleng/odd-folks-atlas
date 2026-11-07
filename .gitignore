@@ -1,0 +1,18 @@
+data/
+.env
+.env.*
+!.env.example
+node_modules/
+.DS_Store
+*.log
+
+# Never commit operator credentials or private state.
+credentials.json
+sessions.json
+*.pem
+*.key
+*.sqlite
+*.sqlite3
+*.db
+backups/
+uploads/

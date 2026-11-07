@@ -1,0 +1,19 @@
+{
+  "name": "odd-folks-atlas",
+  "version": "1.0.0",
+  "private": true,
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "start": "node service/self-host.cjs",
+    "dev": "node service/self-host.cjs --local-demo",
+    "test": "node --test tests/*.test.cjs"
+  },
+  "description": "怪可爱图鉴 · Odd Folks Atlas — self-hosted noncommercial avatar editor",
+  "license": "PolyForm-Noncommercial-1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yanghaoleng/odd-folks-atlas.git"
+  }
+}

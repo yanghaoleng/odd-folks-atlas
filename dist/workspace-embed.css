@@ -1,0 +1,5 @@
+html.workspace-embedded body:not(.editor-page) .back{display:none}
+.workspace-embedded main{padding-top:20px}
+.workspace-embedded :is(button,a,summary,td,input,select):focus:not(:focus-visible){outline:none;box-shadow:none}
+.workspace-embedded :is(button,a,summary,td,input,select):focus-visible{outline:2px solid var(--accent,#0066cc);outline-offset:2px}
+@media(max-width:650px){.workspace-embedded main{padding-top:14px}}

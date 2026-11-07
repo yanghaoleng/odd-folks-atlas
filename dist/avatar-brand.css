@@ -1,0 +1,10 @@
+.avatar-brand-heading{display:flex;align-items:center;gap:9px}
+.avatar-brand-copy{display:flex;flex-direction:column;gap:3px;line-height:1.15}
+.avatar-brand-copy small{font-size:9px;font-weight:500;letter-spacing:.09em;opacity:.62;line-height:1.2}
+header h1 .avatar-brand-random{appearance:none;position:relative;display:block;flex:0 0 44px;width:44px;height:44px;min-height:44px;padding:0;border:0;border-radius:12px;background:transparent;cursor:pointer;touch-action:manipulation}
+.avatar-brand-random:focus-visible{outline:2px solid currentColor;outline-offset:3px}
+.avatar-brand-random:hover{background:color-mix(in srgb,currentColor 5%,transparent)}
+.avatar-brand-art{display:block;position:relative;width:44px;height:44px;isolation:isolate;pointer-events:none}
+.avatar-brand-art canvas{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+.avatar-brand-art .refine-avatar-head{z-index:1}.avatar-brand-art .refine-avatar-accessory{z-index:2}.avatar-brand-art .refine-avatar-mood{z-index:3}
+@media(max-width:650px){.avatar-brand-copy small{font-size:8px;letter-spacing:.06em}.avatar-brand-copy{gap:2px}body.workspace-shell>header h1{gap:3px}}
