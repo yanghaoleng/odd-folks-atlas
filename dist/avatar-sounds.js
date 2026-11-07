@@ -8,9 +8,9 @@ const player = createUISFX({
   pack: 'rubber',
   volume: Number.isFinite(saved.volume) ? Math.max(0, Math.min(1, saved.volume)) : 0.28,
   enabled: typeof saved.enabled === 'boolean' ? saved.enabled : true,
-  preferences: { key: preferenceKey }, maxVoices: 2, cooldownMs: 140,
+  preferences: window.AvatarDemo?.active ? undefined : { key: preferenceKey }, maxVoices: 2, cooldownMs: 140,
 });
-const allowed = new Set(['select', 'open', 'close', 'undo', 'redo', 'success', 'error', 'drop', 'reaction', 'complete', 'toggle-on', 'toggle-off']);
+const allowed = new Set(['press', 'release', 'select', 'open', 'close', 'undo', 'redo', 'success', 'error', 'drop', 'reaction', 'complete', 'toggle-on', 'toggle-off']);
 let unlocked = false, unlocking = null, lastPlayed = -Infinity;
 let controls = null;
 const state = () => ({ enabled: player.isEnabled(), volume: player.getVolume(), pack: 'rubber' });
@@ -30,10 +30,10 @@ function play(cue) {
   const requested = performance.now();
   const run = () => {
     if (!unlocked || !player.isEnabled() || player.getVolume() === 0 || document.hidden || performance.now() - requested > 300) return;
-    const cooldown = cue === 'success' || cue === 'complete' ? 600 : 110;
+    const cooldown = cue === 'success' || cue === 'complete' ? 600 : cue === 'press' || cue === 'release' ? 50 : 110;
     if (performance.now() - lastPlayed < cooldown) return;
     try {
-      const sound = player.play(cue, { retrigger: 'restart', cooldownMs: 140 });
+      const sound = player.play(cue, { retrigger: 'restart', cooldownMs: cue === 'press' || cue === 'release' ? 50 : 140 });
       if (sound) {
         lastPlayed = performance.now();
         document.dispatchEvent(new CustomEvent('avatar-sound-played', { detail: { cue } }));
@@ -54,12 +54,12 @@ function renderControls() {
   controls.dataset.muted = String(!audible);
 }
 function setEnabled(value) {
-  player.setEnabled(!!value); renderControls();
+  player.setEnabled(!!value); renderControls(); document.dispatchEvent(new Event('avatar-sounds-changed'));
   if (!value) unlocked = false;
 }
 function setVolume(value) {
   if (!Number.isFinite(value)) return;
-  player.setVolume(Math.max(0, Math.min(1, value))); renderControls();
+  player.setVolume(Math.max(0, Math.min(1, value))); renderControls(); document.dispatchEvent(new Event('avatar-sounds-changed'));
   if (player.getVolume() === 0) player.stopAll();
 }
 function mountControls(host = document.getElementById('avatarSoundControls')) {
@@ -73,6 +73,7 @@ function mountControls(host = document.getElementById('avatarSoundControls')) {
   const detail = document.createElement('details');
   detail.className = 'avatar-sound-settings';
   detail.innerHTML = `<summary aria-label="操作音效" title="操作音效设置"><span class="avatar-sound-glyph" aria-hidden="true"></span></summary><div class="avatar-sound-popover"><label class="avatar-sound-switch"><span>操作音效</span><input type="checkbox" data-sound-enabled></label><label class="avatar-sound-volume"><span>音量 <output></output></span><input type="range" min="0" max="100" step="5" data-sound-volume aria-label="操作音效音量"></label><p>轻轻弹一下。设置只保存在本机。</p></div>`;
+  if (window.AvatarDemo?.active) detail.querySelector('p').textContent = '轻轻弹一下。设置仅在本页生效。';
   host.append(detail); controls = detail;
   detail.querySelector('[data-sound-enabled]').addEventListener('change', event => {
     setEnabled(event.target.checked);
@@ -128,3 +129,4 @@ document.addEventListener('visibilitychange', () => {
 window.addEventListener('pagehide', () => { player.stopAll(); unlocked = false; });
 window.AvatarSounds = Object.freeze({ play, setEnabled, setVolume, getState: state, mountControls });
 mountControls();
+document.dispatchEvent(new Event('avatar-sounds-ready'));

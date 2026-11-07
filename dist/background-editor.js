@@ -6,7 +6,7 @@ const shapeNames={petals:'圆瓣花',disc:'圆形',rounded:'圆角方',diamond:'
 let panel=null,previewHost=null,eventName='entrance',ready=false;
 const config=()=>AvatarBackground.resolve(state.backgroundMotion);
 const $=id=>document.getElementById(id);
-function status(){const el=$('backgroundSaveStatus');if(!el)return;el.textContent=conflict?'版本冲突，修改已保留':!canWrite||syncError?'暂未同步，修改已保留':dirty||saving?'正在自动同步…':'背景动效已同步';}
+function status(){const el=$('backgroundSaveStatus');if(!el)return;el.textContent=window.AvatarDemo?.active?'仅本页预览，不保存':conflict?'版本冲突，修改已保留':!canWrite||syncError?'暂未同步，修改已保留':dirty||saving?'正在自动同步…':'背景动效已同步';}
 function refresh(){
  if(!ready)return;const value=config();
  for(const button of panel.querySelectorAll('[data-background-shape]'))button.setAttribute('aria-pressed',String(button.dataset.backgroundShape===value.shape));

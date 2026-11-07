@@ -1,24 +1,28 @@
 ((document) => {
 'use strict';
 const $ = id => document.getElementById(id);
+const demo = !!window.AvatarDemo?.active;
+const needsLogin = () => !!window.avatarLogoutInProgress || (new URL(location.href).searchParams.get('login')==='1' && window.AvatarAuth?.getState?.().authenticated!==true);
+const catalogFetch = (input, options={}) => { if(!demo && !['GET','HEAD'].includes((options.method||'GET').toUpperCase()) && needsLogin())return Promise.reject(new Error('login_required')); return demo ? window.AvatarDemo.request(input,options) : fetch(input,options); };
 const groups = [['colors','颜色',null],['animals','动物','head'],['emotions','情绪形容词','mood'],['accessories','配饰','accessory']];
 let server, draft, etag, editVersion=0, savedVersion=0, saving=false, paused=false, timer, reading=false, epoch=0, retryable=false, uploading=false;
 const clone = value => JSON.parse(JSON.stringify(value));
 const dirty = () => editVersion!==savedVersion;
-const writable = () => server?.access?.canWrite===true;
+const writable = () => demo || (!needsLogin() && server?.access?.canWrite===true);
 const el = (tag, cls, text) => { const e=document.createElement(tag);if(cls)e.className=cls;if(text!==undefined)e.textContent=text;return e; };
 function status(message, error=false){ $('status').textContent=message;document.querySelector('.sync').classList.toggle('error',error);$('retry').hidden=!retryable; }
-function uploadControls(){const enabled=server?.access?.canUpload===true;const busy=uploading||saving;$('upload-guide').disabled=!enabled||busy;for(const button of document.querySelectorAll('.upload-button,.upload-file'))button.disabled=!enabled||busy;}
-function meta(){ uploadControls();$('upload-note').textContent=server.access.canUpload?'在具体词条的最后一列点击“上传 PNG”。仅普通非动画 PNG，最大 4 MiB，宽高 16–2048 像素；服务器会重编码到 1024 像素透明画布；上传后待校准，尚不用于头像。':'上传权限尚未开放。仅支持普通非动画 PNG，最大 4 MiB，宽高 16–2048 像素。'; $('login').hidden=writable(); $('version').textContent=`修订 ${server.revision} · 规则 ${server.rulesVersion} · 基础 ${server.baseManifestVersion} · ${server.updatedAt || '更新时间未提供'}`; $('permission').textContent=writable()?'已开放编辑 · 修改自动保存，成功后同步。':'当前为只读浏览。登录后可编辑；写入权限尚未开放时，名称、颜色、资源引用与组合规则均不可修改。';$('save-hint').textContent=writable()?'修改停止 700 毫秒后自动保存':'只读模式 · 未开放写入或上传'; }
-function adopt(data, tag){server=data;draft=clone(data.definition);etag=tag;editVersion=0;savedVersion=0;paused=false;retryable=false;meta();render();status(writable()?'已与服务端同步':'已读取 · 只读模式');}
-function changed(){editVersion++;clearTimeout(timer);if(paused){status('自动保存已暂停 · 本地草稿仍保留',true);return;}status('有未保存的修改…');timer=setTimeout(save,700);}
+function uploadControls(){const enabled=!needsLogin()&&server?.access?.canUpload===true;const busy=uploading||saving;$('upload-guide').disabled=!enabled||busy;for(const button of document.querySelectorAll('.upload-button,.upload-file'))button.disabled=!enabled||busy;}
+function meta(){ uploadControls();if(demo){$('upload-note').textContent='演示模式不上传素材。';$('login').hidden=true;$('version').textContent='本页演示';$('reload').textContent='重新读取本页预览';document.querySelector('.rule-intro p').textContent='规则修改仅用于本页演示，不影响线上身份、头像或其他人。';$('permission').textContent='修改仅供本页预览，不会保存或影响他人。';$('save-hint').textContent='仅本页生效';return;}$('upload-note').textContent=server.access.canUpload?'在具体词条的最后一列点击“上传 PNG”。仅普通非动画 PNG，最大 4 MiB，宽高 16–2048 像素；服务器会重编码到 1024 像素透明画布；上传后待校准，尚不用于头像。':'上传权限尚未开放。仅支持普通非动画 PNG，最大 4 MiB，宽高 16–2048 像素。'; $('login').hidden=writable(); $('version').textContent=`修订 ${server.revision} · 规则 ${server.rulesVersion} · 基础 ${server.baseManifestVersion} · ${server.updatedAt || '更新时间未提供'}`; $('permission').textContent=writable()?'已开放编辑 · 修改自动保存，成功后同步。':'当前为只读浏览。登录后可编辑；写入权限尚未开放时，名称、颜色、资源引用与组合规则均不可修改。';$('save-hint').textContent=writable()?'修改停止 700 毫秒后自动保存':'只读模式 · 未开放写入或上传'; }
+function adopt(data, tag){server=data;draft=clone(data.definition);etag=tag;editVersion=0;savedVersion=0;paused=false;retryable=false;meta();render();status(demo?'本页预览 · 不保存':writable()?'已与服务端同步':'已读取 · 只读模式');}
+function changed(){editVersion++;clearTimeout(timer);if(paused){status('自动保存已暂停 · 本地草稿仍保留',true);return;}status(demo?'正在更新本页预览…':'有未保存的修改…');timer=setTimeout(save,demo?100:700);}
 function valid(){return Object.values(draft.labels).every(x=>typeof x==='string'&&x.trim().length>0)&&Object.values(draft.colors).every(x=>/^#[0-9a-f]{6}$/i.test(x))&&Object.values(draft.rules.wordOrderPolicy).every(x=>Array.isArray(x)&&x.length>0);}
 async function save(){
  if(!writable()||!dirty()||saving||paused||uploading)return;
  if(!valid()){status('请补全名称、六位 HEX 颜色，并为每项规则保留至少一种词序。',true);return;}
+ if(demo){const version=editVersion;const response=await window.AvatarDemo.setDefinition(draft);server=await response.json();etag=response.headers.get('ETag');savedVersion=version;meta();render();status('本页预览 · 不保存');return;}
  if(!etag){paused=true;status('服务端缺少 ETag，已暂停保存以防覆盖。请重新读取。',true);return;}
  const version=editVersion,payload=clone(draft);saving=true;uploadControls();epoch++;retryable=false;status('正在保存…');
- try{const response=await fetch('/api/v1/definition',{method:'PUT',headers:{'Content-Type':'application/json','If-Match':etag},body:JSON.stringify({definition:payload})});
+ try{const response=await catalogFetch('/api/v1/definition',{method:'PUT',headers:{'Content-Type':'application/json','If-Match':etag},body:JSON.stringify({definition:payload})});
  if(response.status===401){paused=true;$('login').hidden=false;status('登录已失效 · 草稿已保留，请重新登录后重试。',true);return;}
  if(response.status===412){paused=true;status('服务端已更新 · 自动保存暂停，本地草稿未丢失。请重新读取后再编辑。',true);return;}
  if(!response.ok)throw new Error(`HTTP ${response.status}`);
@@ -32,7 +36,7 @@ async function read(force=false){
  if(reading||saving||uploading||document.hidden||editing||$('table-dialog').open)return;
  if(force&&dirty()&&!window.confirm('重新读取会放弃当前页面尚未保存的草稿。是否继续？'))return;
  const requestEpoch=epoch,wasDirty=dirty(),requestEditVersion=editVersion;reading=true;
- try{const response=await fetch('/api/v1/definition',{headers:(!force&&etag)?{'If-None-Match':etag}:{},cache:'no-store'});
+ try{const response=await catalogFetch('/api/v1/definition',{headers:(!force&&etag)?{'If-None-Match':etag}:{},cache:'no-store'});
  if(response.status===304)return;
  if(!response.ok)throw new Error(`HTTP ${response.status}`);
  const data=await response.json(),tag=response.headers.get('ETag');
@@ -58,15 +62,15 @@ async function validatePng(file){
  const url=URL.createObjectURL(file);try{await new Promise((resolve,reject)=>{const image=new Image();image.onload=()=>image.naturalWidth===width&&image.naturalHeight===height?resolve():reject(new Error('PNG 尺寸无效。'));image.onerror=()=>reject(new Error('无法解码 PNG，请重新导出后再试。'));image.src=url;});}finally{URL.revokeObjectURL(url);}
 }
 async function upload(row,file){
- if(uploading||saving||server?.access?.canUpload!==true)return;
+ if(demo||uploading||saving||server?.access?.canUpload!==true)return;
  const base=canonical(server.definition),wasPaused=paused;let sent=false,registered=false;uploading=true;epoch++;clearTimeout(timer);uploadControls();status('正在检查 PNG…');
- try{await validatePng(file);sent=true;status('正在上传 PNG…');const response=await fetch('/api/v1/assets',{method:'POST',credentials:'same-origin',headers:{'Content-Type':'image/png','X-Avatar-Target':row.id},body:file});
+ try{await validatePng(file);sent=true;status('正在上传 PNG…');const response=await catalogFetch('/api/v1/assets',{method:'POST',credentials:'same-origin',headers:{'Content-Type':'image/png','X-Avatar-Target':row.id},body:file});
  if(response.status===401){$('login').hidden=false;throw new Error('登录已失效，请重新登录后再选择文件。');}
  if(response.status===413)throw new Error('文件超过上传上限，请将 PNG 缩小至 4 MiB 以内。');
  if(response.status===400)throw new Error('PNG 未通过校验。请使用非动画 PNG，宽高 16–2048 像素并重新导出。');
  if(response.status===503)throw new Error('上传配额或服务暂时不可用，请稍后再试。');
  if(!response.ok)throw new Error(`上传失败（HTTP ${response.status}），请稍后手动重试。`);
- const result=await response.json();registered=true;const refreshed=await fetch('/api/v1/definition',{cache:'no-store',credentials:'same-origin'});
+ const result=await response.json();registered=true;const refreshed=await catalogFetch('/api/v1/definition',{cache:'no-store',credentials:'same-origin'});
  if(!refreshed.ok)throw new Error('资源已登记，但暂时无法核对配置。请重新读取服务端后查看待校准资源。');
  const data=await refreshed.json(),tag=refreshed.headers.get('ETag');
  if(canonical(data.definition)!==base||wasPaused){paused=true;retryable=false;server.assets=data.assets;server.assetCatalogVersion=data.assetCatalogVersion;render();status('资源已登记，但配置期间发生变化或有待处理冲突。已保留草稿并暂停保存；重新读取后可查看待校准资源。',true);return;}
@@ -87,7 +91,7 @@ function entries(){return groups.flatMap(([key,title,layer])=>(server.manifest[k
 function valueOf(entry,key){const {row,name,title,asset,pending}=entry;if(key==='preview'||key==='name')return draft.labels[row.id]??row.label;if(key==='type')return title;if(key==='id')return row.id;if(key==='resource')return entry.key==='colors'?(draft.colors[row.id]??row.hex):(draft.assetRefs[row.id]??row.asset?.id??'未绑定');if(key==='pair'){const id=draft.rules.emotionAccessories[row.id];return id?(draft.labels[id]??id):'不适用';}if(key==='state')return `词条 ${row.state||'未知'}${entry.layer?' · 资源 '+(asset?.state||'未知'):''}`;if(key==='upload')return pending.length?`${pending.length} 个待校准`:'无待校准';return '';}
 function safeImage(asset,label){const img=el('img');img.alt=label;img.loading='lazy';const thumb=asset?.thumbnail,raw=(typeof thumb==='string'?thumb:thumb?.url)||asset?.url;try{const u=new URL(raw,location.href);if(['https:','http:'].includes(u.protocol))img.src=u.href;}catch{}img.addEventListener('error',()=>{img.replaceWith(el('span','image-fallback','未载入'));},{once:true});return img;}
 function setColumnWidth(key,width){const c=columns.find(c=>c.key===key);widths[key]=Math.max(c.min,Math.min(640,width));document.querySelector(`col[data-column="${key}"]`).style.width=widths[key]+'px';document.querySelector(`[data-resize="${key}"]`).setAttribute('aria-valuenow',String(Math.round(widths[key])));$('asset-table').style.width=columns.reduce((n,c)=>n+(widths[c.key]||c.width),0)+'px';}
-function persistWidths(){try{localStorage.setItem('avatar-catalog-columns-v1',JSON.stringify(widths));}catch{}}
+function persistWidths(){if(demo)return;try{localStorage.setItem('avatar-catalog-columns-v1',JSON.stringify(widths));}catch{}}
 function buildHeaders(){const head=$('table-head');head.replaceChildren();$('columns').replaceChildren();for(const c of columns){const col=el('col');col.dataset.column=c.key;$('columns').append(col);const th=el('th');th.scope='col';th.dataset.column=c.key;th.setAttribute('aria-sort',sortKey===c.key?(sortDirection===1?'ascending':'descending'):'none');const actions=el('div','header-actions'),sort=el('button','sort-button',c.label),mark=el('span','sort-mark',sortKey===c.key?(sortDirection===1?' ↑':' ↓'):' ↕');sort.type='button';sort.setAttribute('aria-label',`${c.label}，点击${sortKey===c.key&&sortDirection===1?'降序':'升序'}排序`);sort.append(mark);sort.addEventListener('click',()=>{if(!commitEdit())return;sortDirection=sortKey===c.key?-sortDirection:1;sortKey=c.key;rows();});const menu=el('button','column-menu','⋯');menu.type='button';menu.dataset.menu=c.key;menu.setAttribute('aria-label',`${c.label}筛选与分组`);menu.setAttribute('aria-haspopup','dialog');menu.addEventListener('click',()=>{if(commitEdit())openColumnMenu(c,menu);});const resize=el('div','column-resizer');resize.dataset.resize=c.key;resize.tabIndex=0;resize.setAttribute('role','separator');resize.setAttribute('aria-orientation','vertical');resize.setAttribute('aria-label',`调整${c.label}列宽，方向键每次 16 像素`);resize.setAttribute('aria-valuemin',String(c.min));resize.setAttribute('aria-valuemax','640');resize.addEventListener('pointerdown',event=>{if(!commitEdit())return;event.preventDefault();const x=event.clientX,start=widths[c.key]||c.width;resize.setPointerCapture(event.pointerId);document.body.classList.add('resizing');const move=e=>setColumnWidth(c.key,start+e.clientX-x),end=()=>{resize.removeEventListener('pointermove',move);resize.removeEventListener('pointerup',end);resize.removeEventListener('pointercancel',end);document.body.classList.remove('resizing');persistWidths();};resize.addEventListener('pointermove',move);resize.addEventListener('pointerup',end);resize.addEventListener('pointercancel',end);});resize.addEventListener('keydown',event=>{if(['ArrowLeft','ArrowRight','Home'].includes(event.key)){event.preventDefault();setColumnWidth(c.key,event.key==='Home'?c.width:(widths[c.key]||c.width)+(event.key==='ArrowRight'?16:-16));persistWidths();}});resize.addEventListener('dblclick',()=>{setColumnWidth(c.key,c.width);persistWidths();});actions.append(sort,menu);th.append(actions,resize);head.append(th);setColumnWidth(c.key,widths[c.key]||c.width);}}
 function findCell(id,key){return [...document.querySelectorAll('td[data-id]')].find(e=>e.dataset.id===id&&e.dataset.column===key);}
 function focusCell(id,key){const cell=findCell(id,key);if(!cell)return;document.querySelectorAll('td[tabindex="0"]').forEach(e=>e.tabIndex=-1);cell.tabIndex=0;focusedCell={id,key};cell.focus({preventScroll:true});cell.scrollIntoView({block:'nearest',inline:'nearest'});}
@@ -115,11 +119,13 @@ for(const view of ['catalog','rules'])$(view+'-tab').addEventListener('click',()
 $('login').addEventListener('click',()=>{if(window.AvatarAuth?.open)window.AvatarAuth.open();else status('登录入口尚未就绪，请稍后重新读取。',true);});
 window.addEventListener('avatar-auth-changed',()=>{if(dirty()){paused=true;retryable=true;status('登录状态已变化 · 草稿已保留，点击重试保存核对版本。',true);void read();}else void read(true);});
 $('reload').addEventListener('click',()=>{if(!commitEdit())return;rows();void read(true);});
-$('retry').addEventListener('click',async()=>{if(!retryable||saving||reading||uploading)return;try{const response=await fetch('/api/v1/definition',{cache:'no-store'});if(!response.ok)throw new Error();const tag=response.headers.get('ETag');if(tag!==etag){retryable=false;status('服务端版本已变化 · 保留草稿，请重新读取核对。',true);return;}paused=false;retryable=false;void save();}catch{status('暂时无法核对服务端版本 · 草稿仍保留，请稍后重试。',true);}});
+$('retry').addEventListener('click',async()=>{if(!retryable||saving||reading||uploading)return;try{const response=await catalogFetch('/api/v1/definition',{cache:'no-store'});if(!response.ok)throw new Error();const tag=response.headers.get('ETag');if(tag!==etag){retryable=false;status('服务端版本已变化 · 保留草稿，请重新读取核对。',true);return;}paused=false;retryable=false;void save();}catch{status('暂时无法核对服务端版本 · 草稿仍保留，请稍后重试。',true);}});
 const uncommitted=()=>Boolean(editing&&editing.input.value!==editing.initial);
+window.avatarCatalogBusy=()=>saving||uploading;
+window.avatarPauseCatalogForLogout=()=>{const wasPaused=paused;clearTimeout(timer);paused=true;return()=>{paused=wasPaused;if(dirty()&&!paused){clearTimeout(timer);timer=setTimeout(save,700);}};};
 const previousUnsavedGuard=window.avatarHasUnsavedChanges;
 window.avatarHasUnsavedChanges=()=>Boolean(previousUnsavedGuard?.())||dirty()||uploading||uncommitted();
-window.addEventListener('beforeunload',event=>{if(dirty()||uploading||uncommitted()){event.preventDefault();event.returnValue='';}});
+window.addEventListener('beforeunload',event=>{if(!window.avatarLogoutInProgress&&(dirty()||uploading||uncommitted())){event.preventDefault();event.returnValue='';}});
 document.addEventListener('visibilitychange',()=>{if(!document.hidden)void read();});
 setInterval(()=>{if(!document.hidden&&!paused)void read();},2000);
 void read();

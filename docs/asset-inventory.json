@@ -1641,6 +1641,13 @@
       "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
     },
     {
+      "path": "docs/screenshots/demo-mobile.png",
+      "bytes": 201974,
+      "sha256": "4da49de14481c3199851755b3588f3d4726bdbd094248db7b6dce000b6d86388",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
       "path": "docs/screenshots/editor-desktop.png",
       "bytes": 441058,
       "sha256": "ef67668f988e5f94dbb3d51963698a20fe38657eff2516493072743b8117265c",
@@ -1651,6 +1658,20 @@
       "path": "docs/screenshots/editor-mobile.png",
       "bytes": 227386,
       "sha256": "cab443212f8f86e3b0ec11e7316d3d6d63734eaa03ec22a8fa10faa9f306fddc",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "docs/screenshots/keypad-mobile.png",
+      "bytes": 83818,
+      "sha256": "ab0782a47874ab48482375d2f5fbc33b4583b29cb20553a2bf1f645ca0e52d08",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "docs/screenshots/settings-logout-mobile.png",
+      "bytes": 129352,
+      "sha256": "3b928e9c453b000ebe009a6da37198c7e1e88b27961cd6374775b61bec651a46",
       "license": "CC-BY-NC-4.0",
       "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
     }
