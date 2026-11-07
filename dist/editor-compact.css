@@ -65,14 +65,31 @@ body.workspace-shell .workspace-main-tabs button[aria-selected=true]{color:var(-
 @media(max-width:760px) and (max-height:660px){body.editor-page #materialPanel.compact-inspector{height:max(200px,calc(100dvh - 330px));max-height:max(200px,calc(100dvh - 330px))}}
 body.workspace-shell[data-focus-input=pointer] #materialPanel button:focus{outline:none}
 
-/* Both workspace switches stay in the top bar, with full accessible names. */
-body.workspace-shell>header,body.workspace-shell>header.avatar-auth-header{grid-template-columns:minmax(0,1fr) auto auto;gap:12px;min-height:64px;padding:10px 20px}
-body.workspace-shell>header h1,body.workspace-shell>header.avatar-auth-header h1{grid-column:1;grid-row:1;min-width:0}
-body.workspace-shell>header .workspace-main-tabs{grid-column:2;grid-row:1;width:auto;max-width:none;gap:4px;border:0;justify-self:end}
-body.workspace-shell>header .workspace-main-tabs button{display:grid;place-items:center;flex:none;width:42px;min-height:42px;padding:9px 8px 7px;position:relative;border-bottom:2px solid transparent}
-body.workspace-shell>header .workspace-main-tabs button[aria-selected=true]{border-bottom-color:var(--accent)}
-body.workspace-shell>header .workspace-main-tabs button:hover{background:var(--soft)}
+/* A transparent toolbar: history at left, page navigation pinned to the right. */
+html,body{overscroll-behavior-y:none}
+body.workspace-shell>header,body.workspace-shell>header.avatar-auth-header{display:block;min-height:0;padding:0 20px;border:0;background:transparent}
+.workspace-topbar{position:relative;display:grid;grid-template-columns:auto auto minmax(0,1fr);align-items:center;column-gap:12px;min-height:64px}
+.workspace-topbar::after{content:'';position:absolute;left:0;right:0;bottom:0;height:1px;background:var(--line);pointer-events:none}
+body.workspace-shell>header h1,body.workspace-shell>header.avatar-auth-header h1{grid-column:1;grid-row:1;min-width:0;background:transparent}
+body.workspace-shell>header .workspace-main-tabs{grid-column:3;grid-row:1;align-self:stretch;justify-self:end;width:auto;max-width:none;gap:4px;border:0;background:transparent}
+body.workspace-shell>header .workspace-main-tabs button{display:grid;place-items:center;flex:none;width:44px;min-height:44px;height:100%;padding:8px;position:relative;border:0;background:transparent;box-shadow:none;border-radius:0}
+body.workspace-shell>header .workspace-main-tabs button::after{content:'';position:absolute;bottom:0;left:0;right:0;height:2px;background:transparent;z-index:1}
+body.workspace-shell>header .workspace-main-tabs button[aria-selected=true]{border:0;background:transparent;color:var(--accent)}
+body.workspace-shell>header .workspace-main-tabs button[aria-selected=true]::after{background:var(--accent)}
+body.workspace-shell>header .workspace-main-tabs button:hover{background:transparent;color:var(--accent)}
 .workspace-tab-icon{width:22px;height:22px;display:block;background:currentColor;-webkit-mask:var(--workspace-tab-icon) center/contain no-repeat;mask:var(--workspace-tab-icon) center/contain no-repeat}
-body.workspace-shell>header nav,body.workspace-shell>header.avatar-auth-header nav{grid-column:3;grid-row:1;width:auto;gap:3px;justify-self:end}
-@media(max-width:650px){body.workspace-shell>header,body.workspace-shell>header.avatar-auth-header{padding:8px 10px;gap:5px;min-height:60px}body.workspace-shell>header .workspace-main-tabs{gap:0}body.workspace-shell>header .workspace-main-tabs button{width:40px;min-height:42px;padding-inline:8px}body.workspace-shell>header nav,body.workspace-shell>header.avatar-auth-header nav{gap:0}}
-@media(max-width:360px){body.workspace-shell>header .avatar-brand-copy small{display:none}body.workspace-shell>header h1{font-size:12px}}
+body.workspace-shell>header nav,body.workspace-shell>header.avatar-auth-header nav{grid-column:2;grid-row:1;width:auto;gap:0;margin:0;justify-self:start;background:transparent}
+body.workspace-shell>header nav button{min-height:44px;width:40px;margin:0;padding:8px;background:transparent}
+body.workspace-shell>header #redo{margin:0}
+body.workspace-shell>header .avatar-brand-random:hover{background:transparent}
+body.workspace-shell>header .avatar-demo-notice{margin:8px 0}
+.avatar-caption{background:transparent;gap:8px;padding-bottom:8px;min-height:44px}
+.avatar-caption #panelToggle{display:inline-flex;flex:none;width:40px;min-height:40px;margin:0 0 0 auto;padding:8px;border:0;border-radius:8px;background:transparent;color:var(--muted);box-shadow:none}
+.avatar-caption #panelToggle:hover,.avatar-caption #panelToggle[aria-expanded=true]{background:transparent;color:var(--accent)}
+.avatar-caption #panelToggle span{display:none}
+.avatar-caption #panelToggle .icon{width:22px;height:22px}
+#materialPanel.compact-inspector #motionSection{margin-top:4px}
+#materialPanel.compact-inspector [data-select="animal"],#materialPanel.compact-inspector [data-select="accessory"],#materialPanel.compact-inspector [data-select="mood"]{margin-top:14px;padding-top:8px;border-top:1px solid var(--line)}
+@media(max-width:650px){body.workspace-shell>header,body.workspace-shell>header.avatar-auth-header{padding:0 12px}.workspace-topbar{column-gap:6px;min-height:60px}body.workspace-shell>header .workspace-main-tabs{gap:0}body.workspace-shell>header .workspace-main-tabs button{width:44px;min-height:44px}body.workspace-shell>header nav,body.workspace-shell>header.avatar-auth-header nav{gap:0}body.workspace-shell>header nav button{width:36px;min-height:44px}.avatar-caption{gap:6px}.avatar-caption #panelToggle{width:36px;min-height:40px;padding:7px}}
+@media(max-width:360px){body.workspace-shell>header .avatar-brand-copy small{display:block}body.workspace-shell>header h1{font-size:12px}.workspace-topbar{column-gap:4px}.avatar-caption{gap:5px}.avatar-caption #panelToggle{width:32px;padding:5px}}
+@media(min-width:761px) and (max-width:900px){body.editor-page #materialPanel.compact-inspector{width:320px;flex-basis:320px}}

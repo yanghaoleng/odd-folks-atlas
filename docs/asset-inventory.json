@@ -1564,6 +1564,13 @@
       "source": "Iconoir 7.12.2; see THIRD_PARTY_NOTICES.md"
     },
     {
+      "path": "dist/icons/design-nib.svg",
+      "bytes": 1180,
+      "sha256": "c49ce3db06244aad2686c959de12481c1aefc03dfdd20961ce90717717011d3f",
+      "license": "MIT",
+      "source": "Iconoir 7.12.2; see THIRD_PARTY_NOTICES.md"
+    },
+    {
       "path": "dist/icons/download.svg",
       "bytes": 336,
       "sha256": "f189b865ef0fff2926d268f0d812a2d6635e26b5fbd1ce789859947340eb9db2",
@@ -1635,50 +1642,50 @@
     },
     {
       "path": "docs/screenshots/catalog-desktop.png",
-      "bytes": 156049,
-      "sha256": "4f30b957c50def04f7b795f12be4b55c4f8fa163ce079c5e186eaa152e3f09c5",
+      "bytes": 156653,
+      "sha256": "dd9f4547c939154eb846ea40b72d94493a840bb6ac66703c0654f7e6038d6b16",
       "license": "CC-BY-NC-4.0",
       "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
     },
     {
       "path": "docs/screenshots/compact-mobile.png",
-      "bytes": 126109,
-      "sha256": "080386427578db084d2366e2374e455ab9c5ae9f80914c064e9dcb0527e891b1",
+      "bytes": 115153,
+      "sha256": "62841042f3d9863c87aaee5cf77e8f32e0c1c42e300a5b4a817fb5c55d8c04f4",
       "license": "CC-BY-NC-4.0",
       "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
     },
     {
       "path": "docs/screenshots/demo-mobile.png",
-      "bytes": 225555,
-      "sha256": "5da95b6953a6a39736499436e0bbd266240a422dc0ccb5f373dd0aab1db2ac0e",
+      "bytes": 225450,
+      "sha256": "4c174050252c853b6b1b1fe1b356ebb4af628d90d72477a2292ab7805495c932",
       "license": "CC-BY-NC-4.0",
       "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
     },
     {
       "path": "docs/screenshots/editor-desktop.png",
-      "bytes": 311370,
-      "sha256": "7afc0a11abe0223de084e1c324f8d1bcd9a0f83d66b8c97265625e949d6e25d7",
+      "bytes": 307934,
+      "sha256": "f61316e9f77de99617a23a24f8fd5fa70cf87243f5f945bd73b273302666cbd2",
       "license": "CC-BY-NC-4.0",
       "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
     },
     {
       "path": "docs/screenshots/editor-mobile.png",
-      "bytes": 225555,
-      "sha256": "5da95b6953a6a39736499436e0bbd266240a422dc0ccb5f373dd0aab1db2ac0e",
+      "bytes": 225450,
+      "sha256": "4c174050252c853b6b1b1fe1b356ebb4af628d90d72477a2292ab7805495c932",
       "license": "CC-BY-NC-4.0",
       "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
     },
     {
       "path": "docs/screenshots/keypad-mobile.png",
-      "bytes": 92052,
-      "sha256": "c2d50f0d61e3ce5fc175e46c9e7d4f788edb3587229efcb456994ab1356c024d",
+      "bytes": 95112,
+      "sha256": "46638701726f65fd86ecfe04cdc49f125ff1fa72ca70249288c720bd843a67be",
       "license": "CC-BY-NC-4.0",
       "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
     },
     {
       "path": "docs/screenshots/settings-logout-mobile.png",
-      "bytes": 130619,
-      "sha256": "b875fc6668a131360d3a99bb9b88e29fd0ba5bab20f897dc5ac3cc704951784e",
+      "bytes": 119995,
+      "sha256": "6e35b23cab2082afebb935c89ed4b675a07278a02bed2521adaeb331573046c8",
       "license": "CC-BY-NC-4.0",
       "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
     }

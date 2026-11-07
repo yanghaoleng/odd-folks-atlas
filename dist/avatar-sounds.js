@@ -67,7 +67,8 @@ function mountControls(host = document.getElementById('avatarSoundControls')) {
     const nav = document.querySelector('body.editor-page > header nav');
     if (!nav) return;
     host = document.createElement('div'); host.id = 'avatarSoundControls';
-    nav.insertBefore(host, document.getElementById('panelToggle'));
+    const menu = document.getElementById('panelToggle');
+    nav.insertBefore(host, menu?.parentElement === nav ? menu : null);
   }
   if (host.querySelector('.avatar-sound-settings')) return;
   const detail = document.createElement('details');
