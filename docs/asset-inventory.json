@@ -1702,6 +1702,13 @@
       "sha256": "740f7f06bf26bac542d5dc4bddcea52d32ea400a50ace02725db68ff754c6604",
       "license": "CC-BY-NC-4.0",
       "source": "Project AI-assisted artwork or project screenshot; see ASSET_LICENSE.md. Third-party components retain their own licenses."
+    },
+    {
+      "path": "docs/screenshots/editor-live-20261112.jpg",
+      "bytes": 31479,
+      "sha256": "17cc3f499392fc23bd0b31697b126a4b2efd479bf930f210bc2ae80f7194db16",
+      "license": "CC-BY-NC-4.0",
+      "source": "Project screenshot of author's live editor, captured 2026-11-12; generic animal only, no user account data. See ASSET_LICENSE.md."
     }
   ]
 }
